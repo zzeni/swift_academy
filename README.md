@@ -1,2 +1,4 @@
-# Swift Academy - Front-end Development course &copy; 2015
+# Swift Academy
+
+## Front-end Development course &copy; 2015
 
