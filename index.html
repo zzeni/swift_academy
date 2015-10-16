@@ -5,30 +5,65 @@
     <title>Swift Academy: Front-end development course - Terms and Conditions</title>
     <link rel="stylesheet" href="style.css">
     <style>
-      body {
+      header {
+        background-color: cadetblue;
+        color: white;
+        padding: 10px 0px 20px 30px;
+        position: fixed;
+        width: 100%;
+      }
+      
+      #terms-of-the-course {
+        padding-top: 100px;
         width: 70%;
         margin: 0 auto;
       }
       
-      body a, body a:visited {
+      #terms-of-the-course a,
+      #terms-of-the-course a:visited {
         color: #A0AABF;
 /*        color: cadetblue;*/
       }
       
-      body a:hover {
+      #terms-of-the-course a:hover {
         color: #A0AABF;
 /*        color: cadetblue;*/
         font-weight: bold;
+      }
+      
+      footer {
+        background-color: cadetblue;
+        color: white;
+        text-align: center;
+        padding-top: 15px;
+      }
+      
+      footer a {
+        color: lightblue;
+      }
+      
+      sup {
+        font-size: 0.4em;
+        padding-bottom: 0.5em;
+      }
+      
+      .small {
+        font-size: 0.8em;
       }
     </style>
   </head>
   
   <body>
+    <header>
+      <h1 id="swift-academy">Swift Academy - Front-end Development</h1>    
+    </header>
+    
     <section id="terms-of-the-course">
-      <h1 id="swift-academy">Swift Academy</h1>
 
       <h3>Front-end Development course</h3>
 
+      <hr>
+      
       <ul>
         <li><a href="#purpose">Цел и продължителност</a></li>
         <li><a href="#program">Програма</a></li>
@@ -57,7 +92,7 @@
 
       <h3><em>Добре дошли!</em></h3>
       
-      <p>Добре дошли в курса по Front-end програмиране на SwiftAcademy®
+      <p>Добре дошли в курса по Front-end програмиране на SwiftAcademy <sup>&reg;</sup><br>
       Моля прочетете този документ до край за да се запознаете с естеството, целите и правилника на курса.</p>
 
       <p><em>Благодаря и приятно четене!</em></p>
@@ -138,8 +173,8 @@
 
       <h4 id="code-requirements">Изисквания към оформлението на кода</h4>
 
-      <p>Желатения формат на кода, който предавате е да е стриктно идентиран: всеки "вложен" елемент/блок да е с 2 или 4 интервала по-навътре от "обграждащия" го елемент/блок.
-      Файловете да се именуват само с малки букви, без интервали, скоби или други специални символи.
+      <p>Желатения формат на кода, който предавате е да е стриктно идентиран: всеки "вложен" елемент/блок да е с 2 или 4 интервала по-навътре от "обграждащия" го елемент/блок.<br>
+      Файловете да се именуват само с малки букви, без интервали, скоби или други специални символи.<br>
       Именуването на файлове и променливи да следва конвенциите на съответния език за програмиране. Да се използва само латиница и само английски език, дори и при писането на коментарите.</p>
 
       <p>Кода трябва да е четим и разбираем.</p>
@@ -170,12 +205,12 @@
       </ul>
 
       <p><a href="#swift-academy">нагоре</a></p>
-
-      <hr>
-
-      <h5>Swift Academy © 2015</h5>
-
-      <p><em>This document was created with <a href="http://dillinger.io/" target="_blank">Deligner</a></em></p>
     </section>
+        
+    <footer>
+      Swift Academy &copy; 2015
+      <br>
+      <span class="small">This document was created with <a href="http://dillinger.io/" target="_blank">Deligner</a></span>
+    </footer>
   </body>
 </html>
