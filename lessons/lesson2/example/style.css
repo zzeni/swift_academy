@@ -1,0 +1,16 @@
+header {
+  background-color: #3F51B5;
+  color: white;
+  min-height: 110px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+nav {
+  width: 100%;
+}
+
+nav section {
+  float: right;
+  background-color: rgba(255,255,255,.5);
+}
