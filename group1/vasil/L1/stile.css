@@ -1,0 +1,11 @@
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: white;
+}
+
+h1, h2 {
+    text-align: center;
+    color: lightcoral;
+    text-transform: uppercase;
+}
