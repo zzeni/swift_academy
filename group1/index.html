@@ -2,7 +2,19 @@
 <html>
   <head>
     <title>Front-end Development - Group 1</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/jqueryFileTree.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jqueryFileTree.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready( function() {
+				$('#fileTree-container').fileTree({ root: './', script: '../connectors/jqueryFileTree.js' }, function(file) { 
+					$(window).location = file;
+				});
+      });
+
+    </script>
   </head>
 
   <body>
@@ -10,6 +22,9 @@
       <h1>Front-end Development - Group 1</h1>
     </header>
 
+    <div id="fileTree-container"></div>
+
+    <hr>
     <footer>Copyright &copy; Swift Academy 2015</footer>
 
   </body>
