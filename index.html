@@ -3,14 +3,34 @@
   <head>
     <meta charset="UTF-8">
     <title>Swift Academy: Front-end development course - Terms and Conditions</title>
+    <script src="js/jquery.js"></script>
+    <script src="https://use.fonticons.com/78f6d43b.js"></script>
     <link rel="stylesheet" href="style.css">
     <style>
       header {
         background-color: cadetblue;
         color: white;
-        padding: 10px 0px 20px 30px;
+        padding: 20px 30px;
         position: fixed;
         width: 100%;
+      }
+      
+      header a,
+      header a:focus,
+      header a:hover,
+      header a:visited {
+        color: white;
+      }
+      
+      header h1 {
+        padding: 0;
+        float: left;
+        font-size: 1.8em;
+      }
+      
+      header nav {
+        padding-top: 5px;
+        float: right;
       }
       
       #terms-of-the-course {
@@ -50,12 +70,53 @@
       .small {
         font-size: 0.8em;
       }
+      
+      #nav-dropdown {
+        position: absolute;
+        list-style-type: none;
+        border: 1px #fff solid;
+        border-radius: 10px;
+        background-color: cadetblue;
+        padding: 10px 5px;
+        right: 10px;
+        top: 50px;
+        display: none;
+      }
+      
+      #nav-dropdown li {
+        padding: 0 24px;
+        margin: 0;
+      }
+      
+      #nav-dropdown li:hover {
+        background-color: rgba(255,255,255,.4);
+      }
+        
     </style>
+    
+    <script type="text/javascript">
+      $(document).on("ready", function() {
+        $('#menu-toggle').click(function(e) {
+          $('#nav-dropdown').slideToggle(600);
+          e.preventDefault();
+        });
+      });
+                              
+    </script>
   </head>
   
   <body>
     <header>
-      <h1 id="swift-academy">Swift Academy - Front-end Development</h1>    
+      <h1 id="swift-academy">Swift Academy - Front-end Development</h1>
+      
+      <nav>
+        <a href="#" id="menu-toggle"><i class="icon icon-bars icon-square-o icon-2x"></i></a>
+      
+        <ul id="nav-dropdown">
+          <li><a href="group1">group 1</a></li>
+          <li><a href="group2">group 2</a></li>
+        </ul>
+      </nav>
     </header>
     
     <section id="terms-of-the-course">
