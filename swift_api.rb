@@ -13,6 +13,7 @@ post "/fs_read" do
   query = Rack::Utils.parse_nested_query(data)
   
   dir = query['dir']
+  Dir.chdir('/home/deploy/swift_academy/')
   
   return 'N/A' if Dir.pwd > File.absolute_path(dir)
   
@@ -28,7 +29,7 @@ post "/fs_read" do
         if Dir.exists?(File.join(dir,file))
           dirs += "<li class=\"directory collapsed\"><a href=\"#\" rel=\"#{dir}/#{file}/\">#{file}</a></li>"
         else
-          fails += "<li class=\"file ext_#{File.extname(file).sub(/^\./,'')}\"><a href=\"#\" rel=\"#{dir}#{file}\">#{file}</a></li>"
+          files += "<li class=\"file ext_#{File.extname(file).sub(/^\./,'')}\"><a href=\"#\" rel=\"#{dir}#{file}\">#{file}</a></li>"
         end
       end
     
@@ -36,6 +37,8 @@ post "/fs_read" do
       result += files
       result += "</ul>"
     end
+  else
+    return "Ooops! Can't find your folder"
   end
 
   return result
