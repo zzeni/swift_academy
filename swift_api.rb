@@ -26,7 +26,9 @@ namespace '/api' do
     if Dir.exists?(dir)
       entries = Dir.entries(dir).reject {|x| x[0] == '.'}
       
-      # entries.reject! { /\.html\Z/ } if %w(group1 group2).include?(dir) # Doesn't work
+      if %w(group1 group2).include?(File.basename(File.absolute_path(dir)))
+        entries.reject! { |x| x =~ /\.html\Z/ } 
+      end
 
       unless entries.empty?
         result = "<ul class=\"jqueryFileTree\" style=\"display: none;\">"
