@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  margin-top: 125px;
+}
+
+header {
+  background-color: cadetblue;
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+header a,
+header a:focus,
+header a:hover,
+header a:visited {
+  color: white;
+}
+
+header h1 {
+  padding: 0;
+  float: left;
+  font-size: 1.8em;
+}
+
+header nav {
+  top: 40px;
+  float: right;
+  position: fixed;
+  right: 30px;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+#terms-of-the-course a,
+#terms-of-the-course a:visited {
+  color: #A0AABF;
+/*        color: cadetblue;*/
+}
+
+#terms-of-the-course a:hover {
+  color: #A0AABF;
+/*        color: cadetblue;*/
+  font-weight: bold;
+}
+
+footer {
+  background-color: cadetblue;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer a {
+  color: lightblue;
+}
+
+sup {
+  font-size: 0.4em;
+  padding-bottom: 0.5em;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.smaller {
+  font-size: 0.6em;
+}
+
+#nav-dropdown {
+  position: fixed;
+  list-style-type: none;
+  border: 1px #fff solid;
+  border-radius: 10px;
+  background-color: cadetblue;
+  padding: 10px 5px 15px 5px;
+  right: 10px;
+  top: 60px;
+  display: none;
+}
+
+#nav-dropdown li {
+  padding: 5px 24px;
+  margin: 0;
+}
+
+#nav-dropdown li:hover {
+  background-color: rgba(255,255,255,.4);
+}
