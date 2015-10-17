@@ -2,8 +2,10 @@
 <html>
   <head>
     <title>Front-end Development - Group 1</title>
-<!--    <link rel="stylesheet" href="../css/style.css">-->
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/jqueryFileTree.css">
+    
+    <script src="https://use.fonticons.com/78f6d43b.js"></script>
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jqueryFileTree.js"></script>
 
@@ -11,7 +13,7 @@
       "use strict"
       
       $(document).ready( function() {
-				$('#fileTree-container').fileTree({ root: 'group1', script: '/api/fs_read' }, function(file) { 
+				$('#fileTree').fileTree({ root: 'group1', script: '/api/fs_read' }, function(file) { 
 					window.location = file;
 				});
       });
@@ -21,13 +23,22 @@
 
   <body>
     <header>
-      <h1>Front-end Development - Group 1</h1>
+      <div class="container">
+        <h1>Front-end Development - Group 1</h1>
+        <nav>
+          <a href="../" id="back" title="Go back"><i class="icon icon-external-link icon-2x"></i></a>
+        </nav>
+      </div>
     </header>
-
-    <div id="fileTree-container"></div>
-
-    <hr>
-    <footer>Copyright &copy; Swift Academy 2015</footer>
-
+    
+    <div class="container">
+      <section id="fileTree-container">
+        <div id="fileTree"></div>
+      </section>
+    </div>    
+    
+    <footer>
+      Swift Academy &copy; 2015
+    </footer>
   </body>
 </html>
