@@ -6,7 +6,7 @@ body {
 header {
   background-color: cadetblue;
   color: white;
-  padding: 20px 0;
+  padding: 10px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -48,6 +48,13 @@ header nav {
   color: #A0AABF;
 /*        color: cadetblue;*/
   font-weight: bold;
+}
+
+#fileTree-container {
+  width: 200px;
+  border: 1px #ccc solid;
+  padding: 15px 10px 15px 30px;
+  border-radius: 5px;
 }
 
 footer {

@@ -13,7 +13,7 @@
       "use strict"
       
       $(document).ready( function() {
-				$('#fileTree').fileTree({ root: 'group1', script: '/api/fs_read' }, function(file) { 
+				$('#fileTree').fileTree({ root: 'group1', script: 'http://89.190.215.198/api/fs_read' }, function(file) { 
 					window.location = file;
 				});
       });
