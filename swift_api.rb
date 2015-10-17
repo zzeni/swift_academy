@@ -1,13 +1,15 @@
 # swift_api.rb
 require 'sinatra'
-require 'json'
+require 'sinatra/namespace'
+
+#require 'json'
 #require 'byebug'
 
 get '/' do
   'Hi! This should not happen, btw :)'
 end
 
-namespace '/api/' do
+namespace '/api' do
   post "/fs_read" do
     request.body.rewind  # in case someone already read it
     data = URI.decode(request.body.read)
