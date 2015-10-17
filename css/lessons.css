@@ -1,0 +1,40 @@
+#lesson-viewer iframe {
+  width: 46%;
+  margin: 0;
+  margin-bottom: 80px;
+  display: inline-table;
+  min-width: 350px;
+}
+
+#lesson-viewer .spacer {
+  width: 20px;
+  margin: 0;
+  display: inline-table;
+}
+
+#lessons-browser nav {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+#lessons-browser ul {
+  border: 1px #b3c1c5 solid;
+  border-radius: 5px;
+  background-color: #fafafa;
+  padding: 10px;
+  list-style-type: none;
+}
+
+#lessons-browser ul li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.lesson-preview {
+  width: 200px;
+}
+
+.lesson-preview img {
+  width: 200px;
+  height: 160px;
+}

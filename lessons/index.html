@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Front-end Development - Group 2</title>
+    <title>Front-end Development - Lessons &amp; Examples</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/lessons.css">
     <script src="https://use.fonticons.com/78f6d43b.js"></script>
     
-    <style>
-      footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-    </style>
   </head>
 
   <body>
     <header>
       <div class="container">
-        <h1>Front-end Development - Group 2</h1>
+        <h1>Front-end Development - Lessons &amp; Examples</h1>
         <nav>
           <a href="../" id="back" title="Go back"><i class="icon icon-rocket icon-2x"></i></a>
         </nav>
@@ -25,15 +19,24 @@
     </header>
     
     <div class="container">
-      <h3>Browse homeworks</h3>
-<!--
-      <section id="fileTree-container">
-        <div id="fileTree"></div>
+      <section id="lessons-browser">
+        <h2>Browse lessons</h2>
+        <nav class="lesson-preview">
+          <ul>
+            <li><a href="#" data-target="lesson1"><img src="lesson1/lesson_preview.jpeg"></a></li>
+            <li><a href="#" data-target="lesson2"><img src="lesson2/lesson_preview.jpeg"></a></li>
+          </ul>
+        </nav>
       </section>
--->
-      
-      <iframe src="http://89.190.215.198/group2/filetree.html"></iframe>
-    </div>    
+
+      <section id="lesson-viewer">
+        <h2>Lesson 1</h2>
+        
+        <iframe id="presentation" src="http://89.190.215.198/lessons/lesson1/Lesson1.pdf"></iframe>
+        <div class="spacer">&nbsp;</div>
+        <iframe id="examples" src="http://89.190.215.198/lessons/lesson1/example/lesson1.html"></iframe>
+      </section>
+    </div>
     
     <footer>
       <p>Swift Academy &copy; 2015</p>

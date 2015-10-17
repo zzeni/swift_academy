@@ -69,16 +69,26 @@ footer a {
   color: lightblue;
 }
 
+footer nav a {
+  color: white;
+  padding: 5px;
+}
+
+footer p {
+  padding: 0;
+  margin: 5px;
+}
+
 sup {
   font-size: 0.4em;
   padding-bottom: 0.5em;
 }
 
-.small {
+small, .small {
   font-size: 0.8em;
 }
 
-.smaller {
+smaller, .smaller {
   font-size: 0.6em;
 }
 
