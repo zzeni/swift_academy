@@ -60,7 +60,7 @@ namespace '/api' do
     Dir.chdir(WWW_ROOT)
     
     if File.exists?(lock_file)
-      'System is currently .updating'
+      'System is currently updating'
     else
       output = 0
       
