@@ -1,0 +1,44 @@
+body {
+background: #E86F67;
+font-family: Ubuntu;
+}
+
+.container {
+background: #ffffff;
+max-width: 800px;
+margin: 0 auto;
+padding: 10px  20px;
+overflow: hidden;
+}
+
+h1 {
+text-align: center;
+font-weight: 400;
+font-size: 28px;
+}
+
+img {
+float: left;
+max-width: 250px;
+margin-top: 8px;
+margin-right: 20px;
+}
+
+p {
+line-height: 25px;
+word-spacing: 4px;
+margin-bottom: 20px;
+}
+
+.over-list {
+max-width: 320px;
+}
+
+ul {
+max-width: 300px;
+margin: 0 auto;
+padding-left: 20px
+}
+ul li {
+font-style: italic;
+}
