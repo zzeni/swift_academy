@@ -11,7 +11,7 @@
       "use strict"
       
       $(document).ready( function() {
-				$('#fileTree-container').fileTree({ root: '../group1/', script: 'connectiors/jqueryFileTree.php' }, function(file) { 
+				$('#fileTree-container').fileTree({ root: 'group1', script: '/api/fs_read' }, function(file) { 
 					window.location = file;
 				});
       });
