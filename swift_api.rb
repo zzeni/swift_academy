@@ -36,7 +36,8 @@ namespace '/api' do
           if Dir.exists?(File.join(dir,file))
             dirs += "<li class=\"directory collapsed\"><a href=\"#\" rel=\"/#{rel}\">#{file}</a></li>"
           else
-            files += "<li class=\"file ext_#{File.extname(file).sub(/\a\./,'')}\"><a href=\"#\" rel=\"/#{rel}\">#{file}</a></li>"
+            ext = File.extname(file).sub(/\a\./,'')
+            files += "<li class=\"file ext_#{ext}\"><a href=\"#\" rel=\"/#{rel}\">#{file}</a></li>"
           end
         end
 
@@ -49,5 +50,25 @@ namespace '/api' do
     end
 
     return result
+  end
+
+  get '/update' do
+    lock_file = 'updating.lock'
+    
+    if File.exists?(lock_file)
+      'System is currently .updating'
+    else
+      output = 0
+      
+      File.open(lock_file, File::RDWR|File::CREAT, 0644) do |f|
+        f.flock(File::LOCK_EX)
+        output = "lock file created..\n\n" 
+        output += %x(git pull)
+      end
+      
+      output += "\n.. lock file removed" if File.delete(lock_file)
+      
+      "<pre>#{output}</pre>"
+    end
   end
 end
