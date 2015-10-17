@@ -5,6 +5,8 @@ require 'sinatra/namespace'
 #require 'json'
 #require 'byebug'
 
+WWW_ROOT = ENV['WWW_ROOT'] || '/home/deploy/swift_academy/'
+
 get '/' do
   'Hi! This should not happen, btw :)'
 end
@@ -16,7 +18,7 @@ namespace '/api' do
     query = Rack::Utils.parse_nested_query(data)
 
     dir = query['dir']
-    Dir.chdir('/home/deploy/swift_academy/')
+    Dir.chdir(WWW_ROOT)
 
     return 'N/A' if Dir.pwd > File.absolute_path(dir)
 
@@ -54,6 +56,8 @@ namespace '/api' do
 
   get '/update' do
     lock_file = 'updating.lock'
+    
+    Dir.chdir(WWW_ROOT)
     
     if File.exists?(lock_file)
       'System is currently .updating'
