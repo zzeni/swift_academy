@@ -105,10 +105,16 @@ smaller, .smaller {
 }
 
 #nav-dropdown li {
-  padding: 5px 24px;
+  padding: 10px 50px 10px 30px;
   margin: 0;
 }
 
 #nav-dropdown li:hover {
   background-color: rgba(255,255,255,.4);
+}
+
+#nav-dropdown li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.1em;
 }
