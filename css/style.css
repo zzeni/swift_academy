@@ -50,11 +50,12 @@ header nav {
   font-weight: bold;
 }
 
-#fileTree-container {
-  width: 200px;
-  border: 1px #ccc solid;
-  padding: 15px 10px 15px 30px;
-  border-radius: 5px;
+iframe {
+  padding: 5px;
+  padding-left: 15px;
+  min-width: 450px;
+  min-height: 300px;
+  overflow: scroll;
 }
 
 footer {

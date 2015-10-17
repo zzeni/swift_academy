@@ -3,22 +3,15 @@
   <head>
     <title>Front-end Development - Group 1</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/jqueryFileTree.css">
-    
     <script src="https://use.fonticons.com/78f6d43b.js"></script>
-    <script type="text/javascript" src="../js/jquery.js"></script>
-    <script type="text/javascript" src="../js/jqueryFileTree.js"></script>
-
-    <script type="text/javascript">
-      "use strict"
-      
-      $(document).ready( function() {
-				$('#fileTree').fileTree({ root: 'group1', script: 'http://89.190.215.198/api/fs_read' }, function(file) { 
-					window.location = file;
-				});
-      });
-
-    </script>
+    
+    <style>
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
   </head>
 
   <body>
@@ -32,9 +25,14 @@
     </header>
     
     <div class="container">
+      <h3>Browse homeworks</h3>
+<!--
       <section id="fileTree-container">
         <div id="fileTree"></div>
       </section>
+-->
+      
+      <iframe src="http://89.190.215.198/group1/filetree.html"></iframe>
     </div>    
     
     <footer>

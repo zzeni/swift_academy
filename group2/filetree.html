@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/jqueryFileTree.css">
+    
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jqueryFileTree.js"></script>
+
+    <script type="text/javascript">
+      "use strict"
+      
+      $(document).ready( function() {
+				$('#fileTree').fileTree({ root: 'group2', script: '/api/fs_read' }, function(file) { 
+					window.location = file;
+				});
+      });
+
+    </script>
+  </head>
+
+  <body>
+      <div id="fileTree"></div>
+  </body>
+</html>

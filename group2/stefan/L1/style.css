@@ -1,0 +1,50 @@
+body {
+    color: black;
+    background-color:firebrick;
+}
+h1 { 
+    color:black;
+    text-align: center;
+    border-radius: 45px;
+    background-color: green;
+}
+h2 {
+    margin: 0 auto;
+    background-color: green;
+    border-radius: 45px;
+    text-align: center;
+}
+ul {
+    list-style: square;
+    font-family: cursive;
+    text-align: left;
+}
+  #table {
+      color: black;
+      position: relative; 
+      left: 125px;
+      top: 120px; 
+      font-size: 20px;
+     
+  }
+
+
+p {
+    text-align: center;
+    color:red;
+}
+#parent {
+        margin-left: 300px;
+        margin-right: 300px;
+        width: 500px;
+        height: 500px;
+        background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeGJs5-Ygefb7smlxK2FiR8FXakMhJIy0W60RcdAx6hEHRYsiA");
+    background-size: 500px 500px;
+        border-radius: 45px;
+        border-style: groove;
+        border-width: 50px;
+        border-color: gray;
+        box-shadow: 60px 40px 30px black;
+     
+     
+}
