@@ -8,9 +8,11 @@
     <script type="text/javascript" src="../js/jqueryFileTree.js"></script>
 
     <script type="text/javascript">
+      "use strict"
+      
       $(document).ready( function() {
-				$('#fileTree-container').fileTree({ root: './', script: '../connectors/jqueryFileTree.js' }, function(file) { 
-					$(window).location = file;
+				$('#fileTree-container').fileTree({ root: '../group1/', script: 'connectiors/jqueryFileTree.php' }, function(file) { 
+					window.location = file;
 				});
       });
 
