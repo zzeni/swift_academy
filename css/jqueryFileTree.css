@@ -26,7 +26,7 @@ UL.jqueryFileTree A:hover {
 }
 
 /* Core Styles */
-.jqueryFileTree LI.directory { background: url(../../images/jquery.fileTree/jquery.fileTree/directory.png) left top no-repeat; }
+.jqueryFileTree LI.directory { background: url(../images/jquery.fileTree/directory.png) left top no-repeat; }
 .jqueryFileTree LI.expanded { background: url(../images/jquery.fileTree/folder_open.png) left top no-repeat; }
 .jqueryFileTree LI.file { background: url(../images/jquery.fileTree/file.png) left top no-repeat; }
 .jqueryFileTree LI.wait { background: url(../images/jquery.fileTree/spinner.gif) left top no-repeat; }
