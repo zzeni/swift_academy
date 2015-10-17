@@ -30,9 +30,9 @@ namespace '/api' do
 
         entries.each do |file|
           if Dir.exists?(File.join(dir,file))
-            dirs += "<li class=\"directory collapsed\"><a href=\"#\" rel=\"#{dir}/#{file}/\">#{file}</a></li>"
+            dirs += "<li class=\"directory collapsed\"><a href=\"#\" rel=\"/#{dir}/#{file}/\">#{file}</a></li>"
           else
-            files += "<li class=\"file ext_#{File.extname(file).sub(/^\./,'')}\"><a href=\"#\" rel=\"#{dir}#{file}\">#{file}</a></li>"
+            files += "<li class=\"file ext_#{File.extname(file).sub(/^\./,'')}\"><a href=\"#\" rel=\"/#{dir}/#{file}\">#{file}</a></li>"
           end
         end
 
