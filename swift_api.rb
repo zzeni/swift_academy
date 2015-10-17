@@ -36,7 +36,7 @@ namespace '/api' do
           rel = "#{dir}/#{file}"
           
           if Dir.exists?(File.join(dir,file))
-            dirs += "<li class=\"directory collapsed\"><a href=\"#\" rel=\"/#{rel}\">#{file}</a></li>"
+            dirs += "<li class=\"directory collapsed\"><a href=\"#\" rel=\"#{rel}\">#{file}</a></li>"
           else
             ext = File.extname(file).sub(/\a\./,'')
             files += "<li class=\"file ext_#{ext}\"><a href=\"#\" rel=\"/#{rel}\">#{file}</a></li>"
