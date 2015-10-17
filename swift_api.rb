@@ -18,14 +18,15 @@ namespace '/api' do
     query = Rack::Utils.parse_nested_query(data)
 
     dir = query['dir']
+    
     Dir.chdir(WWW_ROOT)
-
+    
     return 'N/A' if Dir.pwd > File.absolute_path(dir)
 
     if Dir.exists?(dir)
       entries = Dir.entries(dir).reject {|x| x[0] == '.'}
       
-      #      entries.reject! { /\.html\z/ } if %w(group1 group2).include?(dir) # Doesn't work
+      # entries.reject! { /\.html\Z/ } if %w(group1 group2).include?(dir) # Doesn't work
 
       unless entries.empty?
         result = "<ul class=\"jqueryFileTree\" style=\"display: none;\">"
@@ -36,9 +37,9 @@ namespace '/api' do
           rel = "#{dir}/#{file}"
           
           if Dir.exists?(File.join(dir,file))
-            dirs += "<li class=\"directory collapsed\"><a href=\"#\" rel=\"#{rel}\">#{file}</a></li>"
+            dirs += "<li class=\"directory collapsed\"><a href=\"#\" rel=\"#{rel}/\">#{file}</a></li>"
           else
-            ext = File.extname(file).sub(/\a\./,'')
+            ext = File.extname(file).sub(/\A\./,'')
             files += "<li class=\"file ext_#{ext}\"><a href=\"#\" rel=\"/#{rel}\">#{file}</a></li>"
           end
         end
@@ -53,7 +54,7 @@ namespace '/api' do
 
     return result
   end
-
+  
   get '/update' do
     lock_file = 'updating.lock'
     
