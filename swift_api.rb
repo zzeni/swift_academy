@@ -70,7 +70,7 @@ namespace '/api' do
       File.open(lock_file, File::RDWR|File::CREAT, 0644) do |f|
         f.flock(File::LOCK_EX)
         output = "lock file created..\n\n" 
-        output += %x(git pull)
+        output += %x(git pull && git submodule init && git submodule update)
       end
       
       output += "\n.. lock file removed" if File.delete(lock_file)
