@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background-color: cadetblue;
+  background-color: #0E7692;
   color: white;
   padding: 10px 0;
   position: fixed;
@@ -41,12 +41,12 @@ header nav {
 #terms-of-the-course a,
 #terms-of-the-course a:visited {
   color: #A0AABF;
-/*        color: cadetblue;*/
+/*        color: #0E7692;*/
 }
 
 #terms-of-the-course a:hover {
   color: #A0AABF;
-/*        color: cadetblue;*/
+/*        color: #0E7692;*/
   font-weight: bold;
 }
 
@@ -60,7 +60,7 @@ iframe {
 }
 
 footer {
-  background-color: cadetblue;
+  background-color: #0E7692;
   color: white;
   text-align: center;
   padding: 15px 0;
@@ -96,9 +96,9 @@ smaller, .smaller {
 #nav-dropdown {
   position: fixed;
   list-style-type: none;
-  border: 1px #fff solid;
+  border: 1px black solid;
   border-radius: 10px;
-  background-color: cadetblue;
+  background-color: white;
   padding: 10px 5px 15px 5px;
   right: 10px;
   top: 60px;
@@ -106,16 +106,22 @@ smaller, .smaller {
 }
 
 #nav-dropdown li {
+  color: black;
   padding: 10px 50px 10px 30px;
   margin: 0;
-}
-
-#nav-dropdown li:hover {
-  background-color: rgba(255,255,255,.4);
-}
-
-#nav-dropdown li a {
-  text-decoration: none;
+  cursor: pointer;
   text-transform: capitalize;
   font-size: 1.1em;
+}
+
+/*
+#nav-dropdown li a {
+  text-decoration: none;
+  color: inherit;
+}
+*/
+
+#nav-dropdown li:hover {
+  color: white;
+  background-color: black;
 }
