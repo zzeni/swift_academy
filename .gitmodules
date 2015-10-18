@@ -1,0 +1,3 @@
+[submodule "group2/zdravko"]
+	path = group2/zdravko
+	url = git@github.com:DJ-ZdravoMIX/swift-academy-homeworks.git
