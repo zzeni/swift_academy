@@ -3,19 +3,32 @@
   <head>
     <title>Front-end Development - Group 1</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="https://use.fonticons.com/78f6d43b.js"></script>
+    <link rel="stylesheet" href="../css/jqueryFileTree.css">
     <link rel="shortcut icon" href="/favicon.ico?v=2">
+    
+    <script src="https://use.fonticons.com/78f6d43b.js"></script>
+    
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jqueryFileTree.js"></script>
+    
+    <script type="text/javascript">
+      "use strict"
+      
+      $(document).ready( function() {
+        if (window.location.hostname == "") {
+          $('#fileTree-container').html('<iframe src="http://89.190.215.198/group1/filetree.html"></iframe>')
+        }
+        else {
+          $('#fileTree').fileTree({ root: 'group1', script: "/api/fs_read" }, function(file) { 
+            window.location = file;
+          });
+        }
+      });
 
-    <style>
-      footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-    </style>
+    </script>
   </head>
 
-  <body>
+  <body class="group">
     <header>
       <div class="container">
         <h1>Front-end Development - Group 1</h1>
@@ -27,13 +40,9 @@
     
     <div class="container">
       <h3>Browse homeworks</h3>
-<!--
       <section id="fileTree-container">
         <div id="fileTree"></div>
       </section>
--->
-      
-      <iframe src="http://89.190.215.198/group1/filetree.html"></iframe>
     </div>    
     
     <footer>
