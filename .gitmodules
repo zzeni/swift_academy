@@ -1,6 +1,6 @@
 [submodule "group2/zdravko"]
 	path = group2/zdravko
 	url = git@github.com:DJ-ZdravoMIX/swift-academy-homeworks.git
-[submodule "latchezar"]
-	path = latchezar
+[submodule "group1/latchezar"]
+	path = group1/latchezar
 	url = git@github.com:Latchezar/swift-academy-homeworks.git
