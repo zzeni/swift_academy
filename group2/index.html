@@ -16,11 +16,11 @@
       
       $(document).ready( function() {
         if (window.location.hostname == "") {
-          $('#fileTree-container').html('<iframe src="http://89.190.215.198/group2/filetree.html"></iframe>')
+          $('#fileTree-container').html('<iframe src="http://zenifytheweb.com/courses/group2/filetree.html"></iframe>')
         }
         else {
-          $('#fileTree').fileTree({ root: 'group1', script: "/api/fs_read" }, function(file) { 
-            window.location = file;
+          $('#fileTree').fileTree({ root: 'group2', script: "/api/fs_read" }, function(file) { 
+            window.location = '/courses' + file;
           });
         }
       });
