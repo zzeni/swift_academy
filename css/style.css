@@ -168,3 +168,7 @@ smaller, .smaller {
   color: white;
   background-color: #0E7692;
 }
+
+ol li {
+  padding: 5px 0;
+}
