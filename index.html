@@ -39,6 +39,10 @@
           e.preventDefault();
         });
         
+        $("#nav-dropdown").mouseleave(function() {
+          $(this).slideToggle(600);
+        });
+        
         $('header #nav-dropdown li').click(function() {
           window.location = $(this).attr('data-href');
         });

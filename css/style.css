@@ -13,6 +13,7 @@ header {
   width: 100%;
   top: 0;
   z-index: 999;
+  border-bottom: 2px black solid;
   -webkit-transition: padding 0.6s;
   -moz-transition: padding 0.6s;
   -ms-transition: padding 0.6s;
@@ -110,6 +111,7 @@ footer {
   color: white;
   text-align: center;
   padding: 15px 0;
+  border-top: 2px black solid;
 }
 
 footer a {
@@ -164,5 +166,5 @@ smaller, .smaller {
 
 #nav-dropdown li:hover {
   color: white;
-  background-color: black;
+  background-color: #0E7692;
 }
