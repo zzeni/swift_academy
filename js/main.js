@@ -15,8 +15,8 @@ $(document).on("ready", function() {
   
   $('.lesson-preview a').click(function(e) {
     var lesson = $(this).attr('data-target');
-    $('#presentation').attr('src', 'http://courses.zenifytheweb.com/courses/lessons/' + lesson + '/lesson.pdf');
-    $('#examples').attr('src', 'http://courses.zenifytheweb.com/courses/lessons/' + lesson + '/example/index.html');
+    $('#presentation').attr('src', 'http://courses.zenifytheweb.com/lessons/' + lesson + '/lesson.pdf');
+    $('#examples').attr('src', 'http://courses.zenifytheweb.com/lessons/' + lesson + '/example/index.html');
     e.preventDefault();
   });
 });
