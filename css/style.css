@@ -79,6 +79,10 @@ header.collapse #nav-dropdown {
   top: 50px;
 }
 
+a {
+  color: cornflowerblue;
+}
+
 .container {
   width: 70%;
   margin: 0 auto;
@@ -87,13 +91,11 @@ header.collapse #nav-dropdown {
 
 #terms-of-the-course a,
 #terms-of-the-course a:visited {
-  color: #A0AABF;
-/*        color: #0E7692;*/
+/*  color: #A0AABF;*/
 }
 
 #terms-of-the-course a:hover {
-  color: #A0AABF;
-/*        color: #0E7692;*/
+/*  color: #A0AABF;*/
   font-weight: bold;
 }
 
@@ -103,7 +105,6 @@ iframe {
   min-width: 450px;
   min-height: 300px;
   overflow: scroll;
-  margin-bottom: 150px;
 }
 
 footer {
