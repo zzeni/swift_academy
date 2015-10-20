@@ -13,3 +13,6 @@
 [submodule "group2/ivan"]
 	path = group2/ivan
 	url = https://github.com/gaFace/swift-academy-homeworks.git
+[submodule "group1/kristina"]
+	path = group1/kristina
+	url = https://github.com/kiksss91/swift-academy-homeworks.git
