@@ -19,3 +19,9 @@
 [submodule "group2/alexander"]
 	path = group2/alexander
 	url = https://github.com/alxdnch/swift-academy-homeworks.git
+[submodule "group1/vasil"]
+	path = group1/vasil
+	url = https://github.com/VasilDeqnov/swift-academy-homeworks.git
+[submodule "group2/dragomir"]
+	path = group2/dragomir
+	url = https://github.com/Dragomir89/swift-academy-homeworks.git
