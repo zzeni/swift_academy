@@ -1,15 +1,12 @@
-#lesson-viewer iframe {
-  width: 46%;
-  margin: 0;
-  margin-bottom: 80px;
-  display: inline-table;
-  min-width: 350px;
+.lesson-viewer-content {
+  display: table;
+  margin-bottom: 40px;
 }
 
-#lesson-viewer .spacer {
-  width: 20px;
-  margin: 0;
-  display: inline-table;
+#lesson-viewer .iframe-wrapper {
+  margin: 10px;
+  min-width: 350px;
+  display: table-cell;
 }
 
 #lessons-browser nav {
@@ -18,6 +15,7 @@
 }
 
 #lessons-browser ul {
+  display: table;
   border: 1px #b3c1c5 solid;
   border-radius: 5px;
   background-color: #fafafa;
@@ -26,8 +24,17 @@
 }
 
 #lessons-browser ul li {
-  display: inline;
+  display: table-cell;
   margin: 0 5px;
+  padding: 10px;
+}
+
+#lessons-browser ul li.selected {
+  background-color: rgba(0,0,0,.5);
+}
+
+#homework-viewer {
+  margin-bottom: 100px;
 }
 
 .lesson-preview {
