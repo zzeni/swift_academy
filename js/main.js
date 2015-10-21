@@ -18,7 +18,7 @@ $(document).on("ready", function() {
     var lesson_index =  lesson.charAt(lesson.length - 1);
     var lesson_link = 'http://courses.zenifytheweb.com/lessons/' + lesson + '/lesson.pdf';
     var example_link = 'http://courses.zenifytheweb.com/lessons/' + lesson + '/example/index.html';
-    var homework_link = 'https://github.com/zzeni/swift-academy-homeworks/tree/master/task/L' + lesson_index;
+    var homework_link = 'https://github.com/zzeni/swift-academy-homeworks/tree/master/tasks/L' + lesson_index;
     $('.lesson-preview .selected').removeClass('selected');
     $(this).parent().addClass('selected');
     $('#lesson-name').text('Lesson ' + lesson_index);
