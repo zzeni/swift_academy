@@ -1,19 +1,88 @@
 <!DOCTYPE html> 
 <html> 
   <head> 
-    <style> 
-      body { background-color: blue; } 
-      h1 { 
-        background-color: yellow; 
-        margin-top: 10px; 
-        margin-right: 20px; 
-        margin-bottom: 30px; 
-        margin-left: 40px; 
-        /* equivalent to: margin: 10px 20px 30px 40px; */ 
-      } 
+    <style>
+      .about-image img {
+        vertical-align: top;
+        width: 140px;
+        border-radius: 100%;
+      }
+      
+      .about-image {
+        background-color: lightblue;
+        text-align: center;
+      }
+      
+      .about-info {
+        background-color: aliceblue;
+      }
+      
+      .col {
+        padding: 10px;
+        list-style: none;
+        display: table-cell;
+        vertical-align: middle;
+      }
+      
+      .box {
+        display: table;
+      }
+      
+      .row {
+        display: table-row;
+      }
+      
+      ul {
+        font-family: monospace;
+        list-style: none;
+        line-height: 1.5;
+        font-size: 1.5em;
+        padding-left: 10px;
+      }
+      
+      .about-info .col:first-child {
+        text-align: right;
+        font-weight: bold;
+      }      
+      
     </style> 
   </head> 
   <body>
-    <h1>Hello World!</h1>
+    <section id="about">
+      <h1>About me</h1>
+      <div>
+        <div class="box">
+          <div class="row">
+            <div class="col about-image">
+              <img src="http://swift.bg/images/staff/evgenia_manolova.jpg">
+            </div>
+            <div class="col about-info">
+              <div class="box">
+                <div class="row">
+                  <ul class="col">
+                    <li>Name</li>
+                    <li>email</li>
+                    <li>github</li>
+                    <li>LinkedIn</li>
+                  </ul>
+                  <ul class="col">
+                    <li>Evgenia Manolova</li>
+                    <li><a href="mailto:emanolova@gmail.com">emanolova@gmail.com</a></li>
+                    <li><a href="http://github.com/zzeni">link</a></li>
+                    <li><a href="https://bg.linkedin.com/pub/evgenia-manolova/39/96a/166
+        ">link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>or visit my portfolio page <a href="http://zenifytheweb.com/">here</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
