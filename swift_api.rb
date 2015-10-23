@@ -6,6 +6,7 @@ require 'sinatra/namespace'
 #require 'byebug'
 
 WWW_ROOT = ENV['WWW_ROOT'] || '/home/deploy/swift_academy/'
+HOMEWORKS_ROOT = File.expand_path(WWW_ROOT, 'homeworks')
 
 get '/' do
   'Hi! This should not happen, btw :)'
@@ -19,16 +20,16 @@ namespace '/api' do
 
     dir = query['dir']
     
-    Dir.chdir(WWW_ROOT)
+    Dir.chdir(HOMEWORKS_ROOT)
     
     return 'N/A' if Dir.pwd > File.absolute_path(dir)
 
     if Dir.exists?(dir)
       entries = Dir.entries(dir).reject {|x| x[0] == '.'}
       
-      if %w(group1 group2).include?(File.basename(File.absolute_path(dir)))
-        entries.reject! { |x| x =~ /\.html\Z/ } 
-      end
+#      if %w(group1 group2).include?(File.basename(File.absolute_path(dir)))
+#        entries.reject! { |x| x =~ /\.html\Z/ } 
+#      end
 
       unless entries.empty?
         result = "<ul class=\"jqueryFileTree\" style=\"display: none;\">"
@@ -70,7 +71,9 @@ namespace '/api' do
       File.open(lock_file, File::RDWR|File::CREAT, 0644) do |f|
         f.flock(File::LOCK_EX)
         output = "lock file created..\n\n" 
-        output += %x(git pull && git submodule init && git submodule update)
+        output += %x(git fetch origin master && git reset --hard origin/master)
+        output += %x(git submodule foreach git fetch origin master)
+        output += %x(git submodule foreach git reset --hard origin/master)
       end
       
       output += "\n.. lock file removed" if File.delete(lock_file)
