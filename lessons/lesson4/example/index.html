@@ -2,84 +2,65 @@
 <html> 
   <head> 
     <style>
-      .about-image img {
-        vertical-align: top;
-        width: 140px;
-        border-radius: 100%;
-      }
-      
-      .about-image {
-        background-color: lightblue;
-        text-align: center;
-      }
-      
-      .about-info {
-        background-color: aliceblue;
-      }
-      
-      .col {
+      img {
         padding: 10px;
-        list-style: none;
-        display: table-cell;
-        vertical-align: middle;
+        border: 1px black solid;
+      }
+      
+      img.thumb {
+        display: inline;
+        height: 100px;
+      }
+      
+      img.circle {
+        border-radius: 100%;
       }
       
       .box {
         display: table;
+        width: 460px;
       }
       
       .row {
         display: table-row;
       }
       
-      ul {
-        font-family: monospace;
-        list-style: none;
-        line-height: 1.5;
-        font-size: 1.5em;
-        padding-left: 10px;
+      .col {
+        display: table-cell;
+        padding: 0 10px;
+        vertical-align: top;
+        width: 50%;
+        text-align: justify;
       }
-      
-      .about-info .col:first-child {
-        text-align: right;
-        font-weight: bold;
-      }      
-      
+            
     </style> 
   </head> 
   <body>
-    <section id="about">
-      <h1>About me</h1>
-      <div>
-        <div class="box">
-          <div class="row">
-            <div class="col about-image">
-              <img src="http://swift.bg/images/staff/evgenia_manolova.jpg">
-            </div>
-            <div class="col about-info">
-              <div class="box">
-                <div class="row">
-                  <ul class="col">
-                    <li>Name</li>
-                    <li>email</li>
-                    <li>github</li>
-                    <li>LinkedIn</li>
-                  </ul>
-                  <ul class="col">
-                    <li>Evgenia Manolova</li>
-                    <li><a href="mailto:emanolova@gmail.com">emanolova@gmail.com</a></li>
-                    <li><a href="http://github.com/zzeni">link</a></li>
-                    <li><a href="https://bg.linkedin.com/pub/evgenia-manolova/39/96a/166
-        ">link</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+    <h1>Lesson 4 example</h1>
+    <section id="display_inline">
+      <h2>CSS: { display: inline; }</h2>
+      <img src="flowers/1.jpg" class="thumb" alt="flower 1">
+      <img src="flowers/2.jpg" class="thumb" alt="flower 2">
+      <img src="flowers/3.jpg" class="thumb" alt="flower 3">
+      <img src="flowers/4.jpg" class="thumb" alt="flower 4">
+    </section>
+    <section id="border_radius">
+      <h2>CSS: { border: radius; }</h2>
+      <img src="flowers/5.jpg" class="circle" alt="flower 4">
+    </section>
+    <section id="columns">
+      <h2>CSS columns: { display: table; }</h2>
+      <div class="box">
+        <div class="row">
+          <div class="col">
+            <p>
+              A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Magnoliophyta, also called angiosperms). The biological function of a flower is to effect reproduction, usually by providing a mechanism for the union of sperm with eggs. Flowers may facilitate outcrossing (fusion of sperm and eggs from different individuals in a population) or allow selfing (fusion of sperm and egg from the same flower). Some flowers produce diaspores without fertilization (parthenocarpy). Flowers contain sporangia and are the site where gametophytes develop. Flowers give rise to fruit and seeds. Many flowers have evolved to be attractive to animals, so as to cause them to be vectors for the transfer of pollen.
+            </p>
           </div>
-          <div class="row">
-            <div class="col">
-              <p>or visit my portfolio page <a href="http://zenifytheweb.com/">here</a></p>
-            </div>
+          <div class="col">
+            <p>
+              The essential parts of a flower can be considered in two parts: the vegetative part, consisting of petals and associated structures in the perianth, and the reproductive or sexual parts. A stereotypical flower consists of four kinds of structures attached to the tip of a short stalk. Each of these kinds of parts is arranged in a whorl on the receptacle. 
+            </p>
           </div>
         </div>
       </div>
