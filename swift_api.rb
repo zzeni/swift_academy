@@ -71,9 +71,9 @@ namespace '/api' do
       File.open(lock_file, File::RDWR|File::CREAT, 0644) do |f|
         f.flock(File::LOCK_EX)
         output = "lock file created..\n\n" 
-        output += %x(git fetch origin master && git reset --hard origin/master)
+        output += %x(git fetch origin master && git reset --hard origin/master && git pull)
         output += %x(git submodule foreach git fetch origin master)
-        output += %x(git submodule foreach git reset --hard origin/master)
+        output += %x(git submodule foreach git reset --hard origin/master && git pull)
       end
       
       output += "\n.. lock file removed" if File.delete(lock_file)
