@@ -29,4 +29,6 @@ $(document).on("ready", function() {
     $('#homework-viewer').find('a:first').attr('href', homework_link).text(homework_link);
     e.preventDefault();
   });
+  
+  $('.lesson-preview a:last-child').click();
 });
