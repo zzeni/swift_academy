@@ -1,0 +1,3 @@
+[submodule "homeworks"]
+	path = homeworks
+	url = git@github.com:zzeni/swift-academy-homeworks.git
