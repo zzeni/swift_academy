@@ -20,7 +20,7 @@
         }
         else {
           $('#fileTree').fileTree({ root: 'group2', script: "/api/fs_read" }, function(file) { 
-            window.location = '/courses' + file;
+            window.location = '/courses/homeworks' + file;
           });
         }
       });
