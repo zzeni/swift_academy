@@ -6,7 +6,7 @@ require 'sinatra/namespace'
 #require 'byebug'
 
 WWW_ROOT = ENV['WWW_ROOT'] || '/home/deploy/swift_academy/'
-HOMEWORKS_ROOT = File.expand_path(WWW_ROOT, 'homeworks')
+HOMEWORKS_ROOT = File.expand_path('homeworks', WWW_ROOT)
 
 get '/' do
   'Hi! This should not happen, btw :)'
