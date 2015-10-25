@@ -26,6 +26,7 @@ namespace '/api' do
 
     if Dir.exists?(dir)
       entries = Dir.entries(dir).reject {|x| x[0] == '.'}
+      entries.sort! {|a, b| a <=> b}
       
 #      if %w(group1 group2).include?(File.basename(File.absolute_path(dir)))
 #        entries.reject! { |x| x =~ /\.html\Z/ } 
