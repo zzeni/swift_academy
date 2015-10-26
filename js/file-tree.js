@@ -13,7 +13,7 @@ $(document).on("ready", function() {
       $('#fileTree').fileTree({ root: target, script: "/api/fs_read" }, function(file) { 
         var url = '/courses/homeworks' + file;
         
-        if ($('#item-preview').size > 0) {
+        if ($('#item-preview').size() > 0) {
           $('#item-preview').find('iframe').attr('src', url);
           $('#item-preview').find('a').attr('href', url);
         }
