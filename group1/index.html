@@ -3,6 +3,7 @@
   <head>
     <title>Front-end Development - Group 1</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/group.css">
     <link rel="stylesheet" href="../css/jqueryFileTree.css">
     <link rel="shortcut icon" href="/favicon.ico?v=2">
     
@@ -10,25 +11,11 @@
     
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jqueryFileTree.js"></script>
-    
-    <script type="text/javascript">
-      "use strict"
-      
-      $(document).ready( function() {
-        if (window.location.hostname == "") {
-          $('#fileTree-container').html('<iframe src="http://zenifytheweb.com/courses/group1/filetree.html"></iframe>')
-        }
-        else {
-          $('#fileTree').fileTree({ root: 'group1', script: "/api/fs_read" }, function(file) { 
-            window.location = '/courses/homeworks' + file;
-          });
-        }
-      });
-
-    </script>
+    <script type="text/javascript" src="../js/file-tree.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
   </head>
 
-  <body class="group">
+  <body>
     <header>
       <div class="container">
         <h1>Front-end Development - Group 1</h1>
@@ -38,13 +25,21 @@
       </div>
     </header>
     
-    <div class="container">
-      <h3>Browse homeworks</h3>
-      <section id="fileTree-container">
-        <div id="fileTree"></div>
-      </section>
-    </div>    
-    
+    <main>
+      <div class="container">
+        <h3>Browse homeworks</h3>
+        <div id="sections-holder">
+          <section id="fileTree-container">
+            <div id="fileTree" data-target="group1"></div>
+          </section>
+          <section id="item-preview">
+            <iframe class="full-width"></iframe>
+            <br><a href="" target="_blank"><i class="icon icon-external-link"></i> open in fullscreen</a>
+          </section>
+        </div>
+      </div>
+    </main>
+ 
     <footer>
       <p>Swift Academy 2015 &copy;</p>
       <nav id="socilal_nav">

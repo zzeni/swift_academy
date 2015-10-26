@@ -129,12 +129,6 @@ footer p {
   margin: 5px;
 }
 
-.group footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 .hidden {
   display: none;
 }
@@ -182,4 +176,8 @@ smaller, .smaller {
 
 ol li {
   padding: 5px 0;
+}
+
+.full-width {
+  width: 100%;
 }

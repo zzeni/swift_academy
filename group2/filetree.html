@@ -5,20 +5,13 @@
     
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jqueryFileTree.js"></script>
+    <script type="text/javascript" src="../js/file-tree.js"></script>
 
-    <script type="text/javascript">
-      "use strict"
-      
-      $(document).ready( function() {
-				$('#fileTree').fileTree({ root: 'group2', script: '/api/fs_read' }, function(file) { 
-					window.location = file;
-				});
-      });
-
-    </script>
   </head>
 
   <body>
-      <div id="fileTree"></div>
+    <section id="fileTree-container">
+      <div id="fileTree" data-target="group2"></div>
+    </section>  
   </body>
 </html>

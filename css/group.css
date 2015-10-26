@@ -1,0 +1,33 @@
+footer {
+  margin-top: 50px;
+  width: 100%;
+}
+
+#sections-holder {
+  display: table;
+}
+
+#sections-holder section {
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 10px;
+}
+
+#fileTree-container {
+  min-width: 300px;
+}
+
+#item-preview {
+  width: 100%;
+}
+
+iframe {
+  min-height: inherit;
+  min-width: inherit;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+}
+
