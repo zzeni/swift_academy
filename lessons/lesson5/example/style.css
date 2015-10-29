@@ -1,5 +1,21 @@
-@import url(https://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
 body {
-  font-family: "Marck Script";
+  font-family: sans-serif;
+}
+
+article p {
+  font-family: 'Poiret One', "courier new";
+}
+
+.fa-firefox {
+  color: orange;
+}
+
+.fa-facebook {
+  color: #4e69a2
+}
+
+.box p {
+  font-size: 1.5em;
 }
