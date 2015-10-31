@@ -20,5 +20,9 @@ $(document).on("ready", function() {
   });
   
   $('.lesson-preview a:last-child').click();
-
+  
+  if ($('.lesson-preview ul').width() > $('.lesson-preview').width()) {
+    var diff = $('.lesson-preview ul').width() - $('.lesson-preview').width() + 22;
+    $(".lesson-preview").animate({ scrollLeft: diff }, 2000);
+  }
 });
