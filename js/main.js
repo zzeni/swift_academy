@@ -1,5 +1,5 @@
-'use_strict';      
-      
+'use_strict';
+
 $(document).on("ready", function() {
   $(window).on('scroll', function(e) {
     var distanceY = window.pageYOffset || document.documentElement.scrollTop;
@@ -12,21 +12,21 @@ $(document).on("ready", function() {
         $('header').removeClass('collapse');
     }
   });
-  
+
   $(window).on('resize', function() {
-    
+
     $('#item-preview').each(function() {
       var width = $(this).width();
       $(this).find('iframe').height(width*0.7);
     });
-    
-    var footerBottomOffset = $('footer')[0].getBoundingClientRect().bottom
-    if ($(window).height() > footerBottomOffset) {
-      $('footer').addClass('fixed');
-    } else {
-      $('footer').removeClass('fixed');
-    }
+
+      var min_height = $(window).height() - $('footer').outerHeight() - $('header').outerHeight();
+
+      if (min_height > 0) {
+        $('main').css('min-height', '' + min_height + 'px');
+      }
   });
-  
+
   $(window).resize(); // trigger the resize event in order to set footer position
+
 });

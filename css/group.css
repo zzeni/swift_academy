@@ -1,13 +1,16 @@
 footer {
-  margin-top: 50px;
   width: 100%;
 }
 
-#sections-holder {
+main {
+  padding-bottom: 50px;
+}
+
+#homeworks {
   display: table;
 }
 
-#sections-holder section {
+#homeworks > div {
   display: table-cell;
   vertical-align: top;
   padding: 0 10px;
