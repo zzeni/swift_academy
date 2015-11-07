@@ -236,7 +236,7 @@
           Tell me something: <input type="text" data-ng-model="inputtext">
           <ul>
             <li data-ng-repeat="name	in names">
-              Hey {{ name }}! Did you know that .. {{ inputtext }}
+              Hey {{ name }}! Did you know that {{ inputtext || '...' }}
             </li>
           </ul>
         </div>
