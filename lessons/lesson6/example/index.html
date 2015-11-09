@@ -3,38 +3,50 @@
 <html>
   <head>
     <title>Web Forms Example</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
   </head>
-  
+
   <body>
     <h2>Web forms examples</h2>
-        
+
     <section id="text-input">
       <h3>Text inputs</h3>
-      <form action="./" method="get">
-        <p>
-          <label for="sender-name">Your name:</label>
-          <input type="text" name="sender-name" value="Jeni" placeholder="Your Name Here" required disabled>
-        </p>
-        <p>
-          <label for="email">email:</label>
-          <input type="email" name="email" required placeholder="user@example.com" value="email@email.com" readonly>
-        </p>
-        <p>
-          <label for="content">Your message:</label>
-        </p>
-        <p>
-          <textarea name="content" rows="5">enter your message here</textarea>
-        </p>
-        <p>
-          <input type="reset" value="reset">
-          <input type="submit" name="submit" value="submit">
-        </p>
-      </form>
+
+    <form action="http://localhost:4567/api/game" method="get">
+      <input type="hidden" name="key" value="1446484850">
+      <h3>Попълвай само на кирилица, само с малки букви!</h3>
+      <p>
+        <label for="answer_1">Кога е основана българската държава?</label>
+        <br>
+        <input placeholder="ггг" id="answer_1" type="text">
+      </p>
+
+      <p>
+        <label for="answer_2">Кой е най-високият връх в Стара планина?</label>
+        <br>
+        <input type="text" placeholder="Мусала" name="answer_2" required>
+      </p>
+
+      <p>
+        <label for="answer_3">Кое диво животно е изкуствено "внесено" през 20ти век в България?</label>
+        <br>
+        <input type="radio" name="answer_3" value="broun"> кяфява мечка
+        <br>
+        <input type="radio" name="answer_3" value="black"> черна мечка
+        <br>
+        <input type="radio" name="answer_3" value="lynx"> рис
+      </p>
+
+      <p>
+        <input type="submit" value="Изпрати">
+      </p>
+    </form>
+
     </section>
-    
+
     <hr>
-            
+
     <section id="select-inputs">
       <h3>Selects</h3>
       <form action="./" method="get">
@@ -74,13 +86,13 @@
         </p>
       </form>
     </section>
-    
+
     <hr>
-    
+
     <section id="special-inputs">
       <h3>Special inputs</h3>
       <form action="./" method="get">
-        
+
         <!-- You can't see this field on the screen -->
         <input type="hidden" value="1" name="my-hidden-field">
 
@@ -88,17 +100,17 @@
           <label for="password">Enter a password:</label>
           <input type="password">
         </p>
-        
+
         <input type="file" name="file">
-        
+
         <p>
           <input type="submit" name="submit" value="submit">
         </p>
       </form>
     </section>
-    
+
     <hr>
-    
+
     <section id="html5-inputs">
       <h3>HTML5 input types</h3>
       <form action="./" method="get">
