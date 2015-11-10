@@ -43,7 +43,7 @@ h6 {
 body {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 100%;
-  background: black;
+  background: white;
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -53,13 +53,13 @@ body {
 header {
   padding: 20px 0;
   background-color: #ccc;
+  min-height: 150px;
 }
 
 main {
   display: flex;
   display: -webkit-flex;
   width: 100%;
-  height: 75%;
   background: #fff;
 }
 
@@ -71,6 +71,7 @@ footer {
   padding: 15px;
   position: absolute;
   bottom: 0;
+  min-height: 50px;
 }
 
 header h1 {
