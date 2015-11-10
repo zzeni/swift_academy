@@ -18,3 +18,9 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
+.link-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
