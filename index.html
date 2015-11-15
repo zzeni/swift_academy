@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    
+
     <link rel="apple-touch-icon" sizes="57x57" href="http://swift.bg/wp-content/uploads/fbrfg/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="http://swift.bg/wp-content/uploads/fbrfg/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="http://swift.bg/wp-content/uploads/fbrfg/apple-touch-icon-72x72.png">
@@ -23,33 +23,33 @@
       <script src="http://swift.bg/wp-content/themes/generatepress/js/html5shiv.js"></script>
       <link rel="stylesheet" href="http://swift.bg/wp-content/themes/generatepress/css/ie.css" />
     <![endif]-->
-    
+
     <title>Swift Academy | Front-end development course</title>
 
     <link rel="stylesheet" href="css/style.css">
-    
+
     <script src="https://use.fonticons.com/78f6d43b.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
-    
+
     <script type="text/javascript">
       $(document).on("ready", function() {
         $('#menu-toggle').click(function(e) {
           $('#nav-dropdown').slideToggle(600);
           e.preventDefault();
         });
-        
+
         $("#nav-dropdown").mouseleave(function() {
           $(this).slideToggle(600);
         });
-        
+
         $('header #nav-dropdown li').click(function() {
           window.location = $(this).attr('data-href');
         });
       });
     </script>
   </head>
-  
+
   <body>
     <header>
       <div class="container">
@@ -61,12 +61,13 @@
           <ul id="nav-dropdown">
             <li data-href="group1/index.html">group 1</li>
             <li data-href="group2/index.html">group 2</li>
+            <li data-href="program.html">програма</li>
             <li data-href="lessons/index.html">lessons</li>
           </ul>
         </nav>
       </div>
     </header>
-    
+
     <div class="container">
       <section id="terms-of-the-course">
 
@@ -120,6 +121,7 @@
         <h3 id="program">Програма</h3>
 
         <p>Официалната програма на курса можете да видите тук: <a href="http://swift.bg/courses/html_and_css/" target="_blank">http://swift.bg/courses/html_and_css/</a></p>
+        <p>А тази, по която ние ще работим - тук: <a href="program.html" target="_blank">Програма</a></p>
 
         <p>Преподавателят на курса запазва правото си да прави леки изменения в програмата там, където това се налага или спомага за по-качественото преподаване на материала.</p>
 
@@ -212,11 +214,11 @@
           <li>Именуването на файлове и променливи да следва конвенциите на съответния език за програмиране.</li>
           <li>Да се използва само латиница и само английски език, дори и при писането на коментари.</li>
         </ol>
-        
+
         <p>Кода трябва да е четим и разбираем.</p>
-        
+
         <p><em>Кодът трябва да следва официалната конвенция и style guide за съответния език!</em></p>
-        
+
         <ul>
           <li>
             HTML:
@@ -235,7 +237,7 @@
             JavaScript:
             <ul><li><a href="http://www.w3schools.com/js/js_conventions.asp" target="_blank">http://www.w3schools.com/js/js_conventions.asp</a></li></ul></li>
         </ul>
-        
+
         <p><em>Спазването на тези правила ще даде сериозно отражение при сформирането на оценката от преподавателя!</em></p>
 
         <h4 id="efficiency-requirements">Изисквания към коректността на кода</h4>
@@ -252,7 +254,7 @@
         <p>(*) Изредените приложения са само примени, желателно е курсистите да не се ограничават само с тях.</p>
 
         <p><em>Писането на валиден код ще даде много сериозно отражение в оценката от текущ контрол и домашни, както и в оценката от преподавателя</em></p>
-        
+
         <h4 id="references">Допълнителни източници и референции</h4>
 
         <ul>
