@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Homework 10 example solution</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2>Playing the game</h2>
+
+  <section id="first">
+    <h3>Form 1</h3>
+
+    <form action="http://zenifytheweb.com/api/game/start" method="post">
+      <!--      <form action="http://courses.zenifytheweb.com/api/game" method="post">-->
+      <p>
+        <label for="name">Твоето име</label>
+        <br>
+        <input placeholder="Your name" name="name" type="text" required>
+      </p>
+
+      <p>
+        <label for="email">Твоят имейл</label>
+        <br>
+        <input type="email" placeholder="Your email" name="email" required>
+      </p>
+
+      <p>
+        <label for="message">Изпрати текста 'game', за да започнеш играта</label>
+        <br>
+        <textarea name="message" placeholder="Type 'game' to begin"></textarea>
+      </p>
+
+      <p>
+        <input type="submit" value="Изпрати">
+      </p>
+    </form>
+  </section>
+
+  <section id="second">
+    <h3>Form 2</h3>
+
+    <form action="http://zenifytheweb.com/api/game/continue" method="post">
+      <input type="hidden" name="key" value="1447623004">
+
+      <h3>Моля, попълвай само на кирилица!</h3>
+      <p>
+        <label for="answer_1">Коя година е основана българската държава?</label>
+        <br>
+        <input type="number" value="681" name="answer_1" required>
+      </p>
+
+      <p>
+        <label for="answer_2">Кой е най-високият връх в Стара планина?</label>
+        <br>
+        <input type="text" value="Botev" name="answer_2" required>
+      </p>
+
+      <p>
+        <label for="answer_3">Кое диво животно е изкуствено "внесено" през 20ти век в България?</label>
+        <br>
+        <input type="radio" name="answer_3" value="broun"> кяфява мечка
+        <br>
+        <input type="radio" name="answer_3" value="black" checked> черна мечка
+        <br>
+        <input type="radio" name="answer_3" value="lynx"> рис
+      </p>
+
+      <p>
+        <input type="submit" value="Изпрати">
+      </p>
+    </form>
+  </section>
+
+  <hr>
+
+  <section id="third">
+    <h3>Form 3</h3>
+    <form action="http://zenifytheweb.com/api/game/continue" method="post">
+      <input type="hidden" name="key" value="1447623004">
+
+      <h3>What you know about Chuck Noris?</h3>
+      <p>
+        <label for="name">Name</label>
+        <br>
+        <input type="text" value="Chuck Norris" name="name" required>
+      </p>
+
+      <p>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" value="chuck@kicks.ass" name="email" required>
+      </p>
+
+      <p>
+        <label for="occupation">Occupation</label>
+        <br>
+        <input type="text" value="ultimate hero" name="occupation" required>
+      </p>
+
+      <p>
+        <label for="eyes_color ">Eyes Color</label>
+        <br>
+        <input type="color" name="eyes_color" value="#0000ff" required>
+      </p>
+
+      <p>
+        <label for="photo">Photo</label>
+        <br>
+        <input type="file" name="photo" required>
+      </p>
+
+      <p>
+        <input type="submit" value="Go!">
+      </p>
+    </form>
+
+  </section>
+
+  <hr>
+
+  <section id="fourth">
+    <h3>Form 4</h3>
+    <form action="http://zenifytheweb.com/api/game/continue" method="post">
+      <p>
+        Type your key, please:
+        <input type="text" name="key" value="1447623004">
+      </p>
+      <p>
+        Let the JS to generate this:
+        <input id="javascript-rocks" type="text" name="javascript-rocks" readonly>
+      </p>
+      <p>
+        <input type="submit" value="Go!">
+      </p>
+    </form>
+
+    <script>
+      var myVar = "let's keep it simple".length;
+      var myOtherVar = 213 % 36 - 5 * 3;
+      if (myVar == myOtherVar) {
+        myVar += 1;
+      } else {
+        myVar = myOtherVar;
+      }
+
+      var myDate = new Date;
+      myVar *= myDate.getFullYear() - Number(7);
+
+      /*
+        The following code will update the value of the `javascript-rocks' field
+        with the result from the calculation above. It uses the JS object `document'
+        to access arbitrary elements in our html code by their id tag.
+        HINT: It doesn't contain the error, look for it in the calculations! ;)
+      */
+      document.getElementById("javascript-rocks").value = myVar;
+    </script>
+
+  </section>
+
+  <hr>
+
+  <section id="final">
+    <h3>Complete the game</h3>
+    <a id="chucks-secret-key" href=""></a>
+
+    <script>
+      var methods = ['charAt', 'reverse', 'round', 'join', 'split', 'charAt'];
+      var myName = "Chuck Norris";
+      var myBirthYear = 1940;
+      var myImmortalityIndex = 99.99;
+      var myAge = Math.round(myBirthYear*myImmortalityIndex);
+      var mySecretCode = myName.charAt(0) + myAge + myName.charAt(6);
+      var result = mySecretCode.split('').reverse().join('');
+
+      var myLink = document.getElementById('chucks-secret-key');
+      myLink.innerHTML = "result: " + result;
+      myLink.setAttribute('href', "http://zenifytheweb.com/api/game/complete?key=1447623004&result=" + result);
+    </script>
+  </section>
+</body>
+
+</html>
