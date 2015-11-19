@@ -1,0 +1,59 @@
+.tabs-body {
+  border: 1px #ccc solid;
+  border-top: none;
+  padding: 30px;
+}
+
+.tabs-body p {
+  line-height: 30px;
+}
+
+#about-main img {
+  height: 150px;
+}
+
+#about-work {
+  display: none;
+}
+
+#about-education {
+  display: none;
+}
+
+.box-grey {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  display: inline-block;
+/*  width: 100%;*/
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+.link-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+#projects h2 {
+  border-radius: 10px;
+  padding: 50px 10px;
+  background-image: url('http://www.blackmountainhuahin.com/wp-content/uploads/2014/01/BG_Blackmountain1.jpg');
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  text-shadow: 1px 1px 6px #fcfcfc;
+  color: #333;
+}
+
+#projects h3 {
+  border-bottom: 2px #ccc solid;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
