@@ -7,6 +7,7 @@ $(document).on("ready", function() {
     var lesson_index =  lesson.split("lesson")[1];
     var lesson_link = 'http://courses.zenifytheweb.com/lessons/' + lesson + '/lesson.pdf';
     var example_link = 'http://courses.zenifytheweb.com/lessons/' + lesson + '/example/index.html';
+    var github_example_link = 'https://github.com/zzeni/swift_academy/tree/master/lessons/' + lesson + '/example';
     var homework_link = 'https://github.com/zzeni/swift-academy-homeworks/tree/master/tasks/L' + lesson_index;
     $('.lesson-preview .selected').removeClass('selected');
     $(this).parent().addClass('selected');
@@ -15,6 +16,7 @@ $(document).on("ready", function() {
     $('#presentation').parent().find('a:first').attr('href', lesson_link);
     $('#examples').attr('src', example_link);
     $('#examples').parent().find('a:first').attr('href', example_link);
+    $('#examples').parent().find('a:last').attr('href', github_example_link);
     $('#homework-viewer').find('a:first').attr('href', homework_link).text(homework_link);
     e.preventDefault();
   });
