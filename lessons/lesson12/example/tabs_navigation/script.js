@@ -10,7 +10,15 @@ $('.nav-tabs li').click(function (e) {
   $('#' + target).show();
 });
 
-$('.tabs-body').height(Math.max(
-  $('#about-main').height(),
-  $('#about-work').height()
-));
+$(window).resize(function () {
+  if (window.innerWidth > 999) {
+    var minHeight = Math.max(
+      $('#about-main').outerHeight(),
+      $('#about-work').outerHeight()
+    );
+    $('.tabs-body').css('min-height',  minHeight + 'px');
+    $('.tabs-body').css('box-sizing',  'content-box');
+  }
+});
+
+$(window).resize();
