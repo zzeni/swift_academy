@@ -4,16 +4,48 @@
 <head>
   <title>Homework 10 example solution</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
+  <!--  <link rel="stylesheet" href="style.css">-->
+  <style>
+    h1 {
+      font-size: 1.8em;
+      font-family: sans-serif;
+      margin: 50px 100px 0;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      font-family: sans-serif;
+      padding-bottom: 8px;
+      border-bottom: 1px solid black;
+      width: 300px;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    h3 {
+      font-size: 1.2em;
+    }
+
+    section {
+      background-color: aliceblue;
+      width: 600px;
+      margin: 50px 100px;
+      padding: 30px;
+      border: 1px #999 solid;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 
 <body>
-  <h2>Playing the game</h2>
+  <h1>Playing the game</h1>
 
   <section id="first">
-    <h3>Form 1</h3>
+    <h2>Start</h2>
 
-    <form action="http://zenifytheweb.com/api/game/start" method="post">
+    <form action="http://zenifytheweb.com/api/game/start" method="post" target="_blank">
       <!--      <form action="http://courses.zenifytheweb.com/api/game" method="post">-->
       <p>
         <label for="name">Твоето име</label>
@@ -39,11 +71,20 @@
     </form>
   </section>
 
-  <section id="second">
-    <h3>Form 2</h3>
+  <section id="setup">
+    <h2>Set the key</h2>
+    <p>
+      Enter your key here, right after you receive it:
+      <input id="theKey" type="text">
+    </p>
+    <small>then you can keep on submitting the forms below</small>
+  </section>
 
-    <form action="http://zenifytheweb.com/api/game/continue" method="post">
-      <input type="hidden" name="key" value="1447623004">
+  <section id="second">
+    <h3>Round 2</h3>
+
+    <form action="http://zenifytheweb.com/api/game/continue" method="post" target="_blank">
+      <input type="hidden" name="key" class="key-input">
 
       <h3>Моля, попълвай само на кирилица!</h3>
       <p>
@@ -74,12 +115,10 @@
     </form>
   </section>
 
-  <hr>
-
   <section id="third">
-    <h3>Form 3</h3>
-    <form action="http://zenifytheweb.com/api/game/continue" method="post">
-      <input type="hidden" name="key" value="1447623004">
+    <h2>Round 3</h2>
+    <form action="http://zenifytheweb.com/api/game/continue" method="post" target="_blank">
+      <input type="hidden" name="key" class="key-input">
 
       <h3>What you know about Chuck Noris?</h3>
       <p>
@@ -119,14 +158,12 @@
 
   </section>
 
-  <hr>
-
   <section id="fourth">
-    <h3>Form 4</h3>
-    <form action="http://zenifytheweb.com/api/game/continue" method="post">
+    <h2>Round 4</h2>
+    <form action="http://zenifytheweb.com/api/game/continue" method="post" target="_blank">
       <p>
         Type your key, please:
-        <input type="text" name="key" value="1447623004">
+        <input type="text" name="key" class="key-input">
       </p>
       <p>
         Let the JS to generate this:
@@ -160,26 +197,51 @@
 
   </section>
 
-  <hr>
-
   <section id="final">
-    <h3>Complete the game</h3>
-    <a id="chucks-secret-key" href=""></a>
+    <h2>Complete the game</h2>
+    <a id="chucks-secret-key" class="key-link" href="" target="_blank"></a>
 
     <script>
       var methods = ['charAt', 'reverse', 'round', 'join', 'split', 'charAt'];
       var myName = "Chuck Norris";
       var myBirthYear = 1940;
       var myImmortalityIndex = 99.99;
-      var myAge = Math.round(myBirthYear*myImmortalityIndex);
+      var myAge = Math.round(myBirthYear * myImmortalityIndex);
       var mySecretCode = myName.charAt(0) + myAge + myName.charAt(6);
       var result = mySecretCode.split('').reverse().join('');
 
       var myLink = document.getElementById('chucks-secret-key');
       myLink.innerHTML = "result: " + result;
-      myLink.setAttribute('href', "http://zenifytheweb.com/api/game/complete?key=1447623004&result=" + result);
+      myLink.setAttribute('href', "http://zenifytheweb.com/api/game/complete?result=" + result);
     </script>
   </section>
+
+  <script>
+    "use strict";
+
+    document.getElementById("theKey").onkeyup = setKey;
+
+    function setKey() {
+      var value = this.value;
+      var keyInputs = document.getElementsByClassName('key-input');
+
+      for (var i = 0; i < keyInputs.length; i++) {
+        var input = keyInputs[i];
+        input.value = value;
+      }
+
+      var keyLinks = document.getElementsByClassName('key-link');
+
+      for (var i = 0; i < keyLinks.length; i++) {
+        var link = keyLinks[i];
+        var url = link.getAttribute('href');
+        url = url.split('&')[0] + '&key=' + value;
+        link.setAttribute('href', url);
+      }
+
+      return false;
+    }
+  </script>
 </body>
 
 </html>
