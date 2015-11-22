@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Evgenia Manolova">
+  <title>Lesson 12 examples</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    #people {
+      list-style-type: none;
+    }
+  </style>
+</head>
+
+<body>
+  <form id="addPerson">
+
+    <fieldset>
+      <legend>Add person</legend>
+      <p>
+        <label>Name:</label>
+        <input type="text" placeholder="name" id="nameInput" value="Jeni" maxlength="16" required>
+      </p>
+      <p>
+        <label>Birth date:</label>
+        <input type="date" placeholder="birthdate" id="birthdateInput" value="2015-11-22" required>
+      </p>
+      <p>
+        <label></label>
+        <input type="submit" value="add">
+      </p>
+    </fieldset>
+  </form>
+
+  <ul id="people">
+    <h3>People:</h3>
+  </ul>
+
+  <!-- Scripts begin -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/person.js"></script>
+  <script src="js/birthdate_jquery.js"></script>
+  <!-- Scripts end -->
+</body>
+
+</html>
