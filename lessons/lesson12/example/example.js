@@ -18,3 +18,6 @@ function Person(fname, lname) {
     return "I have killed " + this.enemiesKilled + " enemies";
   }
 }
+
+var chuck = new Person('Chuck', 'Norris');
+var baba = new Person('Baba', 'Marta');

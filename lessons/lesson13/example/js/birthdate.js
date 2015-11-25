@@ -1,7 +1,6 @@
 "use strict";
 
 window.console.log('start parsing the js..');
-var people = [];
 
 document.addEventListener('DOMContentLoaded', function () {
   console.log('ready');
@@ -26,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     personContainer.setAttribute("id", Date.now());
     personContainer.setAttribute("draggable", true);
     personContainer.className = "person-container";
-    personContainer.appendChild(nameContainer)
+    personContainer.appendChild(nameContainer);
     personContainer.appendChild(infoContainer);
 
     personContainer.addEventListener('dragstart', function(e) {
