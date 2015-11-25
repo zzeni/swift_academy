@@ -63,9 +63,11 @@ h3 {
 #trash-container img {
   padding: 2px;
   width: 100px;
+  border-radius: 30px;
 }
 
 #trash-container img:hover,
 #trash-container.hover img {
-  box-shadow: 0 0 15px 5px yellow;
+  box-shadow: 0 0 45px 15px yellow;
+  background-color: yellow;
 }
