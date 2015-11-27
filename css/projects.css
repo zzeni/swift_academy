@@ -1,0 +1,82 @@
+body {
+  margin-top: 90px;
+}
+
+main {
+  display: inline-flex;
+  margin: 0;
+  flex: 25;
+  width: 100%;
+}
+
+aside {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0E7692;
+  color: white;
+  border-right: 2px black solid;
+  border-top: 2px black solid;
+  margin: 0;
+  padding-left: 10px;
+  width: 20%
+}
+
+fieldset {
+  width: 30%;
+}
+
+#mandatory {
+  display: none;
+  padding-left: 10px;
+}
+
+.description {
+  padding-left: 10px;
+  padding-top: 20px;
+  width: 50%;
+}
+
+a {
+  color: aquamarine;
+}
+
+L .table {
+  display: table;
+  padding-top: 20%;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+label {
+  font-size: 14pt;
+}
+
+.buttons {
+  font-size: 14pt;
+}
+
+#reset {
+  text-align: right;
+}
+
+i {
+  margin: 5px;
+}
+
+legend {
+  font-size: 20pt;
+  font-style: italic;
+  font-weight: bold;
+}
+
+span {
+  color: red;
+}
