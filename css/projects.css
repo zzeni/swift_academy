@@ -1,82 +1,69 @@
 body {
-  margin-top: 90px;
+  position: relative;
 }
 
-main {
-  display: inline-flex;
-  margin: 0;
-  flex: 25;
-  width: 100%;
-}
-
-aside {
+#aside-navigation {
   font-family: Arial, Helvetica, sans-serif;
+  position: fixed !important;
+}
+
+#main-content {
+  padding-left: 1.5em;
+  position: relative;
+  top: -8em;
+}
+
+#requirements {
+  padding-top: 6em;
+}
+
+#projects,
+#assign {
+  padding-top: 4em;
+}
+
+#accordion {
+  padding-top: 1em;
+  font-size: 1.1em;
+}
+
+#accordion .ui-state-active {
   background-color: #0E7692;
-  color: white;
-  border-right: 2px black solid;
-  border-top: 2px black solid;
-  margin: 0;
-  padding-left: 10px;
-  width: 20%
+  border: 1px #333 solid;
 }
 
-fieldset {
-  width: 30%;
+#accordion ul {
+  padding-left: 3em;
+  list-style-type: decimal;
 }
 
-#mandatory {
-  display: none;
-  padding-left: 10px;
+#accordion ul li {
+  padding: 5px;
 }
 
-.description {
-  padding-left: 10px;
-  padding-top: 20px;
-  width: 50%;
-}
-
-a {
-  color: aquamarine;
-}
-
-L .table {
-  display: table;
-  padding-top: 20%;
+footer {
+  z-index: 999;
 }
 
 .row {
-  display: table-row;
-}
-
-.cell {
-  display: table-cell;
   padding: 10px;
-  text-align: left;
-  vertical-align: middle;
 }
 
-label {
-  font-size: 14pt;
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: #cfcfcf;
 }
 
-.buttons {
-  font-size: 14pt;
-}
-
-#reset {
+.reset {
   text-align: right;
 }
 
-i {
-  margin: 5px;
-}
-
-legend {
-  font-size: 20pt;
-  font-style: italic;
-  font-weight: bold;
-}
-
-span {
+.required {
   color: red;
+}
+
+form .btn {
+  font-family: helvetica, sans-serif;
+  text-transform: uppercase;
 }
