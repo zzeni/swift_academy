@@ -1,11 +1,57 @@
 body {
   margin: 0;
-  margin-top: 100px;
+  margin-top: 8em;
   font-family: "Times New Roman", Times, serif;
 }
 
 * {
   box-sizing: border-box;
+}
+
+aside {
+  padding-top: 0;
+  -webkit-transition: margin-top 0.6s;
+  -moz-transition: margin-top 0.6s;
+  -ms-transition: margin-top 0.6s;
+  -o-transition: margin-top 0.6s;
+  transition: margin-top 0.6s;
+}
+
+aside.expand {
+  margin-top: -2.5em;
+  -webkit-transition: margin-top 0.6s;
+  -moz-transition: margin-top 0.6s;
+  -ms-transition: margin-top 0.6s;
+  -o-transition: margin-top 0.6s;
+  transition: margin-top 0.6s;
+}
+
+#aside-navigation li.active > a {
+  background-color: #0E7692;
+  color: white;
+}
+
+#aside-navigation li > a {
+  color: #0E7692;
+}
+
+.btn.btn-primary {
+  background-color: #0E7692;
+}
+
+main {
+  min-height: 500px;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: 0.67em;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+  font-family: inherit;
 }
 
 header {
@@ -41,6 +87,7 @@ header h1 {
   display: inline-block;
   float: left;
   font-size: 1.8em;
+  margin: 0.9em 0;
   -webkit-transition: margin 0.6s;
   -moz-transition: margin 0.6s;
   -ms-transition: margin 0.6s;
@@ -49,7 +96,7 @@ header h1 {
 }
 
 header nav {
-  margin-top: 22px;
+  margin-top: 1.4em;
   float: right;
   display: inline-block;
   -webkit-transition: margin 0.6s;
@@ -57,6 +104,11 @@ header nav {
   -ms-transition: margin 0.6s;
   -o-transition: margin 0.6s;
   transition: margin 0.6s;
+}
+
+header nav .icon,
+header nav .fa {
+  line-height: 1.2em;
 }
 
 header.collapse,
@@ -67,11 +119,12 @@ header.collapse .container {
   -ms-transition: padding 0.6s;
   -o-transition: padding 0.6s;
   transition: padding 0.6s;
+  display: block;
 }
 
 header.collapse nav,
 header.collapse h1 {
-  margin: 10px 0;
+  margin: 0.6em 0;
   -webkit-transition: margin 0.6s;
   -moz-transition: margin 0.6s;
   -ms-transition: margin 0.6s;
@@ -95,11 +148,11 @@ a {
 
 #terms-of-the-course a,
 #terms-of-the-course a:visited {
-/*  color: #A0AABF;*/
+  /*  color: #A0AABF;*/
 }
 
 #terms-of-the-course a:hover {
-/*  color: #A0AABF;*/
+  /*  color: #A0AABF;*/
   font-weight: bold;
 }
 
@@ -142,16 +195,18 @@ sup {
   padding-bottom: 0.5em;
 }
 
-small, .small {
+small,
+.small {
   font-size: 0.8em;
 }
 
-smaller, .smaller {
+smaller,
+.smaller {
   font-size: 0.6em;
 }
 
 #nav-dropdown {
-/*  position: fixed;*/
+  /*  position: fixed;*/
   position: absolute;
   list-style-type: none;
   border: 1px black solid;
@@ -184,4 +239,9 @@ ol li {
 
 .full-width {
   width: 100%;
+}
+
+.nested-nav {
+  padding-left: 2em;
+  font-size: 1em;
 }
