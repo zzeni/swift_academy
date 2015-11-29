@@ -1,10 +1,17 @@
-"use strict";
+function greeting (name) {
+  return "Hello, " + name + "!";
+}
+
+function personGreeting (person, beFormal) {
+  if (beFormal === false) {
+    return "Hi, " + person.firstName + "!";
+  }
+  else {
+    return "Hello, " + person.fullName() + "!";
+  }
+}
 
 function Person(firstName, lastName) {
-  if (firstName == undefined || lastName == undefined) {
-    throw new Error("you must pass first name and last name");
-  }
-
   this.firstName = firstName;
   this.lastName = lastName;
   this.isPolite = true;
@@ -20,7 +27,7 @@ function Person(firstName, lastName) {
       greeting = (otherPerson === undefined) ? "Здравейте!" : "Здравейте, " + otherPerson.fullName() + "!";
     }
     else {
-      greeting = (otherPerson === undefined) ? "Здрасти!" : "Здравей, " + otherPerson.firstName + "!";
+      greeting = (otherPerson === undefined) ? "Здрасти!" : "Здрасти, " + otherPerson.firstName + "!";
     }
 
     return greeting;

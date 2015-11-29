@@ -1,0 +1,25 @@
+h1 {
+  margin: 30px 20px;
+  font-family: Helvetica, sans-serif;
+}
+
+.panel-heading {
+  padding: 2px 15px;
+}
+
+ol {
+  list-style-type: none;
+}
+
+.btn-special {
+  width: 100%;
+  text-align: left;
+}
+
+.example {
+  display: none;
+}
+
+.manual .panel-heading {
+  cursor: pointer;
+}
