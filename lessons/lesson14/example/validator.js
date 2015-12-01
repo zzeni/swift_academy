@@ -66,8 +66,8 @@
 
       try {
         var pass =
-            (personGreeting(new Person('Boiko', 'Borisov')) === "Hello, Boiko Borisov!") &&
-            (personGreeting(new Person('Jeni', 'Beni123')) === "Hello, Jeni Beni123!")
+            (personGreeting(new Person('Boiko', 'Borisov')) === "Hi, Boiko!") &&
+            (personGreeting(new Person('Jeni', 'Beni123')) === "Hi, Jeni!")
 
         if (pass) {
           $('#task-3').removeClass('panel-default').addClass('panel-success');
