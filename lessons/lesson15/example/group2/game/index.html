@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Errors Example</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="errorContainer"></div>
+
+  <form id="heroFactory">
+    <input type="hidden" id="genderInput">
+
+    <h4>Create a hero:</h4>
+    <p>
+      Name:
+      <input name="name" id="nameInput" type="text" placeholder="name">
+    </p>
+    <p>
+      Avatar:
+      <input name="avatar" id="avatarInput" type="text" placeholder="image url">
+    </p>
+    <p>
+      Gender:
+      <input type="radio" name="gender" value="M"> male
+      <input type="radio" name="gender" value="F"> female
+    </p>
+
+    <p>
+      <button type="submit">Go!</button>
+    </p>
+  </form>
+
+  <h3>Select your hero from the list below!</h3>
+
+  <div id="main">
+    <div>
+      Heroes in the game:
+      <ul id="heroes"></ul>
+    </div>
+
+    <div class="middle">
+      <button id="fightButton" class="hidden">Fight!</button>
+    </div>
+
+    <div>
+      Select your enemy!
+      <ul id="enemies" class="hidden"></ul>
+    </div>
+  </div>
+
+  <h3>Game Log:</h3>
+  <ul id="gameLog">
+  </ul>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script src="hero.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
