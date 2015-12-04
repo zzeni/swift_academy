@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Web Forms Example</title>
+
+  <style>
+    .error {
+      border-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Web forms examples</h2>
+
+  <section id="text-input">
+    <h3>Text inputs</h3>
+
+    <form novalidate>
+      <p>
+        <label for="name">Your name:</label>
+        <input type="text" name="name" placeholder="Your Name Here">
+      </p>
+      <p>
+        <label for="email">email:</label>
+        <input type="email" id="emailInput" name="email" placeholder="user@example.com">
+      </p>
+      <p>
+        <label for="message">Your message:</label>
+      </p>
+      <p>
+        <textarea name="message" rows="5" placeholder="enter your message here"></textarea>
+      </p>
+      <p>
+        <input type="reset" value="reset">
+        <input type="submit" name="submit" value="submit">
+      </p>
+    </form>
+
+  </section>
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
