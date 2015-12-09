@@ -3,7 +3,7 @@ $('form').find('[name=username]').blur(function (e) {
 
   var ajax = $.ajax({
     url: "http://zenifytheweb.com/api/examples/check_username",
-    method: 'post',
+    method: 'get',
     data: { username: $(this).val() }
   });
 
