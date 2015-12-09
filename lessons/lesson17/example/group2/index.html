@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AJAX Example</title>
+
+  <style>
+    .error {
+      border-color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="register">
+    <h3>Registration form</h3>
+
+    <form>
+      <p>
+        <label for="username">username:
+          <input type="text" name="username" placeholder="username">
+        </label>
+      </p>
+      <p>
+        <label for="email">email:
+          <input type="email" id="emailInput" name="email" placeholder="user@example.com">
+        </label>
+      </p>
+      <p>
+        <label for="password">password:
+          <input type="text" name="password" placeholder="">
+        </label>
+      </p>
+      <p>
+        <label for="password_confirmation">password confirmation:
+          <input type="text" name="password_confirmation" placeholder="">
+        </label>
+      </p>
+      <p>
+        <label for="avatar_url">avatar url:
+          <input type="text" name="avatar_url" placeholder="avatar_url">
+        </label>
+      </p>
+      <p>
+        <input type="reset" value="reset">
+        <input type="submit" name="submit" value="submit">
+      </p>
+    </form>
+
+  </section>
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
