@@ -7,8 +7,12 @@ $('form').find('[name=username]').blur(function (e) {
     data: { username: $(this).val() }
   });
 
-  ajax.done(function(result) {
-    console.log(result);
+  ajax.done(function(response) {
+    if (response === "available") {
+      console.log("OK!");
+    } else {
+      console.log("This username is taken");
+    }
   });
 
   ajax.fail(function(error) {
