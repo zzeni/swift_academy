@@ -25,11 +25,11 @@
 
   <select id="itemSelector">
     <option value="all">all</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
+    <option value="blue">blue</option>
+    <option value="orange">orange</option>
+    <option value="red">red</option>
+    <option value="yellow">yellow</option>
+    <option value="purple">purple</option>
   </select>
 
 
@@ -37,48 +37,55 @@
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="database.js"></script>
 
-  <script src="jquery-ui.sortable.min.js"></script>
   <script>
-    function Item(name, pic) {
+    function Item(name, image_url, desc, colour, price) {
       this.name = name;
-      this.pic = pic;
+      this.image_url = image_url;
+      this.description = desc;
+      this.colour = colour;
+      this.price = price;
+      this.id = fabricateID();
+
+      this.toString = function toString() {
+        var itemContainer = $('<div class="item-container"></div>');
+        itemContainer.append($('<img src="' + this.image_url + '" alt="' + this.description + '">'));
+        itemContainer.append($('<p class="item-name">' + this.name + '</p>'));
+        itemContainer.append($('<p class="item-price">' + this.price + '</p>'));
+        itemContainer.append($('<button class="btn btn-primary">buy</button>'));
+
+        return itemContainer;
+      };
     }
 
+    function fabricateID() {
+      return Math.floor((1 + Math.random()) * 0x1000000);
+    }
+
+
     (function () {
-      var container = document.getElementById("gallery");
+      "use strict";
 
       var items = [];
 
-      counter = 0;
-
-      while (counter < 10) {
-        for (var i = 1; i <= 5; i++) {
-          var src = "../../lesson4/example/flowers/" + i + ".jpg";
-          var item = new Item('item' + i, src);
-
-          items.push(item);
-
-        }
-        counter++;
+      for (var i = 0; i < ITEMS_DB.length; i++) {
+        var item = ITEMS_DB[i];
+        items.push(new Item(item.name, item.image_url, item.description, item.colour, item.price));
       }
-      console.log(items);
 
-      $('#gallery').sortable();
 
       $('#itemSelector').change(function (e) {
         e.preventDefault();
+        var container = document.getElementById("gallery");
 
         container.innerHTML = "";
         var selectedOption = $('#itemSelector').val();
 
         for (var i in items) {
           var item = items[i];
-          if (selectedOption === "all" || item.name == "item" + selectedOption) {
-            var img = document.createElement('img');
-            img.src = items[i].pic;
-
-            container.appendChild(img);
+          if (selectedOption === "all" || item.colour == selectedOption) {
+            $(container).append(item.toString());
           }
         }
       });
