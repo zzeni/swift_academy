@@ -2096,17 +2096,17 @@ if(!result){
 document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0'+userScale+'">')
 /*--------------*/
 $(document).ready(function(){
-  var query = window.location.search;
-  var matchdata = query.match(/category=(\d)/)
-  if (matchdata) {
-    var category = matchdata[1];
-    $('#category-' + category).find('.panel-title a').click();
-  }
   $('.panel-title a').click(function(e) {
     var link = this;
     if ($(this).attr('data-disabled')) return;
     $(this).attr('data-disabled', true);
     $(this).parent().parent().parent().toggleClass('open');
     setTimeout(function() { $(link).removeAttr('data-disabled') }, 2500);
-  })
+  });
+  var query = window.location.search;
+  var matchdata = query.match(/category=(\d)/)
+  if (matchdata) {
+    var category = matchdata[1];
+    $('#category-' + category).find('.panel-title a').click();
+  }
 });
