@@ -346,7 +346,8 @@ p {
   padding-bottom: 44px;
 }
 
-.block-slogan h2:first-letter {
+.block-slogan h2:first-letter,
+.block-slogan h2 span {
   color: #e85356;
   font-weight: normal;
 }
@@ -1539,7 +1540,7 @@ footer {
 }
 .panel.open .panel-title a {
   font-size: 1.6em;
-  color: white;
+/*  color: white;*/
 }
 .panel .collapse {
   -webkit-transition: all 2s ease;
