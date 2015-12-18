@@ -6,8 +6,8 @@ Template Monster`s Framework Styles
 .tm_view img {display: block;position: relative;}
 .tm_view h2 {text-transform: uppercase;color: #fff;text-align: center;position: relative;font-size: 17px;padding: 10px;background: rgba(0, 0, 0, 0.8);margin: 10% 0 0 0}
 .tm_view p {font-family: Georgia, serif;font-style: italic;font-size: 12px;position: relative;color: #fff;padding: 10px 20px 20px;text-align: center; margin: 0;}
-.tm_view a.btn {display: inline-block;text-decoration: none;padding: 7px 14px;background: #000;color: #fff;text-transform: uppercase;box-shadow: 0 0 1px #000; border:none; border-radius:0; text-shadow:none;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-o-transition:all 1s ease;transition:all 1s ease;}
-.tm_view a.btn:hover { background:#fff; color:#000;}
+.tm_view a.btn {width: 50%;display: inline-block;text-decoration: none;padding: 7px 14px;background: #000;color: #fff;text-transform: uppercase;box-shadow: 0 0 1px #000; border:none; border-radius:0; text-shadow:none;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-o-transition:all 1s ease;transition:all 1s ease;}
+.tm_view a.btn:hover { border: 1px #fff solid; font-weight: bold;}
 /* first hover */
 .tm_view_first .tm_mask .aligner { height: 100%; }
 .tm_view_first img {-moz-transition: all 0.2s linear;-webkit-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
