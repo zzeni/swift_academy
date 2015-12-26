@@ -12,107 +12,8 @@
       color: inherit;
     }
 
-    .ritz .waffle .s2 {
+    .ritz .waffle td {
       text-align: right;
-      color: #000000;
-      background-color: #ffffff;
-      font-family: Arial;
-      font-size: 10pt;
-      vertical-align: bottom;
-      white-space: nowrap;
-      direction: ltr;
-      padding: 2px 3px 2px 3px;
-    }
-
-    .ritz .waffle .s8 {
-      text-align: center;
-      color: #000000;
-      background-color: #ffffff;
-      font-family: Arial;
-      font-size: 10pt;
-      vertical-align: bottom;
-      white-space: nowrap;
-      direction: ltr;
-      padding: 2px 3px 2px 3px;
-    }
-
-    .ritz .waffle .s4 {
-      text-align: right;
-      color: #00ff00;
-      background-color: #ffffff;
-      font-family: Arial;
-      font-size: 10pt;
-      vertical-align: bottom;
-      white-space: nowrap;
-      direction: ltr;
-      padding: 2px 3px 2px 3px;
-    }
-
-    .ritz .waffle .s6 {
-      text-align: right;
-      color: #ff9900;
-      background-color: #ffffff;
-      font-family: Arial;
-      font-size: 10pt;
-      vertical-align: bottom;
-      white-space: nowrap;
-      direction: ltr;
-      padding: 2px 3px 2px 3px;
-    }
-
-    .ritz .waffle .s0 {
-      text-align: center;
-      color: #000000;
-      background-color: #ffffff;
-      font-family: Arial;
-      font-size: 10pt;
-      vertical-align: bottom;
-      white-space: nowrap;
-      direction: ltr;
-      padding: 2px 3px 2px 3px;
-    }
-
-    .ritz .waffle .s7 {
-      text-align: left;
-      color: #ff9900;
-      background-color: #ffffff;
-      font-family: Arial;
-      font-size: 10pt;
-      vertical-align: bottom;
-      white-space: nowrap;
-      direction: ltr;
-      padding: 2px 3px 2px 3px;
-    }
-
-    .ritz .waffle .s1 {
-      text-align: center;
-      font-weight: bold;
-      color: #000000;
-      background-color: #ffffff;
-      font-family: Arial;
-      font-size: 10pt;
-      vertical-align: bottom;
-      white-space: nowrap;
-      direction: ltr;
-      padding: 2px 3px 2px 3px;
-    }
-
-    .ritz .waffle .s3 {
-      text-align: left;
-      color: #000000;
-      background-color: #ffffff;
-      font-family: Arial;
-      font-size: 10pt;
-      vertical-align: bottom;
-      white-space: nowrap;
-      direction: ltr;
-      padding: 2px 3px 2px 3px;
-    }
-
-    .ritz .waffle .s5 {
-      text-align: left;
-      color: #00ff00;
-      background-color: #ffffff;
       font-family: Arial;
       font-size: 10pt;
       vertical-align: bottom;
@@ -125,12 +26,51 @@
       background-color: #ccc;
     }
 
-    .waffle tr:nth-child(even) {
-      background-color: #f6f6f6 !important;
+    .waffle tr:nth-child(even) td.s2 {
+      /*      background-color: #f6f6f6;*/
+      background-color: rgba(193, 216, 230, 0.9);
     }
 
-    .waffle td {
+    .waffle tr:nth-child(odd) td.s2 {
+      background-color: rgba(224, 255, 255, 0.9);
+    }
+
+    .waffle tr:nth-child(even) .s4,
+    .waffle tr:nth-child(even) .s8,
+    .waffle tr:nth-child(even) .s3 {
+      background-color: lightblue;
+    }
+
+    .waffle tr:nth-child(odd) .s8,
+    .waffle tr:nth-child(odd) .s4,
+    .waffle tr:nth-child(odd) .s3 {
+      background-color: lightcyan;
+    }
+
+    .ritz .waffle td.s8 {
+      text-align: center;
+    }
+
+    .waffle tr {
+      background-color: burlywood;
+    }
+
+    .waffle tr:hover td {
       background-color: transparent!important;
+    }
+
+    label {
+      font-family: sans-serif;
+      font-size: 0.9em;
+      padding: 5px;
+    }
+
+    input[type=checkbox] {
+      margin: 10px 5px 5px 0;
+    }
+
+    .hidden {
+      display: none;
     }
   </style>
 </head>
@@ -142,19 +82,20 @@
         <tr style='height:20px;'>
           <th class="column-headers-background" style="width:30px" dir="ltr">#</th>
           <th class="column-headers-background" style="width:200px">Име</th>
-          <th class="column-headers-background" style="width:140px" dir="ltr">Exam 1</th>
-          <th class="column-headers-background" style="width:140px" dir="ltr">Homeworks 1-6</th>
-          <th class="column-headers-background" style="width:140px" dir="ltr">Exam 2</th>
-          <th class="column-headers-background" style="width:140px" dir="ltr">Homeworks 7-12</th>
-          <th class="column-headers-background" style="width:140px" dir="ltr">Exam 3</th>
-          <th class="column-headers-background" style="width:140px" dir="ltr">Homeworks 13-18</th>
+          <th class="column-headers-background s2" style="width:140px" dir="ltr">Exam 1</th>
+          <th class="column-headers-background s2" style="width:140px" dir="ltr">Homeworks 1-6</th>
+          <th class="column-headers-background s2" style="width:140px" dir="ltr">Exam 2</th>
+          <th class="column-headers-background s2" style="width:140px" dir="ltr">Homeworks 7-12</th>
+          <th class="column-headers-background s2" style="width:140px" dir="ltr">Exam 3</th>
+          <th class="column-headers-background s2" style="width:140px" dir="ltr">Homeworks 13-18</th>
+          <th class="column-headers-background" style="width:140px" dir="ltr">HW Pass</th>
           <th class="column-headers-background" style="width:100px" dir="ltr">Portfolio</th>
           <th class="column-headers-background" style="width:100px" dir="ltr">Project</th>
         </tr>
       </thead>
       <tbody>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">1</td>
+          <td class="s4" dir="ltr">1</td>
           <td class="s3" dir="ltr">Александър Денчев</td>
           <td class="s2" dir="ltr">85%</td>
           <td class="s2" dir="ltr">100% (5/5)</td>
@@ -162,11 +103,12 @@
           <td class="s2" dir="ltr">100% (5/5)</td>
           <td class="s2" dir="ltr">95%</td>
           <td class="s2" dir="ltr">&#10071; 20% (1/5)</td>
+          <td class="s8" dir="ltr">&#10060;</td>
           <td class="s8" dir="ltr">&#9989;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">2</td>
+          <td class="s4" dir="ltr">2</td>
           <td class="s3" dir="ltr">Андрей Попов </td>
           <td class="s2" dir="ltr">&#10024; 100%</td>
           <td class="s2" dir="ltr">&#10024; 115% (6/5)</td>
@@ -175,10 +117,11 @@
           <td class="s2" dir="ltr">75%</td>
           <td class="s2" dir="ltr">70% (3.5/5)</td>
           <td class="s8" dir="ltr">&#9989;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#9989;</td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">3</td>
+          <td class="s4" dir="ltr">3</td>
           <td class="s3" dir="ltr">Драгомир Милдов </td>
           <td class="s2" dir="ltr">75%</td>
           <td class="s2" dir="ltr">100% (5/5)</td>
@@ -186,11 +129,12 @@
           <td class="s2" dir="ltr">60% (3/5)</td>
           <td class="s2" dir="ltr">85%</td>
           <td class="s2" dir="ltr">&#10071; 0% (0/5)</td>
+          <td class="s8" dir="ltr">&#10060;</td>
           <td class="s8" dir="ltr">&#9989;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">4</td>
+          <td class="s4" dir="ltr">4</td>
           <td class="s3" dir="ltr">Живко Димитров </td>
           <td class="s2" dir="ltr">85%</td>
           <td class="s2" dir="ltr">80% (4/5)</td>
@@ -199,10 +143,11 @@
           <td class="s2" dir="ltr">65%</td>
           <td class="s2" dir="ltr">&#10071; 0% (0/5)</td>
           <td class="s8" dir="ltr">&#10060;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#10060;</td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">5</td>
+          <td class="s4" dir="ltr">5</td>
           <td class="s3" dir="ltr">Здравко Ковачев </td>
           <td class="s2" dir="ltr">65%</td>
           <td class="s2" dir="ltr">&#10071; 0% (0/5)</td>
@@ -210,11 +155,12 @@
           <td class="s2" dir="ltr">&#10071; 0% (0/5)</td>
           <td class="s2" dir="ltr">60%</td>
           <td class="s2" dir="ltr">&#10071; 0% (0/5)</td>
+          <td class="s8" dir="ltr">&#10060;</td>
           <td class="s8" dir="ltr">&#9989;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">6</td>
+          <td class="s4" dir="ltr">6</td>
           <td class="s3" dir="ltr">Иван Димитров </td>
           <td class="s2" dir="ltr">95%</td>
           <td class="s2" dir="ltr">100% (5/5)</td>
@@ -223,10 +169,11 @@
           <td class="s2" dir="ltr">85%</td>
           <td class="s2" dir="ltr">70% (3.5/5)</td>
           <td class="s8" dir="ltr">&#9989;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#9989;</td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">7</td>
+          <td class="s4" dir="ltr">7</td>
           <td class="s3" dir="ltr">Иван Ончев</td>
           <td class="s2" dir="ltr">95%</td>
           <td class="s2" dir="ltr">100% (5/5)</td>
@@ -235,10 +182,11 @@
           <td class="s2" dir="ltr">90%</td>
           <td class="s2" dir="ltr">&#10024; 115% (6/5)</td>
           <td class="s8" dir="ltr">&#9989;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#9989;</td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">8</td>
+          <td class="s4" dir="ltr">8</td>
           <td class="s3" dir="ltr">Калин Анастасов </td>
           <td class="s2" dir="ltr">85%</td>
           <td class="s2" dir="ltr">100% (5/5)</td>
@@ -246,11 +194,12 @@
           <td class="s2" dir="ltr">&#10024; 115% (6/5)</td>
           <td class="s2" dir="ltr">85%</td>
           <td class="s2" dir="ltr">&#10071; 40% (2/5)</td>
+          <td class="s8" dir="ltr">&#10060;</td>
           <td class="s8" dir="ltr">&#9989;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">12</td>
+          <td class="s4" dir="ltr">12</td>
           <td class="s3" dir="ltr">Лъчезар Николов </td>
           <td class="s2" dir="ltr">95%</td>
           <td class="s2" dir="ltr">&#10024; 115% (6/5)</td>
@@ -258,11 +207,12 @@
           <td class="s2" dir="ltr">100% (5/5)</td>
           <td class="s2" dir="ltr">80%</td>
           <td class="s2" dir="ltr">&#10071; 30% (1.5/5)</td>
+          <td class="s8" dir="ltr">&#10060;</td>
           <td class="s8" dir="ltr">&#9989;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">9</td>
+          <td class="s4" dir="ltr">9</td>
           <td class="s3" dir="ltr">Марина Шехова</td>
           <td class="s2" dir="ltr">70%</td>
           <td class="s2" dir="ltr">80% (4/5)</td>
@@ -271,10 +221,11 @@
           <td class="s2" dir="ltr">80%</td>
           <td class="s2" dir="ltr">&#10071; 30% (1.5/5)</td>
           <td class="s8" dir="ltr">&#10060;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#10060;</td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">10</td>
+          <td class="s4" dir="ltr">10</td>
           <td class="s3" dir="ltr">Мария Иванова </td>
           <td class="s2" dir="ltr">60%</td>
           <td class="s2" dir="ltr">80% (4/5)</td>
@@ -282,11 +233,12 @@
           <td class="s2" dir="ltr">&#10071; 40% (2/5)</td>
           <td class="s2" dir="ltr">-</td>
           <td class="s2" dir="ltr">&#10071; 0% (0/5)</td>
+          <td class="s8" dir="ltr">&#10060;</td>
           <td class="s8" dir="ltr">&#9989;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">11</td>
+          <td class="s4" dir="ltr">11</td>
           <td class="s3" dir="ltr">Невена Велева </td>
           <td class="s2" dir="ltr">90%</td>
           <td class="s2" dir="ltr">&#10024; 115% (6/5)</td>
@@ -294,11 +246,12 @@
           <td class="s2" dir="ltr">80% (4/5)</td>
           <td class="s2" dir="ltr">85%</td>
           <td class="s2" dir="ltr">&#10071; 30% (1.5/5)</td>
+          <td class="s8" dir="ltr">&#10060;</td>
           <td class="s8" dir="ltr">&#9989;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">12</td>
+          <td class="s4" dir="ltr">12</td>
           <td class="s3" dir="ltr">Николай Колев </td>
           <td class="s2" dir="ltr">&#10024; 100%</td>
           <td class="s2" dir="ltr">100% (5/5)</td>
@@ -306,11 +259,12 @@
           <td class="s2" dir="ltr">100% (5/5)</td>
           <td class="s2" dir="ltr">85%</td>
           <td class="s2" dir="ltr">80% (4/5)</td>
+          <td class="s8" dir="ltr">&#9989;</td>
           <td class="s8" dir="ltr">&#10060;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">13</td>
+          <td class="s4" dir="ltr">13</td>
           <td class="s3" dir="ltr">Петър</td>
           <td class="s2" dir="ltr">70%</td>
           <td class="s2" dir="ltr">80% (4/5)</td>
@@ -319,10 +273,11 @@
           <td class="s2" dir="ltr">80%</td>
           <td class="s2" dir="ltr">&#10071; 0% (0/5)</td>
           <td class="s8" dir="ltr">&#10060;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#10060;</td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">14</td>
+          <td class="s4" dir="ltr">14</td>
           <td class="s3" dir="ltr">Стефан Попов</td>
           <td class="s2" dir="ltr">90%</td>
           <td class="s2" dir="ltr">100% (5/5)</td>
@@ -331,10 +286,11 @@
           <td class="s2" dir="ltr">95%</td>
           <td class="s2" dir="ltr">&#10071; 0% (0/5)</td>
           <td class="s8" dir="ltr">&#10060;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#10060;</td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
         <tr style='height:20px;'>
-          <td class="s2" dir="ltr">15</td>
+          <td class="s4" dir="ltr">15</td>
           <td class="s3" dir="ltr">Хриси</td>
           <td class="s2" dir="ltr">90%</td>
           <td class="s2" dir="ltr">100% (5/5)</td>
@@ -342,49 +298,42 @@
           <td class="s2" dir="ltr">80% (4/5)</td>
           <td class="s2" dir="ltr">80%</td>
           <td class="s2" dir="ltr">&#10071; 40% (2/5)</td>
+          <td class="s8" dir="ltr">&#10060;</td>
           <td class="s8" dir="ltr">&#9989;</td>
-          <td class="s8" dir="ltr"></td>
+          <td class="s8" dir="ltr">&#10060;</td>
         </tr>
       </tbody>
     </table>
-  </div>
-  <script type='text/javascript'>
-    function posObj(sheet, id, row, col, x, y) {
-      var rtl = false;
-      var sheetElement = document.getElementById(sheet);
-      if (!sheetElement) {
-        sheetElement = document.getElementById(sheet + '-grid-container');
-      }
-      if (sheetElement) {
-        rtl = sheetElement.getAttribute('dir') == 'rtl';
-      }
-      var r = document.getElementById(sheet + 'R' + row);
-      var c = document.getElementById(sheet + 'C' + col);
-      if (r && c) {
-        var objElement = document.getElementById(id);
-        var s = objElement.style;
-        var t = y;
-        while (r) {
-          t += r.offsetTop;
-          r = r.offsetParent;
-        }
-        var offsetX = x;
-        while (c) {
-          offsetX += c.offsetLeft;
-          c = c.offsetParent;
-        }
-        if (rtl) {
-          offsetX -= objElement.offsetWidth;
-        }
-        s.left = offsetX + 'px';
-        s.top = t + 'px';
-        s.display = 'block';
-        s.border = '1px solid #000000';
-      }
-    };
 
-    function posObjs() {};
-    posObjs();
+    <form name="filters">
+      <label><input type="checkbox" name="hw_toggle"> Hide midstate HW</label>
+      <label><input type="checkbox" name="exam_toggle"> Hide midstate exams</label>
+    </form>
+
+  </div>
+
+  <script type='text/javascript'>
+    var hw_cells = document.querySelectorAll('.s2:nth-child(even)');
+    var exam_cells = document.querySelectorAll('.s2:nth-child(odd)');
+
+    document.filters.hw_toggle.addEventListener('click', function () {
+      toggle_cells(hw_cells, this.checked);
+    });
+
+    document.filters.exam_toggle.addEventListener('click', function () {
+      toggle_cells(exam_cells, this.checked);
+    });
+
+    function toggle_cells(cells, checked) {
+      for (var i in cells) {
+        var cell = cells[i];
+        if (checked) {
+          cell.classList.add("hidden");
+        } else {
+          cell.classList.remove("hidden");
+        }
+      }
+    }
   </script>
 </body>
 
