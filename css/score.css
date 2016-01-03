@@ -1,0 +1,76 @@
+.ritz .waffle a {
+  color: inherit;
+}
+
+.ritz .waffle td {
+  text-align: right;
+  font-family: Arial;
+  font-size: 10pt;
+  vertical-align: bottom;
+  white-space: nowrap;
+  direction: ltr;
+  padding: 4px 5px 4px 5px;
+  border: 1px solid #66f;
+}
+
+.waffle th {
+  padding: 2px 5px;
+  color: white;
+  background-color: darkcyan;
+  border: 1px solid #66f;
+}
+
+.waffle tr:nth-child(even) td.s2 {
+  /*      background-color: #f6f6f6;*/
+  background-color: rgba(193, 216, 230, 0.9);
+}
+
+.waffle tr:nth-child(odd) td.s2 {
+  background-color: rgba(224, 255, 255, 0.9);
+}
+
+.waffle tr:nth-child(even) .s4,
+.waffle tr:nth-child(even) .s8,
+.waffle tr:nth-child(even) .s3 {
+  background-color: lightblue;
+}
+
+.waffle tr:nth-child(odd) .s8,
+.waffle tr:nth-child(odd) .s4,
+.waffle tr:nth-child(odd) .s3 {
+  background-color: lightcyan;
+}
+
+.ritz .waffle td.s8 {
+  text-align: center;
+}
+
+.waffle tr {
+  background-color: burlywood;
+}
+
+.waffle tr:hover td {
+  background-color: transparent!important;
+}
+
+th.s1 {
+  background-color: darkred;
+}
+
+th.s2 {
+  background-color: mediumseagreen;
+}
+
+label {
+  font-family: sans-serif;
+  font-size: 0.9em;
+  padding: 5px;
+}
+
+input[type=checkbox] {
+  margin: 10px 5px 5px 0;
+}
+
+.hidden {
+  display: none;
+}
