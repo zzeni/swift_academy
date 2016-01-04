@@ -33,7 +33,8 @@
       "proj_effects": 0,
       "proj_code": 0,
       "proj_use": 0,
-      "proj_complete": 0
+      "proj_complete": 0,
+      "recommendation": 0
     },
     {
       "name": "Григор Восканян",
@@ -68,7 +69,8 @@
       "proj_effects": 0,
       "proj_code": 0,
       "proj_use": 0,
-      "proj_complete": 0
+      "proj_complete": 0,
+      "recommendation": 0
     },
     {
       "name": "Жанина Терзийска",
@@ -103,7 +105,8 @@
       "proj_effects": 0,
       "proj_code": 0,
       "proj_use": 0,
-      "proj_complete": 0
+      "proj_complete": 0,
+      "recommendation": 0
     },
     {
       "name": "Илко Димов",
@@ -138,7 +141,8 @@
       "proj_effects": 0,
       "proj_code": 0,
       "proj_use": 0,
-      "proj_complete": 0
+      "proj_complete": 0,
+      "recommendation": 0
     },
     {
       "name": "Калина Георгиева",
@@ -173,7 +177,8 @@
       "proj_effects": 0,
       "proj_code": 0,
       "proj_use": 0,
-      "proj_complete": 0
+      "proj_complete": 0,
+      "recommendation": 0
     },
     {
       "name": "Калина Петрова",
@@ -208,7 +213,8 @@
       "proj_effects": 0,
       "proj_code": 0,
       "proj_use": 0,
-      "proj_complete": 0
+      "proj_complete": 0,
+      "recommendation": 0
     },
     {
       "name": "Кристина Димитрова",
@@ -243,7 +249,8 @@
       "proj_effects": 0,
       "proj_code": 0,
       "proj_use": 0,
-      "proj_complete": 0
+      "proj_complete": 0,
+      "recommendation": 0
     },
     {
       "name": "Леонора Николова",
@@ -278,7 +285,8 @@
       "proj_effects": 0,
       "proj_code": 0,
       "proj_use": 0,
-      "proj_complete": 0
+      "proj_complete": 0,
+      "recommendation": 0
     }
   ]
 }
