@@ -85,3 +85,12 @@ input[type=checkbox] {
   color: darkorange;
 }
 
+.ritz .waffle td.commented {
+  border: 1px solid firebrick;
+}
+
+.bonus {
+  font-weight: bold;
+  color: firebrick;
+}
+
