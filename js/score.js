@@ -15,7 +15,7 @@ function processScore(group,format) {
       var row = $('<tr></tr>');
 
       row.append('<td class="s4">' + index + '</td>');
-      row.append('<td class="s3">' + score["name"] + '</td>');
+      row.append('<td class="s3">' + score.name + '</td>');
 
       for(var j=0;j<3;j++) {
         var sum = 0;
@@ -65,7 +65,13 @@ function processScore(group,format) {
         "proj_complete"
       ],function(index,key_name) {
         if (format === "project") {
-          row.append('<td class="s2">' + score[key_name] + '</td>');
+          var comment = score[key_name + '_comment']
+          if (comment === undefined) {
+            row.append('<td class="s2">' + score[key_name] + '</td>');
+          }
+          else {
+            row.append('<td class="s2 commented" title="' + comment + '">' + score[key_name] + '</td>');
+          }
         }
         project_total += score[key_name];
       });
@@ -79,25 +85,30 @@ function processScore(group,format) {
         // persistance
         var persistence = Math.round((Math.max(hw_total-100,0))/20);
         var exam = Math.round((exam_total + project_total*5)/90);
-        var recom = score['recommendation'];
+        var bonus = 0;
 
         if (persistence > 10) {
-          recom += persistence - 10;
+          bonus += persistence - 10;
           persistence = 10;
         }
         if (exam > 10) {
-          recom += exam - 10;
+          bonus += exam - 10;
           exam = 10;
-        }
-        if (recom > 10) {
-          recom = 10;
         }
 
         row.append('<td class="s8">' + persistence + '/10</td>');
         // exam
         row.append('<td class="s8">' + exam + '/10</td>');
         // teacher's grade
-        row.append('<td class="s8">' + recom + '/10</td>');
+        row.append('<td class="s8">?/10</td>');
+//        row.append('<td class="s8">' + score.recommendation + '/10</td>');
+        // binus points
+        if (bonus > 0) {
+          row.append('<td class="s8 bonus">' + bonus + '</td>');
+        }
+        else {
+          row.append('<td class="s8">-</td>');
+        }
       }
 
       table.append(row);
