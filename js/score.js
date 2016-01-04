@@ -1,7 +1,7 @@
 function processScore(group,format) {
   "use strict";
 
-  if (!format.match(/^homeworks|project|comulative$/)) console.error("wrong format: " + format);
+  if (!format.match(/^homeworks|project|final$/)) console.error("wrong format: " + format);
 
   var scoresFunc = function scoresFunc(scores,format) {
     console.log(scores);
@@ -27,13 +27,13 @@ function processScore(group,format) {
           sum += sc;
         }
         hw_total += sum;
-        if (format === "homeworks" || format === "comulative") {
+        if (format === "homeworks" || format === "final") {
           var style = (format==="homeworks")? 's8' : 's2';
           row.append('<td class="' + style + '">' + sum + '</td>');
         }
       }
 
-      if (format === "homeworks" || format === "comulative") {
+      if (format === "homeworks" || format === "final") {
         var style = (format==="homeworks")? 's2' : 's8';
         if (hw_total <= 100) {
           row.append('<td class="' + style + ' danger">' + hw_total + '</td>');
@@ -47,7 +47,7 @@ function processScore(group,format) {
       }
 
       for(var i=1; i<=4; i++) {
-        if (format === "comulative") {
+        if (format === "final") {
           row.append('<td class="s2">' + score['test' + i] + '</td>');
         }
         exam_total += score['test' + i];
@@ -70,12 +70,12 @@ function processScore(group,format) {
         project_total += score[key_name];
       });
 
-      if (format === "project" || format === "comulative") {
+      if (format === "project" || format === "final") {
         row.append('<td class="s2">' + project_total + '</td>');
       }
 
       // Now all the final scores
-      if (format === "comulative") {
+      if (format === "final") {
         // persistance
         var persistence = Math.round((Math.max(hw_total-100,0))/20);
         var exam = Math.round((exam_total + project_total*5)/90);
