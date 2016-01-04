@@ -575,13 +575,17 @@
       "test4": 0,
       "proj_layout": 10,
       "proj_design": 15,
+      "proj_design_comment": "Много ми харесва дизайна. Може би фонт-а може да се пипне малко но и така е добре",
       "proj_navigation": 10,
       "proj_responsiveness": 20,
       "proj_js": 0,
-      "proj_effects": 15,
+      "proj_js_comment": "Реално не се сещам за javascript който да приложиш тук. Може би смяна на есик?",
+      "proj_effects": 10,
       "proj_code": 5,
+      "proj_code_comment": "Името на папката; малки размествания по кода",
       "proj_use": 10,
       "proj_complete": 5,
+      "proj_complete_comment": "Създава усещане за завършеност, но все пак искам да добавиш каросел/слайдер за картинките, както и по твой избор: или превод, или видео галерия.",
       "recommendation": 0
     }
   ]
