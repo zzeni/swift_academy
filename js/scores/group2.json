@@ -34,7 +34,7 @@
       "proj_code": 0,
       "proj_use": 0,
       "proj_complete": 0,
-      "recommendation": 0
+      "recommendation": 6
     },
     {
       "name": "Андрей Попов",
@@ -61,16 +61,17 @@
       "test2": 100,
       "test3": 75,
       "test4": 0,
-      "proj_layout": 0,
-      "proj_design": 0,
-      "proj_navigation": 0,
-      "proj_responsiveness": 0,
-      "proj_js": 0,
-      "proj_effects": 0,
-      "proj_code": 0,
-      "proj_use": 0,
-      "proj_complete": 0,
-      "recommendation": 0
+      "proj_layout": 10,
+      "proj_design": 10,
+      "proj_navigation": 10,
+      "proj_responsiveness": 10,
+      "proj_js": 10,
+      "proj_effects": 10,
+      "proj_code": 10,
+      "proj_use": 10,
+      "proj_complete": 10,
+      "recommendation": 10,
+      "recommendation_comment": "Много надъхан и енергичен. Изпълнява задачите в срок. Перфектна комуникация. Няма кой знае каква база, но пък има огромно желание да учи и се справя отлично с позтавените задачи."
     },
     {
       "name": "Драгомир Милдов",
@@ -97,16 +98,17 @@
       "test2": 85,
       "test3": 85,
       "test4": 0,
-      "proj_layout": 0,
-      "proj_design": 0,
-      "proj_navigation": 0,
-      "proj_responsiveness": 0,
-      "proj_js": 0,
-      "proj_effects": 0,
-      "proj_code": 0,
-      "proj_use": 0,
-      "proj_complete": 0,
-      "recommendation": 0
+      "proj_layout": 10,
+      "proj_design": 10,
+      "proj_navigation": 10,
+      "proj_responsiveness": 20,
+      "proj_js": 20,
+      "proj_effects": 10,
+      "proj_code": 10,
+      "proj_use": 10,
+      "proj_complete": 5,
+      "recommendation": 7,
+      "recommendation_comment": "Има много добра база - отлични познания по javascript, но му липсва фокус и често просрочва задачите. Не комуникира достатъчно. Стига да е фокусиран има много потенциал."
     },
     {
       "name": "Живко Димитров",
@@ -133,16 +135,19 @@
       "test2": 85,
       "test3": 65,
       "test4": 0,
-      "proj_layout": 0,
-      "proj_design": 0,
+      "proj_layout": 10,
+      "proj_design": 5,
+      "proj_design_comment": "Липсва бекграунд. Много е безцветно",
       "proj_navigation": 0,
-      "proj_responsiveness": 0,
-      "proj_js": 0,
+      "proj_responsiveness": 10,
+      "proj_responsiveness_comment": "трябва да се смалява някак за малки екрани",
+      "proj_js": 30,
       "proj_effects": 0,
-      "proj_code": 0,
-      "proj_use": 0,
-      "proj_complete": 0,
-      "recommendation": 0
+      "proj_code": 10,
+      "proj_use": 10,
+      "proj_complete": 10,
+      "recommendation": 7,
+      "recommendation_comment": "справя се много по-добре със скриптове, отколкото с дизайн. Има много желание и ентусиазъм и въпреки че е малко расеян, смятам че има добър потенциал"
     },
     {
       "name": "Здравко Ковачев",
@@ -178,7 +183,8 @@
       "proj_code": 0,
       "proj_use": 0,
       "proj_complete": 0,
-      "recommendation": 0
+      "recommendation": 3,
+      "recommendation_comment": "Има желание, но материята му е трудна за усвояване."
     },
     {
       "name": "Иван Димитров",
@@ -205,16 +211,17 @@
       "test2": 95,
       "test3": 85,
       "test4": 0,
-      "proj_layout": 0,
-      "proj_design": 0,
+      "proj_layout": 10,
+      "proj_design": 20,
       "proj_navigation": 0,
-      "proj_responsiveness": 0,
-      "proj_js": 0,
+      "proj_responsiveness": 10,
+      "proj_js": 30,
       "proj_effects": 0,
-      "proj_code": 0,
-      "proj_use": 0,
-      "proj_complete": 0,
-      "recommendation": 0
+      "proj_code": 10,
+      "proj_use": 10,
+      "proj_complete": 10,
+      "recommendation": 10,
+      "recommendation_comment": "Много ерудиран и изпълнителен. Справя се добре както с аналитичната, така и с дизайнерската част. Спокоен и фокусиран."
     },
     {
       "name": "Иван Ончев",
@@ -251,9 +258,9 @@
       "proj_effects_comment": "аз бих добавила lazy load (особено за мобилни устройства)",
       "proj_code": 10,
       "proj_use": 10,
-      "proj_complete": 5,
-      "proj_complete_comment": "Има грешка при зареждане (липсваща картинка), количката трябва да се довърши",
-      "recommendation": 0
+      "proj_complete": 10,
+      "recommendation": 10,
+      "recommendation_comment": "Много ерудиран, проявява огромно желание и мотивация да се учи. Перфектна комуникация. Умения за работа в екип. Без почти никаква база в началото, успя да постигне най-високите реултати в целия курс .. просто защото му е интересно да се занимава с front-end :)"
     },
     {
       "name": "Калин Анастасов",
@@ -280,16 +287,17 @@
       "test2": 85,
       "test3": 85,
       "test4": 0,
-      "proj_layout": 0,
-      "proj_design": 0,
-      "proj_navigation": 0,
+      "proj_layout": 10,
+      "proj_design": 10,
+      "proj_navigation": 10,
       "proj_responsiveness": 0,
-      "proj_js": 0,
-      "proj_effects": 0,
-      "proj_code": 0,
-      "proj_use": 0,
-      "proj_complete": 0,
-      "recommendation": 0
+      "proj_js": 10,
+      "proj_effects": 5,
+      "proj_code": 10,
+      "proj_use": 10,
+      "proj_complete": 10,
+      "recommendation": 7,
+      "recommendation_comment": "Много спокоен и изпълнителен. Има желание да се научи и усвоява много добре нещата. Има много потенциал."
     },
     {
       "name": "Лъчезар Николов",
@@ -325,7 +333,8 @@
       "proj_code": 0,
       "proj_use": 0,
       "proj_complete": 0,
-      "recommendation": 0
+      "recommendation": 8,
+      "recommendation_comment": "Енергичен и мотивиран. Понякога губи фокус, но има нагласата да усвоява добре и бързо нещата. Има потенциал."
     },
     {
       "name": "Марина Шехова",
@@ -361,7 +370,8 @@
       "proj_code": 0,
       "proj_use": 0,
       "proj_complete": 0,
-      "recommendation": 0
+      "recommendation": 7,
+      "recommendation_comment": "Справя се чудесно и влага много старание. Има нужда от малко повече практика с javascript, но при желание ще се справи."
     },
     {
       "name": "Мария Иванова",
@@ -397,7 +407,8 @@
       "proj_code": 0,
       "proj_use": 0,
       "proj_complete": 0,
-      "recommendation": 0
+      "recommendation": 2,
+      "recommendation_comment": "Трудно усвоява материала. Затруднява я аналитичната част, както и техническата терминология. Пропусна доста материал, заради отсъствие по болест."
     },
     {
       "name": "Невена Велева",
@@ -416,10 +427,10 @@
       "l12": 35,
       "l13": 0,
       "l14": 0,
-      "l15": 0,
-      "l16": 0,
-      "l17": 0,
-      "l18": 0,
+      "l15": 20,
+      "l16": 20,
+      "l17": 20,
+      "l18": 20,
       "test1": 90,
       "test2": 85,
       "test3": 85,
@@ -429,15 +440,14 @@
       "proj_navigation": 10,
       "proj_navigation_comment": "добави scrolltop",
       "proj_responsiveness": 20,
-      "proj_js": 5,
-      "proj_js_comment": "ще е добре да има още малко JS функционалност в проекта",
+      "proj_js": 10,
       "proj_effects": 0,
       "proj_effects_comment": "малко css transitions или js easing ще дойдат много добре и на място",
       "proj_code": 10,
       "proj_use": 10,
-      "proj_complete": 0,
-      "proj_complete_comment": "липсва търсене в артикулите",
-      "recommendation": 0
+      "proj_complete": 10,
+      "recommendation": 9,
+      "recommendation_comment": "Много спокойна и изпълнителна. Не губи фокус. Има потенциал."
     },
     {
       "name": "Николай Колев",
@@ -473,7 +483,8 @@
       "proj_code": 0,
       "proj_use": 0,
       "proj_complete": 0,
-      "recommendation": 0
+      "recommendation": 7,
+      "recommendation_comment": "Има добра база, но не комуникира много. Ще се справя чудесно ако работи сам или ако е в екип, който не изисква много комуникация."
     },
     {
       "name": "Петър",
@@ -525,10 +536,10 @@
       "l9": 0,
       "l10": 20,
       "l11": 20,
-      "l12": 25,
-      "l13": 0,
-      "l14": 0,
-      "l15": 0,
+      "l12": 20,
+      "l13": 10,
+      "l14": 20,
+      "l15": 20,
       "l16": 0,
       "l17": 0,
       "l18": 0,
@@ -536,8 +547,8 @@
       "test2": 75,
       "test3": 95,
       "test4": 0,
-      "proj_layout": 0,
-      "proj_design": 0,
+      "proj_layout": 10,
+      "proj_design": 10,
       "proj_navigation": 0,
       "proj_responsiveness": 0,
       "proj_js": 0,
@@ -545,7 +556,7 @@
       "proj_code": 0,
       "proj_use": 0,
       "proj_complete": 0,
-      "recommendation": 0
+      "recommendation": 6
     },
     {
       "name": "Хриси",
@@ -585,7 +596,8 @@
       "proj_use": 10,
       "proj_complete": 5,
       "proj_complete_comment": "Създава усещане за завършеност, но все пак искам да добавиш каросел/слайдер за картинките, както и по твой избор: или превод, или видео галерия.",
-      "recommendation": 0
+      "recommendation": 10,
+      "recommendation_comment": "Много жизнерадостен човек, с който се общува изключително лесно. Има много добра база и желание да се развива. Показва чудесни резултати както в дизайна, така и в по-логическо-аналитичната част"
     }
   ]
 }
