@@ -34,7 +34,7 @@
       "proj_code": 0,
       "proj_use": 0,
       "proj_complete": 0,
-      "recommendation": 0
+      "recommendation": 2
     },
     {
       "name": "Григор Восканян",
@@ -61,16 +61,16 @@
       "test2": 65,
       "test3": 75,
       "test4": 0,
-      "proj_layout": 0,
-      "proj_design": 0,
-      "proj_navigation": 0,
-      "proj_responsiveness": 0,
-      "proj_js": 0,
-      "proj_effects": 0,
-      "proj_code": 0,
-      "proj_use": 0,
-      "proj_complete": 0,
-      "recommendation": 0
+      "proj_layout": 10,
+      "proj_design": 10,
+      "proj_navigation": 10,
+      "proj_responsiveness": 20,
+      "proj_js": 10,
+      "proj_effects": 20,
+      "proj_code": 10,
+      "proj_use": 10,
+      "proj_complete": 10,
+      "recommendation": 6
     },
     {
       "name": "Жанина Терзийска",
@@ -109,7 +109,7 @@
       "proj_code_comment": "Не ми харесва именуването на файловете. Проектът ти съдържа много излишни файлове. На места форматирането 'бяга'.",
       "proj_use": 10,
       "proj_complete": 10,
-      "recommendation": 0
+      "recommendation": 7
     },
     {
       "name": "Илко Димов",
@@ -130,22 +130,22 @@
       "l14": 10,
       "l15": 0,
       "l16": 20,
-      "l17": 0,
-      "l18": 0,
+      "l17": 10,
+      "l18": 10,
       "test1": 75,
       "test2": 65,
       "test3": 0,
       "test4": 0,
-      "proj_layout": 0,
-      "proj_design": 0,
+      "proj_layout": 5,
+      "proj_design": 5,
       "proj_navigation": 0,
-      "proj_responsiveness": 0,
+      "proj_responsiveness": 20,
       "proj_js": 0,
       "proj_effects": 0,
-      "proj_code": 0,
-      "proj_use": 0,
+      "proj_code": 5,
+      "proj_use": 10,
       "proj_complete": 0,
-      "recommendation": 0
+      "recommendation": 6
     },
     {
       "name": "Калина Георгиева",
@@ -172,16 +172,16 @@
       "test2": 70,
       "test3": 90,
       "test4": 0,
-      "proj_layout": 0,
-      "proj_design": 0,
-      "proj_navigation": 0,
-      "proj_responsiveness": 0,
-      "proj_js": 0,
+      "proj_layout": 10,
+      "proj_design": 5,
+      "proj_navigation": 10,
+      "proj_responsiveness": 10,
+      "proj_js": 5,
       "proj_effects": 0,
-      "proj_code": 0,
-      "proj_use": 0,
-      "proj_complete": 0,
-      "recommendation": 0
+      "proj_code": 10,
+      "proj_use": 10,
+      "proj_complete": 10,
+      "recommendation": 6
     },
     {
       "name": "Калина Петрова",
@@ -253,7 +253,7 @@
       "proj_code": 0,
       "proj_use": 0,
       "proj_complete": 0,
-      "recommendation": 0
+      "recommendation": 9
     },
     {
       "name": "Леонора Николова",
@@ -289,7 +289,7 @@
       "proj_code": 0,
       "proj_use": 0,
       "proj_complete": 0,
-      "recommendation": 0
+      "recommendation": 8
     }
   ]
 }
