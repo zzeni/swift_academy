@@ -29,12 +29,12 @@
       "proj_design": 10,
       "proj_navigation": 10,
       "proj_responsiveness": 20,
-      "proj_js": 10,
+      "proj_js": 0,
       "proj_effects": 10,
       "proj_code": 10,
       "proj_use": 10,
       "proj_complete": 10,
-      "recommendation": 2
+      "recommendation": 5
     },
     {
       "name": "Григор Восканян",
@@ -107,7 +107,7 @@
       "proj_code": 10,
       "proj_use": 10,
       "proj_complete": 10,
-      "recommendation": 7
+      "recommendation": 8
     },
     {
       "name": "Илко Димов",
@@ -143,7 +143,7 @@
       "proj_code": 5,
       "proj_use": 10,
       "proj_complete": 0,
-      "recommendation": 6
+      "recommendation": 7
     },
     {
       "name": "Калина Георгиева",
@@ -179,7 +179,7 @@
       "proj_code": 10,
       "proj_use": 10,
       "proj_complete": 10,
-      "recommendation": 6
+      "recommendation": 7
     },
     {
       "name": "Калина Петрова",
@@ -242,15 +242,15 @@
       "test2": 110,
       "test3": 85,
       "test4": 80,
-      "proj_layout": 0,
-      "proj_design": 0,
-      "proj_navigation": 0,
-      "proj_responsiveness": 0,
+      "proj_layout": 10,
+      "proj_design": 20,
+      "proj_navigation": 10,
+      "proj_responsiveness": 20,
       "proj_js": 0,
-      "proj_effects": 0,
-      "proj_code": 0,
-      "proj_use": 0,
-      "proj_complete": 0,
+      "proj_effects": 10,
+      "proj_code": 10,
+      "proj_use": 10,
+      "proj_complete": 10,
       "recommendation": 9
     },
     {
@@ -278,15 +278,15 @@
       "test2": 100,
       "test3": 75,
       "test4": 80,
-      "proj_layout": 0,
-      "proj_design": 0,
-      "proj_navigation": 0,
-      "proj_responsiveness": 0,
+      "proj_layout": 10,
+      "proj_design": 10,
+      "proj_navigation": 10,
+      "proj_responsiveness": 20,
       "proj_js": 0,
-      "proj_effects": 0,
-      "proj_code": 0,
-      "proj_use": 0,
-      "proj_complete": 0,
+      "proj_effects": 10,
+      "proj_code": 10,
+      "proj_use": 10,
+      "proj_complete": 10,
       "recommendation": 8
     }
   ]

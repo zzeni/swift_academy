@@ -34,7 +34,7 @@
       "proj_code": 0,
       "proj_use": 0,
       "proj_complete": 0,
-      "recommendation": 6
+      "recommendation": 7
     },
     {
       "name": "Андрей Попов",
@@ -107,7 +107,7 @@
       "proj_code": 10,
       "proj_use": 10,
       "proj_complete": 5,
-      "recommendation": 7,
+      "recommendation": 9,
       "recommendation_comment": "Има много добра база - отлични познания по javascript, но му липсва фокус и често просрочва задачите. Не комуникира достатъчно. Стига да е фокусиран има много потенциал."
     },
     {
@@ -136,17 +136,16 @@
       "test3": 65,
       "test4": 85,
       "proj_layout": 10,
-      "proj_design": 5,
-      "proj_design_comment": "Липсва бекграунд. Много е безцветно",
+      "proj_design": 10,
       "proj_navigation": 0,
-      "proj_responsiveness": 10,
+      "proj_responsiveness": 20,
       "proj_responsiveness_comment": "трябва да се смалява някак за малки екрани",
       "proj_js": 30,
       "proj_effects": 0,
       "proj_code": 10,
       "proj_use": 10,
       "proj_complete": 10,
-      "recommendation": 7,
+      "recommendation": 8,
       "recommendation_comment": "справя се много по-добре със скриптове, отколкото с дизайн. Има много желание и ентусиазъм и въпреки че е малко расеян, смятам че има добър потенциал"
     },
     {
@@ -183,7 +182,7 @@
       "proj_code": 0,
       "proj_use": 10,
       "proj_complete": 5,
-      "recommendation": 3,
+      "recommendation": 4,
       "recommendation_comment": "Има желание, но материята му е трудна за усвояване."
     },
     {
@@ -280,9 +279,9 @@
       "l13": 0,
       "l14": 20,
       "l15": 0,
-      "l16": 0,
-      "l17": 0,
-      "l18": 0,
+      "l16": 20,
+      "l17": 20,
+      "l18": 20,
       "test1": 85,
       "test2": 85,
       "test3": 85,
@@ -296,7 +295,7 @@
       "proj_code": 10,
       "proj_use": 10,
       "proj_complete": 10,
-      "recommendation": 7,
+      "recommendation": 8,
       "recommendation_comment": "Много спокоен и изпълнителен. Има желание да се научи и усвоява много добре нещата. Има много потенциал."
     },
     {
@@ -472,16 +471,16 @@
       "test2": 105,
       "test3": 85,
       "test4": 85,
-      "proj_layout": 0,
-      "proj_design": 0,
-      "proj_navigation": 0,
-      "proj_responsiveness": 0,
-      "proj_js": 0,
-      "proj_effects": 0,
-      "proj_code": 0,
-      "proj_use": 0,
-      "proj_complete": 0,
-      "recommendation": 7,
+      "proj_layout": 10,
+      "proj_design": 10,
+      "proj_navigation": 10,
+      "proj_responsiveness": 20,
+      "proj_js": 10,
+      "proj_effects": 10,
+      "proj_code": 10,
+      "proj_use": 10,
+      "proj_complete": 10,
+      "recommendation": 8,
       "recommendation_comment": "Има добра база, но не комуникира много. Ще се справя чудесно ако работи сам или ако е в екип, който не изисква много комуникация."
     },
     {
@@ -554,7 +553,7 @@
       "proj_code": 0,
       "proj_use": 0,
       "proj_complete": 0,
-      "recommendation": 6
+      "recommendation": 7
     },
     {
       "name": "Хриси",
@@ -591,7 +590,7 @@
       "proj_code": 10,
       "proj_use": 10,
       "proj_complete": 10,
-      "recommendation": 10,
+      "recommendation": 8,
       "recommendation_comment": "Много жизнерадостен човек, с който се общува изключително лесно. Има много добра база и желание да се развива. Показва чудесни резултати както в дизайна, така и в по-логическо-аналитичната част"
     }
   ]
