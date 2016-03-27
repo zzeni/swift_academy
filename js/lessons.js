@@ -5,8 +5,8 @@ $(document).on("ready", function() {
   $('.lesson-preview a').click(function(e) {
     var lesson = $(this).attr('data-target');
     var lesson_index =  lesson.split("lesson")[1];
-    var lesson_link = 'http://courses.zenifytheweb.com/lessons/' + lesson + '/lesson.pdf';
-    var example_link = 'http://courses.zenifytheweb.com/lessons/' + lesson + '/example/index.html';
+    var lesson_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/lesson.pdf';
+    var example_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/example/index.html';
     var github_example_link = 'https://github.com/zzeni/swift_academy/tree/master/lessons/' + lesson + '/example';
     var homework_link = 'https://github.com/zzeni/swift-academy-homeworks/tree/master/tasks/L' + lesson_index;
     $('.lesson-preview .selected').removeClass('selected');
