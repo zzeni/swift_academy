@@ -5,6 +5,7 @@ $(document).on("ready", function() {
   $('.lesson-preview a').click(function(e) {
     var lesson = $(this).attr('data-target');
     var lesson_index =  lesson.split("lesson")[1];
+    if (lesson_index.length == 1) lesson_index = '0' + lesson_index;
     var lesson_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/lesson.pdf';
     var example_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/example/index.html';
     var github_example_link = 'https://github.com/zzeni/swift_academy/tree/master/lessons/' + lesson + '/example';
