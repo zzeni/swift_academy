@@ -11,6 +11,7 @@ $(document).on("ready", function() {
     var example_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/examples/index.html';
     var downlod_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/examples.zip';
     var homework_link = 'https://github.com/zzeni/swift-academy-homeworks/tree/master/tasks/L' + lesson_index;
+    var homework_src = 'http://zenlabs.pro/courses/lessons/' + lesson + '/hw-task.html';
     $('.lesson-preview .selected').removeClass('selected');
     $(this).parent().addClass('selected');
     $('#lesson-name').text('Lesson ' + lesson_index);
@@ -21,6 +22,7 @@ $(document).on("ready", function() {
 //    $('#examples').parent().find('a:last').attr('href', github_example_link);
     $('#examples').parent().find('a:last').attr('href', downlod_link);
     $('#homework-viewer').find('a:first').attr('href', homework_link).text(homework_link);
+    $('#hw-task').attr('src', homework_src);
     e.preventDefault();
   });
 
