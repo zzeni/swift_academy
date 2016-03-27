@@ -7,7 +7,8 @@ $(document).on("ready", function() {
     var lesson_index =  lesson.split("lesson")[1];
     if (lesson_index.length == 1) lesson_index = '0' + lesson_index;
     var lesson_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/lesson.pdf';
-    var github_example_link = 'https://github.com/zzeni/swift_academy/tree/master/lessons/' + lesson + '/examples';
+//    var github_example_link = 'https://github.com/zzeni/swift_academy/tree/master/lessons/' + lesson + '/examples';
+    var example_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/example/index.html';
     var downlod_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/examples.zip';
     var homework_link = 'https://github.com/zzeni/swift-academy-homeworks/tree/master/tasks/L' + lesson_index;
     $('.lesson-preview .selected').removeClass('selected');
