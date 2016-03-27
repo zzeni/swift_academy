@@ -1,0 +1,27 @@
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: white;
+}
+
+h1, h2 {
+    text-align: center;
+    color: lightcoral;
+    text-transform: capitalize;
+}
+
+ul li {
+    list-style: bullets;
+    font-style: italic;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: darkmagenta;
+}
+
+img {
+    margin: 30px 0;
+}
+
