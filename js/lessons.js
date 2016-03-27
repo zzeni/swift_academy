@@ -7,8 +7,8 @@ $(document).on("ready", function() {
     var lesson_index =  lesson.split("lesson")[1];
     if (lesson_index.length == 1) lesson_index = '0' + lesson_index;
     var lesson_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/lesson.pdf';
-    var example_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/example/index.html';
-    var github_example_link = 'https://github.com/zzeni/swift_academy/tree/master/lessons/' + lesson + '/example';
+    var github_example_link = 'https://github.com/zzeni/swift_academy/tree/master/lessons/' + lesson + '/examples';
+    var downlod_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/examples.zip';
     var homework_link = 'https://github.com/zzeni/swift-academy-homeworks/tree/master/tasks/L' + lesson_index;
     $('.lesson-preview .selected').removeClass('selected');
     $(this).parent().addClass('selected');
@@ -17,7 +17,8 @@ $(document).on("ready", function() {
     $('#presentation').parent().find('a:first').attr('href', lesson_link);
     $('#examples').attr('src', example_link);
     $('#examples').parent().find('a:first').attr('href', example_link);
-    $('#examples').parent().find('a:last').attr('href', github_example_link);
+//    $('#examples').parent().find('a:last').attr('href', github_example_link);
+    $('#examples').parent().find('a:last').attr('href', downlod_link);
     $('#homework-viewer').find('a:first').attr('href', homework_link).text(homework_link);
     e.preventDefault();
   });
