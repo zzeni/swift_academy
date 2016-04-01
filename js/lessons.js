@@ -21,7 +21,7 @@ $(document).on("ready", function() {
     $('#examples').parent().find('a:first').attr('href', example_link);
 //    $('#examples').parent().find('a:last').attr('href', github_example_link);
     $('#examples').parent().find('a:last').attr('href', downlod_link);
-    $('#homework-viewer').find('a:first').attr('href', homework_link).text(homework_link);
+    $('#homework-viewer').find('a:first').attr('href', homework_src);
     $('#hw-task').attr('src', homework_src);
     e.preventDefault();
   });
