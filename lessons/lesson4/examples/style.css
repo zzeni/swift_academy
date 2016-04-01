@@ -1,0 +1,88 @@
+* {
+/*  box-sizing: border-box;*/
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+main {
+  display: table;
+}
+
+nav {
+  padding: 10px;
+  text-align: center;
+  background-color: burlywood;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+}
+
+aside {
+  width: 20%;
+  background-color: antiquewhite;
+  padding: 30px;
+  display: table-cell;
+}
+
+h2 {
+/*  padding-bottom: 5px;*/
+/*  border-bottom: 1px solid black;*/
+}
+
+section {
+  padding-left: 30px;
+  display: table-cell;
+}
+
+footer {
+  background-color: burlywood;
+  color: white;
+  height: 40px;
+  padding: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.images img {
+  width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  section, aside {
+    display: table-row;
+    width: 100%;
+  }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
