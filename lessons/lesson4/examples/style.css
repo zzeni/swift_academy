@@ -21,19 +21,25 @@ main {
   display: table;
 }
 
-nav {
+.side-nav {
+  position: fixed;
+  
+}
+
+.main-nav {
   padding: 10px;
   text-align: center;
   background-color: burlywood;
+  display: block;
 }
 
-nav ul li {
+.main-nav ul li {
   list-style-type: none;
   display: inline-block;
   padding: 10px;
 }
 
-nav a {
+.main-nav a {
   text-decoration: none;
   font-size: 1.2em;
   color: white;
