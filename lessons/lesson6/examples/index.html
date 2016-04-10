@@ -3,38 +3,80 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Video and Audio examples</title>
-  <meta name="keywords" content="lesson, example, audio, video, html, html5, css, css3">
-  <meta name="author" content="Evgenia Manolova">
-  <meta name="description" content="Lesson 5 example - audio and video">
-  <link href="style.css?version=0.1" rel="stylesheet">
+  <title>Responsive design</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 
 <body>
-  <video id="background-video" autoplay loop poster="bg.jpg">
-    <source type="video/webm" src="rain.webm">
-    <source type="video/mp4" src="rain.mp4">
-    your browser doesn't support video
-  </video>
-  
-  <header>
-    <audio controls>
-      <source type="audio/ogg" src="storm.ogg">
-      <source type="audio/mp3" src="storm.mp3">
-      your browser doesn't support audio
-    </audio>
-  </header>
+  <div class="container">
+    <h1>
+      This is a Bootstrap example
+    </h1>
 
-  <navbar class="main-nav">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </navbar>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading">Panel heading</div>
+          <div class="panel-body">
+            <p>...</p>
+          </div>
 
-  <footer>Swift Academy &copy; 2016</footer>
-    
+          <!-- List group -->
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+
+
+        <div class="panel panel-warning">
+          <!-- Default panel contents -->
+          <div class="panel-heading">Panel heading</div>
+          <div class="panel-body">
+            <p>...</p>
+          </div>
+
+          <!-- List group -->
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+
+        <div class="panel panel-info">
+          <!-- Default panel contents -->
+          <div class="panel-heading">Panel heading</div>
+          <div class="panel-body">
+            <p>...</p>
+          </div>
+
+          <!-- List group -->
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
 </body>
 
 </html>
