@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fefefe;
+  padding-left: 30px;
+}
+
+#about_me {
+  width: 520px;
+}
+
+.about-image img {
+  vertical-align: top;
+  width: 140px;
+  border-radius: 100%;
+}
+
+.about-image {
+  background-color: lightblue;
+  text-align: center;
+}
+
+.about-info {
+  font-family: monospace;
+  background-color: aliceblue;
+}
+
+.table {
+  display: table;
+  widows: 100%;
+}
+
+.about-info .table {
+  line-height: 26px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  padding: 0 10px;
+  vertical-align: middle;
+}
+
+.header-cell {
+  text-align: right;
+  font-weight: bold;
+}
