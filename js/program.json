@@ -78,8 +78,8 @@
     topics: [
       { name: 'the media queries' },
       { name: 'the viewport' },
-      { name: 'симулация на различни viewports' },
-      { name: 'Структура на url локаторите, пълни и относителни пътища' },
+      { name: 'Работа с chrome device mode емулатора' },
+      { name: 'CSS cross-browser compatibility' },
     ]
   },
   { name: 'CSS псевдо класове',
@@ -87,12 +87,10 @@
     date: '13-04-2016',
     topics: [
       { name: 'CSS псевдо класове' },
-      { name: 'cross-browser compatibility' },
+      { name: 'CSS псевдо елементи' },
+      { name: 'Структура на url локаторите, пълни и относителни пътища' },
       { name: 'Атрибутът "data-"' },
       { name: 'Запознаване с Bootstrap' },
-      { name: 'Кое е новото в CSS3' },
-      { name: 'flexbox' },
-      { name: 'CSS transitions' },
     ]
   },
   { name: 'HTTP протокола и HTML forms',
@@ -114,9 +112,9 @@
     topics: [
       { name: 'SVG изображения' },
       { name: 'SVG и CSS' },
-      { name: 'Векторни фонтове (Fontawesome, Gliphicons)' },
-      { name: 'Работа с икони' },
-      { name: 'Работа с Bootstrap' }
+      { name: 'Фонт икони (Fontawesome, Gliphicons)' },
+      { name: 'Работа с Bootstrap' },
+      { name: 'Image sprites' },
     ]
   },
   { name: 'Запознаване с Javascript',
@@ -129,7 +127,9 @@
           name: 'JQuery UI'
         ]
       },
-      { name: 'HTML 5 draggable & droppable' },
+      { name: 'Кое е новото в CSS3' },
+      { name: 'flexbox' },
+      { name: 'CSS transitions' },
     ]
   },
   { name: 'Основи на JavaScript',
@@ -139,7 +139,8 @@
       { name: 'Синтаксис' },
       { name: 'Променливи, типове данни' },
       { name: 'Работа с масиви' },
-      { name: 'Дефиниране и извикване на функции' }
+      { name: 'Дефиниране и извикване на функции' },
+      { name: 'HTML 5 draggable & droppable' },
     ]
   },  
   { name: 'Обекти и ООП',
@@ -263,6 +264,7 @@
       { name: 'MVC' },
       { name: 'REST и CRUD' },
       { name: 'Изграждане на собствен API' },
+      { name: 'Работа с web server (инсталиране на MAMP) и база данни' },
     ]
   },
   { name: 'Сигурност в web',
