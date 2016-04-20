@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="HTML forms">
+  <meta name="author" content="Evgenia Manolova">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>WEB forms</title>
+  
+  <link href="/favicon.ico" rel="icon">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h1>
+        Web forms example
+      </h1>
+      <form method="get" action="index.html">
+        
+        <input type="hidden" name="secret_key">
+        
+        <p>
+          Your username: <input type="text" name="username" required="required" value="bla" />
+        </p>
+        
+        <p>
+          email: <input type="email" name="email" placeholder="user@example.com" required />
+        </p>
+        
+        <p>
+          password: <input type="password" name="password" required />
+        </p>
+        
+        <p>
+        Language: 
+          <select name="languge">
+            <option disabled selected>Choose language:</option>
+            <option value="BG">Български</option>
+            <option value="DE">Deutch</option>
+          </select>
+        </p>
+        
+        <p>
+          Gender:
+        </p>
+        <p>
+          <input type="radio" value="F" name="gender" required> woman
+          <input type="radio" value="M" name="gender" required> man
+        </p>
+        
+        <p>
+          <input type="checkbox" name="agree" checked> I agree
+        </p>
+        
+        <p>
+          Choose avatar: <input type="file" name="avatar">
+        </p>
+        
+        <p>
+          <input type="date">
+        </p>
+          
+        <p>
+          <input type="range" min="100" max="1000">
+        </p>
+        
+        <p>
+          <input type="submit" value="Go go go">
+        </p>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
+ 
