@@ -2,80 +2,29 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="HTML forms">
-  <meta name="author" content="Evgenia Manolova">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <title>WEB forms</title>
-  
-  <link href="/favicon.ico" rel="icon">  
+  <title>Lesson 9 - SVG &amp; Fonts</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <main>
-    <div class="container">
+  <div class="container">
+    <div class="heading">
       <h1>
-        Web forms example
+        Lesson 9 examples
       </h1>
-      <form method="get" action="index.html">
-        
-        <input type="hidden" name="secret_key">
-        
-        <p>
-          Your username: <input type="text" name="username" required="required" value="bla" />
-        </p>
-        
-        <p>
-          email: <input type="email" name="email" placeholder="user@example.com" required />
-        </p>
-        
-        <p>
-          password: <input type="password" name="password" required />
-        </p>
-        
-        <p>
-        Language: 
-          <select name="languge">
-            <option disabled selected>Choose language:</option>
-            <option value="BG">Български</option>
-            <option value="DE">Deutch</option>
-          </select>
-        </p>
-        
-        <p>
-          Gender:
-        </p>
-        <p>
-          <input type="radio" value="F" name="gender" required> woman
-          <input type="radio" value="M" name="gender" required> man
-        </p>
-        
-        <p>
-          <input type="checkbox" name="agree" checked> I agree
-        </p>
-        
-        <p>
-          Choose avatar: <input type="file" name="avatar">
-        </p>
-        
-        <p>
-          <input type="date">
-        </p>
-          
-        <p>
-          <input type="range" min="100" max="1000">
-        </p>
-        
-        <p>
-          <input type="submit" value="Go go go">
-        </p>
-      </form>
     </div>
-  </main>
+    <div class="list-group">
+      <a class="list-group-item" href="./svg_and_fonts/"><i class="fa fa-key fa-fw" aria-hidden="true"></i>&nbsp; SVG & Fonts</a>
+      <a class="list-group-item" href="./bootstrapped_form/"><i class="fa fa-diamond fa-fw" aria-hidden="true"></i>&nbsp; Bootstrapped forms</a>
+      <a class="list-group-item" href="./image_sprites/"><i class="fa fa-trophy fa-fw" aria-hidden="true"></i>&nbsp; The image sprites</a>
+      <a class="list-group-item" href="../examples.zip"><i class="fa fa-download fa-fw" aria-hidden="true"></i>&nbsp; Download .zip file</a>
+    </div>
+  </div>
+
+
 </body>
 
 </html>
- 

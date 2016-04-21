@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Selfie';
+  src: url('../fonts/Selfie.ttf');
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-family: Selfie, sans-serif;
+}
+
+#kiwi {
+  width: 200px;
+  fill: yellow;
+}
+
+ellipse {
+  fill: red;
+}
+
+.fa {
+  color: lightgreen;
+}
+
+.fa > span {
+  font-family: Selfie, sans-serif;
+}
