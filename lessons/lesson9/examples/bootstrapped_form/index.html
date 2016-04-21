@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="HTML forms">
+  <meta name="author" content="Evgenia Manolova">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lesson 9 - Bootstrapped WEB forms</title>
+
+  <link href="/favicon.ico" rel="icon">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <div class="container text-center">
+      <h1>Web forms example - with style</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+        <form method="get" action="index.html" class="form-horisontal">
+          <div class="form-group">
+            <label for="username">Your username</label>
+            <input type="text" id="username" name="username" required="required" value="bla" class="form-control" />
+          </div>
+
+          <div class="form-group">
+            <label>email</label>
+            <input class="form-control" type="email" name="email" placeholder="user@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label>password</label>
+            <input class="form-control" type="password" name="password" required />
+          </div>
+
+          <div class="form-group">
+            <label>Language</label>
+            <select name="languge" class="form-control">
+              <option disabled selected>Choose language:</option>
+              <option value="BG">Български</option>
+              <option value="DE">Deutch</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            Gender:
+          </div>
+          <div class="form-group">
+            <input type="radio" value="F" name="gender" required id="genderF">
+            <label for="genderF"> woman</label>
+            <input type="radio" value="M" name="gender" required id="genderM">
+            <label for="genderM"> man</label>
+          </div>
+
+          <div class="form-group">
+            <input type="checkbox" name="agree" id="agree" checked><label for="agree"> I agree</label>
+          </div>
+
+          <div class="form-group">
+            Choose avatar:
+            <input type="file" name="avatar">
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" type="date">
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" type="range" min="100" max="1000">
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" type="submit" value="Go go go">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

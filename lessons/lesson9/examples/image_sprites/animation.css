@@ -1,0 +1,121 @@
+@-webkit-keyframes sprint {
+  0% {
+    background-position-x: 0;
+  }
+  25% {
+    background-position-x: -150px;
+  }
+  50% {
+    background-position-x: -300px;
+  }
+  75% {
+    background-position-x: -450px;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+@keyframes sprint {
+  0% {
+    background-position-x: 0;
+  }
+  25% {
+    background-position-x: -150px;
+  }
+  50% {
+    background-position-x: -300px;
+  }
+  75% {
+    background-position-x: -450px;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+
+@-webkit-keyframes full-sprint {
+  0% {
+    background-position: 0 0;
+  }
+  12% {
+    background-position: -150px 0;
+  }
+  25% {
+    background-position: -300px 0;
+  }
+  37% {
+    background-position: -450px 0;
+  }
+  50% {
+    background-position: 0 -75px;
+  }
+  62% {
+    background-position: -150px -75px;
+  }
+  75% {
+    background-position: -300px -75px;
+  }
+  87% {
+    background-position: -450px -75px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes full-sprint {
+  0% {
+    background-position: 0 0;
+  }
+  12% {
+    background-position: -150px 0;
+  }
+  25% {
+    background-position: -300px 0;
+  }
+  37% {
+    background-position: -450px 0;
+  }
+  50% {
+    background-position: 0 -75px;
+  }
+  62% {
+    background-position: -150px -75px;
+  }
+  75% {
+    background-position: -300px -75px;
+  }
+  87% {
+    background-position: -450px -75px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.sprite {
+  background-image: url("img/sprites-cat-running.png");
+  background-size: 605px;
+  width: 150px;
+  height: 90px;
+}
+
+#transition-sprite {
+  transition: background-position 0.1s step-end;
+  opacity: 0.8;
+}
+
+#transition-sprite:hover {
+  background-position-x: -150px;
+  opacity: 1;
+}
+
+#sprint-sprite {
+  animation: sprint 1s step-end infinite;
+  -webkit-animation: sprint 1s step-end infinite;
+}
+
+#full-sprint-sprite {
+  animation: full-sprint 1s step-end infinite;
+  -webkit-animation: full-sprint 1s step-end infinite;
+}
+
