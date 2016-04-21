@@ -1,7 +1,7 @@
 'use_strict';
 
 $(document).on("ready", function() {
-  var version = "0.5"
+  var version = "0.6"
 
   $('.lesson-preview a').click(function(e) {
     var lesson = $(this).attr('data-target');
