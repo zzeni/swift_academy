@@ -11,7 +11,7 @@ $(document).on("ready", function() {
     }
     else {
       $('#fileTree').fileTree({ root: target, script: "/api/fs_read" }, function(file) { 
-        var url = '/courses/archive-2015/homeworks' + file;
+        var url = '/courses/' + file;
         
         if ($('#item-preview').size() > 0) {
           $('#item-preview').find('iframe').attr('src', url);
