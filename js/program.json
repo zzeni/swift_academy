@@ -121,15 +121,16 @@
     lesson: '10',
     date: '24-04-2016',
     topics: [
+      { name: 'js onclick events' },
       { name: 'работа с JS плъгини',
         subtopics: [
           name: 'bootstrap.js',
           name: 'JQuery UI'
         ]
       },
-      { name: 'Кое е новото в CSS3' },
+      { name: 'CSS display: none' },
+      { name: 'CSS3 :target псевдо-класа' },
       { name: 'flexbox' },
-      { name: 'CSS transitions' },
     ]
   },
   { name: 'Основи на JavaScript',
@@ -242,6 +243,7 @@
     lesson: '21',
     date: '01-06-2016',
     topics: [
+      { name: 'CSS transitions' },
       { name: 'animation' },
       { name: 'pre-processed CSS' },
       { name: 'LESS' },
