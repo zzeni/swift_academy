@@ -122,7 +122,7 @@
     date: '24-04-2016',
     topics: [
       { name: 'flexbox' },
-      { name: 'js onclick events' },
+      { name: 'js onclick event' },
       { name: 'работа с JS плъгини',
         subtopics: [
           name: 'bootstrap.js',
@@ -141,6 +141,7 @@
       { name: 'Променливи, типове данни' },
       { name: 'Работа с масиви' },
       { name: 'Дефиниране и извикване на функции' },
+      { name: 'JS closures & scope' },
       { name: 'HTML 5 draggable & droppable' },
     ]
   },  
