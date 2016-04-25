@@ -1,7 +1,7 @@
 function processScore(group, format) {
   "use strict";
 
-  if (!format.match(/^homeworks|project|final$/)) console.error("wrong format: " + format);
+  if (!format.match(/^homeworks|project|final|test1$/)) console.error("wrong format: " + format);
 
   var scoresFunc = function scoresFunc(scores, format) {
     console.log(scores);
@@ -111,6 +111,17 @@ function processScore(group, format) {
         }
       }
 
+      if (format === "test1") {
+        var arr = score["test1_arr"];
+        var length = arr.length;
+        for(i=0; i<length; i++) {
+          if (i==length-1)
+            row.append('<td class="s8">' + arr[i] + '</td>');
+          else
+            row.append('<td class="s2">' + arr[i] + '</td>');
+        }
+      }
+      
       table.append(row);
     });
   }
