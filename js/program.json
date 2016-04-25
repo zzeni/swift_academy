@@ -117,10 +117,11 @@
       { name: 'Image sprites' },
     ]
   },
-  { name: 'Запознаване с Javascript',
+  { name: 'Flexbox. JS plugins. Bootstrap.js',
     lesson: '10',
     date: '24-04-2016',
     topics: [
+      { name: 'flexbox' },
       { name: 'js onclick events' },
       { name: 'работа с JS плъгини',
         subtopics: [
@@ -130,7 +131,6 @@
       },
       { name: 'CSS display: none' },
       { name: 'CSS3 :target псевдо-класа' },
-      { name: 'flexbox' },
     ]
   },
   { name: 'Основи на JavaScript',

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="Evgenia Manolova">
+  <title>Course FE3: Homeworks' results</title>
+  <link rel="stylesheet" href="../css/score.css">
+</head>
+
+<body>
+  <div class="ritz grid-container" dir="ltr">
+    <table class="waffle" cellspacing="0" cellpadding="0" id="score">
+      <tr style='height:20px;'>
+        <th class="column-headers-background" style="width:30px" dir="ltr">#</th>
+        <th class="column-headers-background s2" style="width:200px">Име</th>
+        <th class="column-headers-background" style="width:140px" dir="ltr">Точки Тест</th>
+        <th class="column-headers-background" style="width:140px" dir="ltr">Точки Задача</th>
+        <th class="column-headers-background" style="width:140px" dir="ltr">Общо<br />(total)</th>
+        <th class="column-headers-background" style="width:140px" dir="ltr">Оценка<br />(total * 2.65)</th>
+      </tr>
+
+    </table>
+
+  </div>
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/score.js"></script>
+
+  <script>
+    (function main(){
+      "use strict";
+
+      processScore('group3', 'test1');
+    })();
+  </script>
+
+</body>
+
+</html>
