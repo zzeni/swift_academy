@@ -1,12 +1,5 @@
 .lesson-viewer-content {
-  display: table;
-  margin-bottom: 40px;
-}
-
-#lesson-viewer .iframe-wrapper {
-  margin: 10px;
-  min-width: 350px;
-  display: table-cell;
+  margin: 10px 0;
 }
 
 #lessons-browser nav {
@@ -31,10 +24,6 @@
 
 #lessons-browser ul li.selected {
   background-color: rgba(0,0,0,.5);
-}
-
-#homework-viewer {
-  margin-bottom: 100px;
 }
 
 .lesson-preview {
