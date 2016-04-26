@@ -157,6 +157,11 @@ iframe, object {
   padding: 5px;
 }
 
+object {
+  padding: 0;
+  margin: 0;
+}
+
 footer {
   background-color: #0E7692;
   color: white;
