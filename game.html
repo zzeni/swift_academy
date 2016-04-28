@@ -2,8 +2,8 @@
 <html>
 
 <head>
-  <title>Homework 10 example solution</title>
   <meta charset="UTF-8">
+  <title>Homework 11 example solution</title>
   <!--  <link rel="stylesheet" href="style.css">-->
   <style>
     h1 {
@@ -45,8 +45,7 @@
   <section id="first">
     <h2>Start</h2>
 
-    <form action="http://zenifytheweb.com/api/game/start" method="post" target="_blank">
-      <!--      <form action="http://courses.zenifytheweb.com/api/game" method="post">-->
+    <form action="http://zenlabs.pro/api/game/start" method="post" target="_blank">
       <p>
         <label for="name">Твоето име</label>
         <br>
@@ -83,7 +82,7 @@
   <section id="second">
     <h2>Round 2</h2>
 
-    <form action="http://zenifytheweb.com/api/game/continue" method="post" target="_blank">
+    <form action="http://zenlabs.pro/api/game/continue" method="post" target="_blank">
       <input type="hidden" name="key" class="key-input">
 
       <h3>Моля, попълвай само на латиница!</h3>
@@ -117,7 +116,7 @@
 
   <section id="third">
     <h2>Round 3</h2>
-    <form action="http://zenifytheweb.com/api/game/continue" method="post" target="_blank">
+    <form action="http://zenlabs.pro/api/game/continue" method="post" target="_blank">
       <input type="hidden" name="key" class="key-input">
 
       <h3>What you know about Chuck Noris?</h3>
@@ -160,7 +159,7 @@
 
   <section id="fourth">
     <h2>Round 4</h2>
-    <form action="http://zenifytheweb.com/api/game/continue" method="post" target="_blank">
+    <form action="http://zenlabs.pro/api/game/continue" method="post" target="_blank">
       <p>
         Type your key, please:
         <input type="text" name="key" class="key-input">
@@ -212,7 +211,7 @@
 
       var myLink = document.getElementById('chucks-secret-key');
       myLink.innerHTML = "result: " + result;
-      myLink.setAttribute('href', "http://zenifytheweb.com/api/game/complete?result=" + result);
+      myLink.setAttribute('href', "http://zenlabs.pro/api/game/complete?result=" + result);
     </script>
   </section>
 
