@@ -32,7 +32,7 @@
       for (i = 0; i < size; i = i + 1) {
         lesson = data[i];
         panel = $($('#panelPrototype').html());
-        panel.attr('id', 'Lesson' + i);
+        panel.attr('id', 'lessonPanel' + lesson.lesson);
         panel.find('.panel-heading').attr('id', 'Heading' + i);
         panel.find('.panel-collapse')
           .attr('aria-labelledby', 'Heading' + i)
@@ -49,7 +49,7 @@
           title: "Lesson " + lesson.lesson,
           allDay: true,
           start: new Date(swapDates(lesson.date)),
-          url: '#lesson' + lesson.lesson
+          url: '#lessonPanel' + lesson.lesson
         });
       }
       
