@@ -2,7 +2,7 @@
   "use strict";
 
   $(document).ready(function () {
-    $.getJSON("/js/program.json", function (data) {
+    $.getJSON("./js/program.json", function (data) {
       var lesson, i, size, events, extractTopics, swapDates, panel;
       
       size = data.length;
@@ -49,7 +49,7 @@
           title: "Lesson " + lesson.lesson,
           allDay: true,
           start: new Date(swapDates(lesson.date)),
-          url: '#Lesson' + lesson.lesson
+          url: '#lesson' + lesson.lesson
         });
       }
       
