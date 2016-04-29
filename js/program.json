@@ -1,285 +1,367 @@
-[
-  { name: 'Въведение в курса',
-    lesson: '1',
-    date: '23-03-2016',
-    topics: [
-      { name: 'Запознаване с основите на WEB' },
-      { name: 'Font-end vs back-end' },
-      { name: 'Компоненти на front-end-a' },
-      { name: 'Основна структура на HTML документ' },
-      { name: 'Редактори за работа с HTML' },
-      { name: 'Основи на SEO' },
-    ]
-  },
-  { name: 'HTML & HTML5',
-    lesson: '2',
-    date: '27-03-2016',
-    topics: [
-      { name: 'Компоненти на HTML документа',
-        subtopics: [
-          { name: 'Елементи и тагове' },
-          { name: 'Хипервръзки и изображения' },
-          { name: 'Списъци' },
-          { name: 'Таблици' },
-        ]
-      },
-      { name: 'Meta съдържание' },
-      { name: 'Стандарти' },
-      { name: 'HTML5 и Семантика на HTML елементите' },
-    ]
-  },
-  { name: 'Елементи на уеб дизайна (как се изготвят страници)',
-    lesson: '3',
-    date: '30-03-2016',
-    topics: [
-      { name: 'Разположение (layout)' },
-      { name: 'Цветове' },
-      { name: 'Изображения' },
-      { name: 'Фонтове' },
-      { name: 'Съдържание' },
-    ]
-  },
-  { name: 'HTML атрибути. Основи на CSS. The box model',
-    lesson: '4',
-    date: '03-04-2016',
-    topics: [
-      { name: 'Атрибути на html елементите' },
-      { name: 'Основи на CSS. Селектори' },
-      { name: 'id и class в HTML' },
-      { name: 'id и class в CSS' },
-      { name: 'Запознаване с Box модела' },
-      { name: 'CSS display на HTML елементите' },
-    ]
-  },
-  { name: 'Git',
-    lesson: '5',
-    date: '06-04-2016',
-    topics: [
-      { name: 'запознаване с GIT',
-        subtopics: [
-          { name: 'version control' },
-          { name: 'remote origin' },
-          { name: 'distributed development' }
-        ]
-      },
-      { name: 'запознаване и работа с GitHub' },
-      { name: 'други системи за DVC' },
-      { name: 'Упражнения',
-        subtopics: [
-          { name: 'CSS позициониране' },
-          { name: 'HTML5 video & auduo' }
-        ]
-      }
-    ]
-  },
-  { name: 'Responsive design',
-    lesson: '6',
-    date: '10-04-2016',
-    topics: [
-      { name: 'the media queries' },
-      { name: 'the viewport' },
-      { name: 'Работа с chrome device mode емулатора' },
-      { name: 'CSS cross-browser compatibility' },
-    ]
-  },
-  { name: 'CSS псевдо класове',
-    lesson: '7',
-    date: '13-04-2016',
-    topics: [
-      { name: 'CSS псевдо класове' },
-      { name: 'CSS псевдо елементи' },
-      { name: 'Структура на url локаторите, пълни и относителни пътища' },
-      { name: 'Атрибутът "data-"' },
-      { name: 'Запознаване с Bootstrap' },
-    ]
-  },
-  { name: 'HTTP протокола и HTML forms',
-    date: '17-04-2016',
-    lesson: '8',
-    topics: [
-      { name: 'Текущ контрол 1',
-        style: 'font-weight: bold;'
-      },
-      { name: 'Какво е HTTP и как работи' },
-      { name: 'HTTP request и response' },
-      { name: 'HTML формуляри' },
-      { name: 'валидиране и HTML5 input types' }
-    ]
-  },
-  { name: 'Фонтове и векторни изображения',
-    lesson: '9',
-    date: '20-04-2016',
-    topics: [
-      { name: 'SVG изображения' },
-      { name: 'SVG и CSS' },
-      { name: 'Фонт икони (Fontawesome, Gliphicons)' },
-      { name: 'Работа с Bootstrap' },
-      { name: 'Image sprites' },
-    ]
-  },
-  { name: 'Flexbox. JS plugins. Bootstrap.js',
-    lesson: '10',
-    date: '24-04-2016',
-    topics: [
-      { name: 'flexbox' },
-      { name: 'js onclick event' },
-      { name: 'работа с JS плъгини',
-        subtopics: [
-          name: 'bootstrap.js',
-          name: 'JQuery UI'
-        ]
-      },
-      { name: 'CSS display: none' },
-      { name: 'CSS3 :target псевдо-класа' },
-    ]
-  },
-  { name: 'Основи на JavaScript',
-    date: '27-04-2016',
-    lesson: '11',
-    topics: [
-      { name: 'Синтаксис' },
-      { name: 'Променливи, типове данни' },
-      { name: 'Работа с масиви' },
-      { name: 'Дефиниране и извикване на функции' },
-      { name: 'JS closures & scope' },
-      { name: 'HTML 5 draggable & droppable' },
-    ]
-  },  
-  { name: 'Обекти и ООП',
-    lesson: '12',
-    date: '04-05-2016',
-    topics: [
-      { name: 'Основи на обектно ориентираното програмиране' },
-      { name: 'Класове и обекти в JavaScript' },
-      { name: 'Прототип на класа' },
-    ]
-  },
-  { name: 'Функционално програмиране с JavaScript',
-    lesson: '13',
-    date: '08-05-2016',
-    topics: [
-      { name: 'Цикли – for, while' },
-      { name: 'Сортиране на масив' },
-      { name: 'Работа с низове (текст)' },
-      { name: 'Scope и Namespace' },
-      { name: 'Енкапсулация (скриване на имената от глобалния контекст)' },
-    ]
-  },
-  { name: 'JQuery. DOM. BOM',
-    lesson: '14',
-    date: '11-05-2016',
-    topics: [
-      { name: 'Текущ контрол 2',
-        style: 'font-weight: bold;'
-      },
-      { name: 'JQuery обекти' },
-      { name: 'Обектен модел на документа' },
-      { name: 'Обектен модел на браузъра' },
-      { name: 'window.location' },
-      { name: 'работа със setTimeout и setInterval' },
-    ]
-  },
-  { name: 'ООП с JavaScript',
-    lesson: '15',
-    date: '15-05-2016',
-    topics: [
-      { name: 'JSON форматът' },
-      { name: 'Работа с файлове' },
-      { name: 'Изграждане на динамичен уебсайт с JavaScript - част 1' },
-      { name: 'Демо: игра' },
-    ]
-  },
-  { name: 'Събития в JavaScript',
-    lesson: '16',
-    date: '18-05-2016',
-    topics: [
-      { name: 'Какво е събитие и какво е обработка' },
-      { name: 'EventListener' },
-      { name: 'this на event-a' },
-      { name: 'Демо: drag\'n\'drop' },
-    ]
-  },
-  { name: 'AJAX',
-    lesson: '17',
-    date: '19-05-2016',
-    topics: [
-      { name: 'Комуниккация с backend' },
-      { name: 'Асинхронно зареждане на данни' },
-      { name: 'Изграждане на динамичен уебсайт с JavaScript - част 2' },
-    ]
-  },
-  { name: 'Сесия и бисквитки',
-    lesson: '18',
-    date: '25-05-2016',
-    topics: [
-      { name: 'Какво е сесия' },
-      { name: 'Какво са бисквитките' },
-      { name: 'Изграждане на динамичен уебсайт с JavaScript - част 3' },
-    ]
-  },
-  { name: 'Обработка на грешки',
-    lesson: '19',
-    date: '29-05-2016',
-    topics: [
-      { name: 'Възникване на грешки' },
-      { name: 'Очакване на грешки' },
-      { name: 'Try - catch блок (конструкция)' },
-      { name: 'работа с debugger' },
-    ]
-  },
-  { name: 'Валидация на user input',
-    lesson: '20',
-    date: '01-06-2016',
-    topics: [
-      { name: 'Текущ контрол 3',
-        style: 'font-weight: bold;'
-      },
-      { name: 'Възникване на грешки' },
-      { name: 'Очакване на грешки' },
-      { name: 'Try - catch блок (конструкция)' },
-      { name: 'работа с debugger' },
-    ]
-  },
-  { name: 'CSS3 анимация. LESS',
-    lesson: '21',
-    date: '01-06-2016',
-    topics: [
-      { name: 'CSS transitions' },
-      { name: 'animation' },
-      { name: 'pre-processed CSS' },
-      { name: 'LESS' },
-    ]
-  },
-  { name: 'Meta tags & SEO',
-    lesson: '22',
-    topics: [
-      { name: 'HTML мета съдържание' },
-      { name: 'Интеграция с Гугъл, Фейсбук, Туитър' },
-      { name: 'SEO на уеб страниците' },
-      { name: 'page ranking' },
-      { name: 'structured data' },
-    ]
-  },
-  { name: 'Design patterns',
-    lesson: '23',
-    date: '25-05-2016',
-    topics: [
-      { name: 'MVC' },
-      { name: 'REST и CRUD' },
-      { name: 'Изграждане на собствен API' },
-      { name: 'Работа с web server (инсталиране на MAMP) и база данни' },
-    ]
-  },
-  { name: 'Сигурност в web',
-    lesson: '24',
-    topics: [
-      { name: 'SSL' },
-      { name: 'CORS' },
-      { name: 'Authentication & Authorisation' },
-      { name: 'Финален тест',
-        style: 'font-weight: bold;'
-      },
-    ]
-  },
-
-
+[{
+	"name": "Въведение в курса",
+	"lesson": "1",
+	"date": "23-03-2016",
+	"topics": [{
+		"name": "Запознаване с основите на WEB"
+	}, {
+		"name": "Font-end vs back-end"
+	}, {
+		"name": "Компоненти на front-end-a"
+	}, {
+		"name": "Основна структура на HTML документ"
+	}, {
+		"name": "Редактори за работа с HTML"
+	}, {
+		"name": "Основи на SEO"
+	}]
+}, {
+	"name": "HTML & HTML5",
+	"lesson": "2",
+	"date": "27-03-2016",
+	"topics": [{
+		"name": "Компоненти на HTML документа",
+		"subtopics": [{
+			"name": "Елементи и тагове"
+		}, {
+			"name": "Хипервръзки и изображения"
+		}, {
+			"name": "Списъци"
+		}, {
+			"name": "Таблици"
+		}]
+	}, {
+		"name": "Meta съдържание"
+	}, {
+		"name": "Стандарти"
+	}, {
+		"name": "HTML5 и Семантика на HTML елементите"
+	}]
+}, {
+	"name": "Елементи на уеб дизайна (как се изготвят страници)",
+	"lesson": "3",
+	"date": "30-03-2016",
+	"topics": [{
+		"name": "Разположение (layout)"
+	}, {
+		"name": "Цветове"
+	}, {
+		"name": "Изображения"
+	}, {
+		"name": "Фонтове"
+	}, {
+		"name": "Съдържание"
+	}]
+}, {
+	"name": "HTML атрибути. Основи на CSS. The box model",
+	"lesson": "4",
+	"date": "03-04-2016",
+	"topics": [{
+		"name": "Атрибути на html елементите"
+	}, {
+		"name": "Основи на CSS. Селектори"
+	}, {
+		"name": "id и class в HTML"
+	}, {
+		"name": "id и class в CSS"
+	}, {
+		"name": "Запознаване с Box модела"
+	}, {
+		"name": "CSS display на HTML елементите"
+	}]
+}, {
+	"name": "Git",
+	"lesson": "5",
+	"date": "06-04-2016",
+	"topics": [{
+		"name": "запознаване с GIT",
+		"subtopics": [{
+			"name": "version control"
+		}, {
+			"name": "remote origin"
+		}, {
+			"name": "distributed development"
+		}]
+	}, {
+		"name": "запознаване и работа с GitHub"
+	}, {
+		"name": "други системи за DVC"
+	}, {
+		"name": "Упражнения",
+		"subtopics": [{
+			"name": "CSS позициониране"
+		}, {
+			"name": "HTML5 video & auduo"
+		}]
+	}]
+}, {
+	"name": "Responsive design",
+	"lesson": "6",
+	"date": "10-04-2016",
+	"topics": [{
+		"name": "the media queries"
+	}, {
+		"name": "the viewport"
+	}, {
+		"name": "Работа с chrome device mode емулатора"
+	}, {
+		"name": "CSS cross-browser compatibility"
+	}]
+}, {
+	"name": "CSS псевдо класове",
+	"lesson": "7",
+	"date": "13-04-2016",
+	"topics": [{
+		"name": "CSS псевдо класове"
+	}, {
+		"name": "CSS псевдо елементи"
+	}, {
+		"name": "Структура на url локаторите, пълни и относителни пътища"
+	}, {
+		"name": "Атрибутът \"data-\""
+	}, {
+		"name": "Запознаване с Bootstrap"
+	}]
+}, {
+	"name": "HTTP протокола и HTML forms",
+	"date": "17-04-2016",
+	"lesson": "8",
+	"topics": [{
+		"name": "Текущ контрол 1",
+		"style": "font-weight: bold;"
+	}, {
+		"name": "Какво е HTTP и как работи"
+	}, {
+		"name": "HTTP request и response"
+	}, {
+		"name": "HTML формуляри"
+	}, {
+		"name": "валидиране и HTML5 input types"
+	}]
+}, {
+	"name": "Фонтове и векторни изображения",
+	"lesson": "9",
+	"date": "20-04-2016",
+	"topics": [{
+		"name": "SVG изображения"
+	}, {
+		"name": "SVG и CSS"
+	}, {
+		"name": "Фонт икони (Fontawesome, Gliphicons)"
+	}, {
+		"name": "Работа с Bootstrap"
+	}, {
+		"name": "Image sprites"
+	}]
+}, {
+	"name": "Flexbox. JS plugins. Bootstrap.js",
+	"lesson": "10",
+	"date": "24-04-2016",
+	"topics": [{
+		"name": "flexbox"
+	}, {
+		"name": "js onclick event"
+	}, {
+		"name": "работа с JS плъгини",
+		"subtopics": [{
+			"name": "bootstrap.js"
+		}, {
+			"name": "JQuery UI"
+		}]
+	}, {
+		"name": "CSS display: none"
+	}, {
+		"name": "CSS3 :target псевдо-класа"
+	}]
+}, {
+	"name": "Основи на JavaScript",
+	"date": "27-04-2016",
+	"lesson": "11",
+	"topics": [{
+		"name": "Синтаксис"
+	}, {
+		"name": "Променливи, типове данни"
+	}, {
+		"name": "Логически и аритметични операции"
+	}, {
+		"name": "Работа с масиви"
+	}, {
+		"name": "Дефиниране и извикване на функции"
+	}]
+}, {
+	"name": "Функционално програмиране с JavaScript",
+	"lesson": "12",
+	"date": "04-05-2016",
+	"topics": [{
+		"name": "Цикли – for, while"
+	}, {
+		"name": "Сортиране на масив"
+	}, {
+		"name": "Работа с низове (текст)"
+	}, {
+		"name": "JS closures & scope"
+	}, {
+		"name": "Енкапсулация (скриване на имената от глобалния контекст)"
+	}]
+}, {
+	"name": "Обекти и ООП. Обектен модел на документа",
+	"lesson": "13",
+	"date": "08-05-2016",
+	"topics": [{
+		"name": "Основи на обектно ориентираното програмиране"
+	}, {
+		"name": "Класове и обекти в JavaScript"
+	}, {
+		"name": "Прототип на класа"
+	}, {
+		"name": "DOM (Document Object Model)"
+	}]
+}, {
+	"name": "JQuery. Обектен модел на браузъра",
+	"lesson": "14",
+	"date": "11-05-2016",
+	"topics": [{
+		"name": "Текущ контрол 2",
+		"style": "font-weight: bold;"
+	}, {
+		"name": "JQuery обекти"
+	}, {
+		"name": "Обектен модел на браузъра"
+	}, {
+		"name": "window.location"
+	}, {
+		"name": "работа със setTimeout и setInterval"
+	}]
+}, {
+	"name": "Събития в JavaScript",
+	"lesson": "15",
+	"date": "15-05-2016",
+	"topics": [{
+		"name": "Какво е събитие и какво е обработка"
+	}, {
+		"name": "EventListener"
+	}, {
+		"name": "this на event-a"
+	}, {
+		"name": "Демо: drag & drop"
+	}]
+}, {
+	"name": "JSON. Работа с файлове",
+	"lesson": "16",
+	"date": "18-05-2016",
+	"topics": [{
+		"name": "JSON форматът"
+	}, {
+		"name": "Работа с файлове"
+	}, {
+		"name": "Изграждане на динамичен уебсайт с JavaScript - част 1"
+	}]
+}, {
+	"name": "AJAX",
+	"lesson": "17",
+	"date": "25-05-2016",
+	"topics": [{
+		"name": "Комуниккация с backend"
+	}, {
+		"name": "Асинхронно зареждане на данни"
+	}, {
+		"name": "Изграждане на динамичен уебсайт с JavaScript - част 2"
+	}]
+}, {
+	"name": "Сесия и бисквитки",
+	"lesson": "18",
+	"date": "29-05-2016",
+	"topics": [{
+		"name": "Какво е сесия"
+	}, {
+		"name": "Какво са бисквитките"
+	}, {
+		"name": "Изграждане на динамичен уебсайт с JavaScript - част 3"
+	}]
+}, {
+	"name": "Обработка на грешки",
+	"lesson": "19",
+	"date": "01-06-2016",
+	"topics": [{
+		"name": "Възникване на грешки"
+	}, {
+		"name": "Очакване на грешки"
+	}, {
+		"name": "Try - catch блок (конструкция)"
+	}, {
+		"name": "работа с debugger"
+	}, {
+		"name": "Демо: игра"
+	}]
+}, {
+	"name": "Регулярни изрази и валидация на user input",
+	"lesson": "20",
+	"date": "05-06-2016",
+	"topics": [{
+		"name": "Текущ контрол 3",
+		"style": "font-weight: bold;"
+	}, {
+		"name": "Валидация на данни, въведени от потребителя"
+	}, {
+		"name": "Регулярни изрази"
+	}]
+}, {
+	"name": "CSS3 анимация. LESS",
+	"lesson": "21",
+	"date": "08-06-2016",
+	"topics": [{
+		"name": "CSS transitions"
+	}, {
+		"name": "animation"
+	}, {
+		"name": "pre-processed CSS"
+	}, {
+		"name": "LESS"
+	}]
+}, {
+	"name": "Meta tags & SEO",
+	"date": "12-06-2016",
+	"lesson": "22",
+	"topics": [{
+		"name": "HTML мета съдържание"
+	}, {
+		"name": "Интеграция с Гугъл, Фейсбук, Туитър"
+	}, {
+		"name": "SEO на уеб страниците"
+	}, {
+		"name": "page ranking"
+	}, {
+		"name": "structured data"
+	}]
+}, {
+	"name": "Design patterns. Работа с web server и база данни. Photoshop",
+	"lesson": "23",
+	"date": "15-06-2016",
+	"topics": [{
+		"name": "MVC"
+	}, {
+		"name": "REST и CRUD"
+	}, {
+		"name": "Изграждане на собствен API"
+	}, {
+		"name": "Работа с web server (инсталиране на MAMP) и база данни"
+	}, {
+		"name": "Wordpress website setup"
+	}, {
+		"name": "Photoshop: layers & effects"
+	}]
+}, {
+	"name": "Сигурност в web",
+	"date": "19-06-2016",
+	"lesson": "24",
+	"topics": [{
+		"name": "SSL"
+	}, {
+		"name": "CORS"
+	}, {
+		"name": "Authentication & Authorisation"
+	}, {
+		"name": "Финален тест",
+		"style": "font-weight: bold;"
+	}]
+}]
