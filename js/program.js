@@ -40,6 +40,7 @@
         panel.find('.panel-title a')
           .text(lesson.lesson + ". " + lesson.name)
           .attr('href', '#Collapse' + i)
+          .attr('tabindex', i)
           .attr('aria-controls', 'Collapse' + i);
         panel.find('.panel-body').append(extractTopics(lesson.topics));
 
@@ -49,18 +50,16 @@
           title: "Lesson " + lesson.lesson,
           allDay: true,
           start: new Date(swapDates(lesson.date)),
-          url: '#lessonPanel' + lesson.lesson
+          target: '#lessonPanel' + lesson.lesson
         });
       }
       
       $('#calendar').fullCalendar({
-        events: events
-      });
-      
-      $('.fc-event').click(function (e) {
-        e.preventDefault();
-        var panelId = $(this).attr('href');
-        $(panelId).find('.panel-title a').click();
+        events: events,
+        eventClick: function (calEvent, jsEvent, view) {
+          var panelId = calEvent.target;
+          $(panelId).find('.panel-title a').click().focus();
+        }
       });
     });
   });
