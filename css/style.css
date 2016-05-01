@@ -4,10 +4,6 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 aside {
   padding-top: 0;
   -webkit-transition: margin-top 0.6s;
@@ -43,6 +39,10 @@ main {
   min-height: 500px;
 }
 
+.btn.btn-transparent {
+  background-color: transparent;
+}
+
 h1 {
   display: block;
   font-size: 2em;
@@ -75,10 +75,10 @@ header .container {
   padding: 0;
 }
 
-header a,
-header a:focus,
-header a:hover,
-header a:visited {
+header .btn,
+header .btn:focus,
+header .btn:hover,
+header .btn:visited {
   color: white;
 }
 
@@ -87,7 +87,7 @@ header h1 {
   display: inline-block;
   float: left;
   font-size: 1.8em;
-  margin: 0.9em 0.6em;
+  margin: 0.9em 0;
   -webkit-transition: margin 0.6s;
   -moz-transition: margin 0.6s;
   -ms-transition: margin 0.6s;
@@ -106,34 +106,13 @@ header nav {
   transition: margin 0.6s;
 }
 
-header nav .icon,
-header nav .fa {
-  line-height: 1.2em;
+header nav .glyphicon {
+  font-size: 2em;
 }
 
-header.collapse,
-header.collapse .container {
-  padding: 0;
-  -webkit-transition: padding 0.6s;
-  -moz-transition: padding 0.6s;
-  -ms-transition: padding 0.6s;
-  -o-transition: padding 0.6s;
-  transition: padding 0.6s;
+header.collapse {
   display: block;
-}
-
-header.collapse nav,
-header.collapse h1 {
-  margin: 0.6em;
-  -webkit-transition: margin 0.6s;
-  -moz-transition: margin 0.6s;
-  -ms-transition: margin 0.6s;
-  -o-transition: margin 0.6s;
-  transition: margin 0.6s;
-}
-
-header.collapse #nav-dropdown {
-  top: 50px;
+  padding: 0;
 }
 
 a {
@@ -255,7 +234,7 @@ ol li {
 @media only screen and (max-width: 360px) {
   header h1 {
     font-size: 1.6em;
-    margin: 0.6em;
+    margin: 0.6em 0;
   }
   
   h1, h2, h3, h4, h5, h6 {
