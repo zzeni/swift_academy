@@ -1,36 +1,9 @@
-footer {
-  width: 100%;
-}
-
-main {
-  padding-bottom: 50px;
-}
-
-#homeworks {
-  display: table;
-}
-
-#homeworks > div {
-  display: table-cell;
-  vertical-align: top;
-  padding: 0 10px;
-}
-
 #fileTree-container {
   min-width: 300px;
 }
 
 #item-preview {
   width: 100%;
-}
-
-iframe {
-  min-height: inherit;
-  min-width: inherit;
-}
-
-.fixed {
-  position: fixed;
-  bottom: 0;
+  padding: 1em;
 }
 

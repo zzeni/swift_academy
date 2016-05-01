@@ -29,5 +29,10 @@ $(document).on("ready", function () {
   });
 
   $(window).resize(); // trigger the resize event in order to set footer position
+  
+  $('#midstates a').click(function (e) {
+    e.preventDefault();
+    $("#item-preview iframe").attr('src', $(this).attr('href'));
+  });
 
 });

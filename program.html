@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -14,12 +14,24 @@
 <body>
   <header>
     <div class="container">
-      <h1>Front-end Development - Course Program</h1>
-      <!--
-        <nav>
-          <a href="./index.html" id="back" title="Go back"><i class="icon icon-rocket icon-2x"></i></a>
+      <div class="col-xs-11">
+        <h1>Front-end Development - Course Program</h1>
+      </div>
+      <div class="col-xs-1">
+        <nav class="pull-right">
+          <div class="dropdown">
+            <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true" aria-label="menu navigation"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+              <li><a href="index.html">lessons</a></li>
+              <li><a href="students/index.html">homeworks</a></li>
+              <li><a href="program.html">schedule</a></li>
+<!--                <li data-href="projects.html">проекти</li>-->
+            </ul>
+          </div>
         </nav>
--->
+      </div>
     </div>
   </header>
 
@@ -39,12 +51,12 @@
     <nav id="socilal_nav">
       <a href="https://www.facebook.com/SwiftAcad" target="_blank"><i class="icon icon-facebook-square"></i></a>
       <a href="https://www.linkedin.com/company/swift-academy-bg" target="_blank"><i class="icon icon-linkedin-square"></i></a>
-      <a href="http://swift.bg/"><i class="icon icon-external-link"></i></a>
+      <a href="http://swift.bg/"><span class="glyphicon glyphicon-share"></span></a>
     </nav>
     <small>Created by <a href="https://bg.linkedin.com/pub/evgenia-manolova/39/96a/166" target="_blank">Evgenia Manolova</a> &copy; All rights reserved</small>
   </footer>
 
-  <div id="panelPrototype">
+  <div id="panelPrototype" role="tablist">
     <div class="panel panel-info">
       <div class="panel-heading" role="tab">
         <h4 class="panel-title">
@@ -60,6 +72,7 @@
   </div>
 
   <!-- JavaScript -->
+  <script src="https://use.fonticons.com/78f6d43b.js"></script>
   <script src="./vendor/jquery-2.2.3.min.js"></script>
   <script src="./vendor/bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
   <script src="./vendor/fullcalendar-2.7.0/lib/moment.min.js"></script>
