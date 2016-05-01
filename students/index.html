@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
 
-    <title>Front-end Development - Students</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Front-end Development - Course Program</title>
+  <link rel="stylesheet" href="../vendor/bootstrap-3.3.6/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../vendor/fullcalendar-2.7.0/fullcalendar.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/group.css">
+</head>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/group.css">
-    <link rel="stylesheet" href="../css/jqueryFileTree.css">
-    <link rel="shortcut icon" href="../favicon.ico?v=2">
-
-    <script src="https://use.fonticons.com/78f6d43b.js"></script>
-
-    <script type="text/javascript" src="../js/jquery.js"></script>
-    <script type="text/javascript" src="../js/jqueryFileTree.js"></script>
-    <script type="text/javascript" src="../js/file-tree.js"></script>
-    <script type="text/javascript" src="../js/main.js"></script>
-  </head>
-
-  <body>
-    <header>
-      <div class="container">
-        <h1>Front-end Development - Students</h1>
-        <nav>
-          <a href="../index.html" id="back" title="Go back"><i class="icon icon-rocket icon-2x"></i></a>
+<body>
+  <header>
+    <div class="container">
+      <div class="col-xs-11">
+        <h1>Front-end Development - Course Program</h1>
+      </div>
+      <div class="col-xs-1">
+        <nav class="pull-right">
+          <div class="dropdown">
+            <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true" aria-label="menu navigation"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+              <li><a href="../index.html">lessons</a></li>
+              <li><a href="../students/index.html">homeworks</a></li>
+              <li><a href="../program.html">schedule</a></li>
+              <!--                <li data-href="projects.html">проекти</li>-->
+            </ul>
+          </div>
         </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
         <section id="midstates">
           <h3>Оценки</h3>
           <ul>
@@ -44,22 +51,34 @@
           <div id="fileTree-container">
             <div id="fileTree" data-target="homeworks"></div>
           </div>
-          <div id="item-preview">
-            <iframe class="full-width"></iframe>
-            <br><a href="" target="_blank"><i class="icon icon-external-link"></i> open in fullscreen</a>
-          </div>
         </section>
       </div>
-    </main>
+      <div class="col-md-8">
+        <div id="item-preview">
+          <iframe class="full-width"></iframe>
+          <br><a href="" target="_blank"><i class="icon icon-external-link"></i> open in fullscreen</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <footer>
-      <p>Swift Academy 2016 &copy;</p>
-      <nav id="socilal_nav">
-        <a href="https://www.facebook.com/SwiftAcad" target="_blank"><i class="icon icon-facebook-square"></i></a>
-        <a href="https://www.linkedin.com/company/swift-academy-bg" target="_blank"><i class="icon icon-linkedin-square"></i></a>
-        <a href="http://swift.bg/" target="_blank"><i class="icon icon-external-link"></i></a>
-      </nav>
-      <small>Created by <a href="https://bg.linkedin.com/pub/evgenia-manolova/39/96a/166" target="_blank">Evgenia Manolova</a> &copy; All rights reserved</small>
-    </footer>
-  </body>
+  <footer>
+    <p>Swift Academy 2016 &copy;</p>
+    <nav id="socilal_nav">
+      <a href="https://www.facebook.com/SwiftAcad" target="_blank"><i class="icon icon-facebook-square"></i></a>
+      <a href="https://www.linkedin.com/company/swift-academy-bg" target="_blank"><i class="icon icon-linkedin-square"></i></a>
+      <a href="http://swift.bg/"><span class="glyphicon glyphicon-share"></span></a>
+    </nav>
+    <small>Created by <a href="https://bg.linkedin.com/pub/evgenia-manolova/39/96a/166" target="_blank">Evgenia Manolova</a> &copy; All rights reserved</small>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://use.fonticons.com/78f6d43b.js"></script>
+  <script src="../vendor/jquery-2.2.3.min.js"></script>
+  <script src="../vendor/bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
+  <script src="../vendor/jqueryFileTree.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/file-tree.js"></script>
+</body>
+
 </html>
