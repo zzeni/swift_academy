@@ -1,3 +1,29 @@
 #panelPrototype {
   display: none;
 }
+
+.fc-event-container {
+  cursor: pointer;
+}
+
+.fc-day-number.fc-other-month {
+  background-color: transparent;
+  color: transparent;
+}
+
+.eventTarget {
+  width: 1;
+  height: 1;
+  position: relative;
+  top: -8em;
+}
+
+@media screen and (min-width: 680px) {
+  #calendar-container {
+    position: relative;
+    z-index: -1;
+  }
+  #calendar {
+    position: fixed;
+  }
+}
