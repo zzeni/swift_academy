@@ -21,9 +21,13 @@
 @media screen and (min-width: 680px) {
   #calendar-container {
     position: relative;
-    z-index: -1;
   }
   #calendar {
     position: fixed;
+  }
+  footer {
+    position: absolute;
+    left: 0;
+    right: 0;
   }
 }
