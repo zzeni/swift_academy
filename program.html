@@ -28,7 +28,7 @@
       <div class="col-md-7">
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"></div>
       </div>
-      <div class="col-md-5">
+      <div id='calendar-container' class="col-md-5">
         <div id='calendar'></div>
       </div>
     </div>
@@ -48,8 +48,9 @@
     <div class="panel panel-info">
       <div class="panel-heading" role="tab">
         <h4 class="panel-title">
-            <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true"></a>
-          </h4>
+          <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true"></a>
+        </h4>
+        <div class="eventTarget" tabindex="0"></div>
       </div>
       <div class="panel-collapse collapse" role="tabpanel">
         <div class="panel-body">

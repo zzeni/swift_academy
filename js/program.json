@@ -126,9 +126,10 @@
 	"name": "HTTP протокола и HTML forms",
 	"date": "17-04-2016",
 	"lesson": "8",
+  "exam": "Test 1",
 	"topics": [{
 		"name": "Текущ контрол 1",
-		"style": "font-weight: bold;"
+		"class": "strong"
 	}, {
 		"name": "Какво е HTTP и как работи"
 	}, {
@@ -220,9 +221,10 @@
 	"name": "JQuery. Обектен модел на браузъра",
 	"lesson": "14",
 	"date": "11-05-2016",
+  "exam": "Test 2",
 	"topics": [{
 		"name": "Текущ контрол 2",
-		"style": "font-weight: bold;"
+		"class": "strong"
 	}, {
 		"name": "JQuery обекти"
 	}, {
@@ -297,9 +299,10 @@
 	"name": "Регулярни изрази и валидация на user input",
 	"lesson": "20",
 	"date": "05-06-2016",
+  "exam": "Test 3",
 	"topics": [{
 		"name": "Текущ контрол 3",
-		"style": "font-weight: bold;"
+		"class": "strong"
 	}, {
 		"name": "Валидация на данни, въведени от потребителя"
 	}, {
@@ -354,6 +357,7 @@
 	"name": "Сигурност в web",
 	"date": "19-06-2016",
 	"lesson": "24",
+  "exam": "Final",
 	"topics": [{
 		"name": "SSL"
 	}, {
@@ -362,6 +366,6 @@
 		"name": "Authentication & Authorisation"
 	}, {
 		"name": "Финален тест",
-		"style": "font-weight: bold;"
+		"class": "strong"
 	}]
 }]
