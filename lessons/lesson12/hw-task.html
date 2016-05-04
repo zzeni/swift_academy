@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="bg">
+<meta charset="utf-8">
+<title>Swift Academy front end - Домашно 12</title>
+
+<xmp theme="cerulean" style="display:none;">
+## Урок 12
+
+### Задача за домашна работа
+
+Довършете примерите от днес.
+  
+Имплементирайте следните 2 функции:
+  
+```javascript
+  function any(list, value) {
+    // returns true if at least one value of the array is equal to the passed argument value
+  }
+```
+  
+```javascript
+  function all(list, value) {
+    // returns true if all the valuee of the array are equal to the passed argument value
+  }
+```
+  
+След това направете `higher order` версия на горните функции, така че:
+  
+- `hofAny(callback, array)` връща _true_ ако условието, което се намира в _callback_ функцията се изпълни поне един път и _false_ в противен случай
+- `hofAll(callback, array)` връща _true_ ако условието, което се намира в _callback_ функцията се изпълни всеки път и _false_ в противен случай
+
+Пример:
+  
+```javascript
+  var array = [
+    { name: 'David Bowie', age: 69 },
+    { name: 'Thom Yorke', age: 47 },
+    { name: 'Matt Berninger', age: 45 },
+    { name: 'Tracy Chapman', age: 52 },
+    { name: 'Jim Morrison', age: 27 },
+    { name: 'Nick Cave', age: 58 }
+  ];
+  
+  hofAny(function (artist) {
+    return artist.age < 50;
+  }, array); // true
+                           
+  hofAll(function (artist) {
+    return artist.age < 50;
+  }, array); // false
+```
+  
+И накрая, разгледайте следният случай:
+  
+```javascript
+  var artists = {
+    list: array,
+    any: function (callback) {
+      return hofAny(callback, this.list);
+    },
+    all: function (callback) {
+      return hofAll(callback, this.list);
+    }
+  };
+
+```
+  
+Какво ще се случи ако след като сме създали обекта `artisit`, изпълним кода по-долу?
+  
+```javascript
+  artists.any(function (artist) {
+    return artist.age < 50;
+  });
+                           
+  artists.all(function (artist) {
+    return artist.age < 50;
+  });
+```
+  
+Решенията качете във файл `script.js` на папка `L12` от проекта с домашните.
+Добавете и един `index.html`, който да включва скрипта, за да може лесно да се провери дали скрипта ви работи в конзолата.
+  
+Приятна работа!
+  
+</xmp>
+
+<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+</html>
