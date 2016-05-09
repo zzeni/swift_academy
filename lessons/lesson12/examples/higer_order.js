@@ -11,7 +11,7 @@ console.log("find", '9:', find(numberArray, 9));
 console.log("find", 'Thom:', find(stringArray, 'Thom'));
 console.log("find", 'Derren:', find(stringArray, 'Derren'));
 
-function mapLength(array) {
+function (array) {
 	var resultArray = [];
 	
 	for (var i=0; i<array.length; i++) {
