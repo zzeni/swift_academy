@@ -1,7 +1,7 @@
 function processScore(group, format) {
   "use strict";
 
-  if (!format.match(/^homeworks|project|final|test1$/)) console.error("wrong format: " + format);
+  if (!format.match(/^homeworks|project|final|test\d$/)) console.error("wrong format: " + format);
 
   var scoresFunc = function scoresFunc(scores, format) {
     console.log(scores);
