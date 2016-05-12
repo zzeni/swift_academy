@@ -113,13 +113,25 @@ function processScore(group, format) {
 
       if (format === "test1") {
         var arr = score["test1_arr"];
-        var length = arr.length;
+        var length = 5;
         for(i=0; i<length; i++) {
-          if (i==length-1)
-            row.append('<td class="s8">' + arr[i] + '</td>');
+          var value = arr[i] || "";
+          if (i>=length-2)
+            row.append('<td class="s8">' + value + '</td>');
           else
-            row.append('<td class="s2">' + arr[i] + '</td>');
+            row.append('<td class="s2">' + value + '</td>');
         }
+      }
+
+      if (format === "test2") {
+        var testScores = score["test2_detail"];
+        var total = 0;
+        for (var part in testScores) {
+          total += testScores[part];
+          row.append('<td class="s2">' + testScores[part] + '</td>');
+        }        
+        row.append('<td class="s8">' + total + '</td>');
+        row.append('<td class="s8">' + Math.round(total * 0.4) + '</td>');
       }
       
       table.append(row);
