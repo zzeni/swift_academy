@@ -15,9 +15,9 @@ var bikes = [
 
 console.log("Need a bike?..");
 
-function logBikes(bukesArray) {
-  bukesArray.forEach(function (bike) {
-    console.log(bike.name + ": " + bike.price);
+function logBikes(bikesList) {
+  bikesList.forEach(function (bike) {
+    console.log("    " + bike.name + ": " + bike.price);
   });
 }
 
@@ -44,7 +44,7 @@ bikes.customForEach = function(callback) {
 console.log("The result from the custom forEach is: ");
 
 bikes.customForEach(function (bike) {
-  console.log(bike.name + ": " + bike.price);
+  console.log("   - " + bike.name + ": " + bike.price);
 });
 
 // ===========================================
