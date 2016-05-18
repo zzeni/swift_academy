@@ -23,19 +23,16 @@
       <div class="panel-heading"><h4>User manual - Подготовка</h4></div>
       <div class="panel-body">
         <p>
-          Използвай тази страничка за да валидираш решенията си от <em>домашно 14</em>!
+          Използвай тази страничка за да валидираш решенията си от <em>домашно 16</em>!
         </p>
         <p>
-          За целта свали и разархивирай <code>validator.zip</code> чрез бутона по-долу, след което създай файл с име <code>solutions.js</code> в същата папка в която е <code>index.html</code>. Накрая копирай или напиши решенията си в <code>solutions.js</code>.
+          За целта свали и разархивирай <code>task.zip</code> чрез бутона по-долу, в папката <code>js</code> ще намериш празен файл <code>solutions.js</code>, където трябва да копираш или напишеш решенията си.
         </p>
         <p>
           <em>Не е необходимо да променяш нищо по останалите файлове, работи само в <code>solutions.js</code>!</em>
         </p>
 
-
         <a class="btn btn-info" href="validator.zip" target="_blank">Download</a>
-
-
       </div>
     </div>
     <div class="manual panel panel-warning">
@@ -63,7 +60,7 @@
           <em>Преглеждай внимателно условията и примерите, които са дадени в тях!</em>
         </p>
         <p>
-          Възможно е да се различават леко с тези от GitHub, така че гледай само тези тук.
+          Ако нещо не се валидира, прегледай конзолата за грешки или hint-ове.
         </p>
         <p>
           Всеки препинателен знак или интервал е от значение!
@@ -103,7 +100,7 @@
           </div>
           <div class="example">
 
-            <pre><code>new Person("Бойко", "Борисов"); // Person { firstName: "Бойко", lastName: "Борисов" }</code></pre>
+            <pre><code>new Person("Чък", "Норис"); // Person { firstName: "Чък", lastName: "Норис" }</code></pre>
           </div>
         </div>
       </li>
@@ -113,14 +110,14 @@
         </div>
         <div class="panel-body">
           <p class="task">
-            Направете втора функция, която да поздравява, но я кръстете <code>personGreeting</code> и вместо име й подавайте обект от тип Person.
+            Направете втора функция, която да поздравява, но я кръстете <code>personGreeting</code> и вместо име, й подавайте обект от тип Person.
           </p>
           <div class="example-toggle">
             <p class="btn btn-default btn-special">Пример: ...</p>
           </div>
           <div class="example">
 
-            <pre><code>personGreeting(new Person("Бойко", "Борисов")); // "Hi, Бойко!"</code></pre>
+            <pre><code>personGreeting(new Person("Чък", "Норис")); // "Hi, Чък!"</code></pre>
           </div>
         </div>
       </li>
@@ -138,10 +135,10 @@
           <div class="example">
 
             <pre><code>
-var person = new Person("Бойко", "Борисов");
-personGreeting(person, true); // "Hello, Бойко Борисов!"
-personGreeting(person, false); // "Hi, Бойко!"
-personGreeting(person); // "Hi, Бойко!"
+var person = new Person("Чък", "Норис");
+personGreeting(person, true); // "Hello, Чък Норис!"
+personGreeting(person, false); // "Hi, Чък!"
+personGreeting(person); // "Hi, Чък!"
             </code></pre>
           </div>
         </div>
@@ -160,8 +157,8 @@ personGreeting(person); // "Hi, Бойко!"
           <div class="example">
 
             <pre><code>
-var person = new Person("Бойко", "Борисов");
-person.introduce(); // "Здравейте, Казвам се Бойко Борисов."
+var person = new Person("Чък", "Норис");
+person.introduce(); // "Казвам се Чък Норис."
             </code></pre>
           </div>
         </div>
@@ -179,7 +176,7 @@ person.introduce(); // "Здравейте, Казвам се Бойко Бор�
           </div>
           <div class="example">
 
-            <pre><code>var person = new Person("Бойко", "Борисов"); // Person { firstName: "Бойко", lastName: "Борисов", isPolite: true }</code></pre>
+            <pre><code>var person = new Person("Чък", "Норис"); // Person { firstName: "Чък", lastName: "Норис", isPolite: true }</code></pre>
           </div>
         </div>
       </li>
@@ -197,7 +194,7 @@ person.introduce(); // "Здравейте, Казвам се Бойко Бор�
           <div class="example">
 
             <pre><code>
-var person = new Person("Бойко", "Борисов");
+var person = new Person("Чък", "Норис");
 
 person.isPolite; // true
 person.bePolite(false);
@@ -220,11 +217,11 @@ person.isPolite; // false
           <div class="example">
 
             <pre><code>
-var person = new Person("Бойко", "Борисов");
+var person = new Person("Чък", "Норис");
 
-person.introduce(); // “Казвам се Бойко Борисов.”
+person.introduce(); // “Казвам се Чък Норис.”
 person.bePolite(false);
-person.introduce(); // "Аз съм Бойко."
+person.introduce(); // "Аз съм Чък."
             </code></pre>
           </div>
         </div>
@@ -243,13 +240,14 @@ person.introduce(); // "Аз съм Бойко."
           <div class="example">
 
             <pre><code>
-var boiko = new Person("Бойко", "Борисов");
+var chuck = new Person("Чък", "Норис");
 var lili = new Person("Лили", "Иванова");
 
-boiko.introduce(); // "Казвам се Бойко Борисов."
+chuck.greet(lili); // "Здравейте Лили Иванова!"
+chuck.introduce(); // "Казвам се Чък Норис."
 lili.bePolite(false);
 
-lili.greet(boiko); // "Здрасти, Бойко!"
+lili.greet(chuck); // "Здрасти, Чък!"
 lili.introduce(); // "Аз съм Лили."
             </code></pre>
           </div>
@@ -262,7 +260,7 @@ lili.introduce(); // "Аз съм Лили."
         <div class="panel-body">
           <p class="task">
             Променете метода <code>introduce</code>, така че да може да получава параметър от тип Person ( <code>introduce(otherPerson)</code> ). Kомбинирайте <code>greet</code> и <code>introduce</code> kato използвате резултата от <code>greet(otherPerson)</code> в <code>introduce</code>.
-            <br/> Променете <code>greet</code>, така че да проверява дали параметъра <code>otherPerson</code> е подаден ( <code>if (otherPerson != undefined) {..}</code> ). Ако да - тогава поздравете по име (използвайте съответно учтива и неучтива форма, както досега).
+            <br/> Променете <code>greet</code>, така че да проверява дали параметъра <code>otherPerson</code> е подаден ( <code>if (otherPerson !== undefined) {..}</code> ). Ако да - тогава поздравете по име (използвайте съответно учтива и неучтива форма, както досега).
             <br/> Ако не е подаден параметър <code>otherPerson</code>, тогава просто върнете само поздрав без име ("Здрасти!" / "Здравейте!")
           </p>
           <div class="example-toggle">
@@ -271,13 +269,13 @@ lili.introduce(); // "Аз съм Лили."
           <div class="example">
 
             <pre><code>
-var boiko = new Person("Бойко", "Борисов");
+var chuck = new Person("Чък", "Норис");
 var lili = new Person("Лили", "Иванова");
 
-boiko.introduce(); // "Здравейте! Казвам се Бойко Борисов."
+chuck.introduce(); // "Здравейте! Казвам се Чък Норис."
 
 lili.bePolite(false);
-lili.introduce(boiko); // "Здрасти, Бойко! Аз съм Лили."
+lili.introduce(chuck); // "Здрасти, Чък! Аз съм Лили."
             </code></pre>
           </div>
         </div>
@@ -286,7 +284,7 @@ lili.introduce(boiko); // "Здрасти, Бойко! Аз съм Лили."
 
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="solutions.js"></script>
+  <script src="./js/solutions.js"></script>
   <script src="./validator/validator.js"></script>
 </body>
 
