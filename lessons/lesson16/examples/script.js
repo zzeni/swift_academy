@@ -1,31 +1,47 @@
-
-  "use strict";
-
-  var myVar1 = "My var 1";
-
-  localContext(5);
-
-
-  function localContext(myVar3) {
-    var myVar2 = "My var 2";
-    console.log("In the 'if' context:");
-    console.log(myVar1);
-    console.log(myVar2);
-    console.log(myVar3);
-
-    function innerFunc(x) {
-      console.log("this is x: " + x);
-      console.log("my var 1 again: " + myVar1);
-
-    }
-
-    innerFunc(1);
-    //  console.log("this is x out of the context: " + x);
+function calcAge(day, month, year) {
+  var age = 0;
+  
+  var today = new Date();
+  
+  var todayDay = today.getDate();
+  var todayMonth = today.getMonth() + 1;
+  var todayYear = today.getFullYear();
+  var suffixes = ['th', 'st', 'nd', 'rd', 'th', 'th', 'th', 'th', 'th', 'th'];
+  
+  age = todayYear - year;
+  
+  if (month > todayMonth || (month == todayMonth && day > todayDay)) {
+    age--;
   }
+  
+  if (age < 0) {
+    return "This is not possible!";
+  }
+  else if (month == todayMonth && day == todayDay) {
+    return "Happy " + age + suffixes[age % 10] + " Birthday!";
+  }
+  else {
+    return "You are " + age + " years old! :)";
+  }
+}
 
-  //innerFunc(3);
+function calcAge2(dateStr) {
+  var dateParts = dateStr.split('-');
+  return(calcAge(dateParts[0], dateParts[1], dateParts[2]));
+}
 
-  console.log("In the global context:");
-  console.log(myVar1);
-  //console.log(myVar2);
-  //console.log(myVar3);
+function Person(fname, lname, bdate) {
+  this.firstName = fname;
+  this.lastName = lname;
+  this.birthdate = bdate;
+}
+
+Person.prototype.tellMyAge = function () {
+  return calcAge2(this.birthdate);
+};
+
+var ani = new Person('Ani', 'Ivanova', '10-08-1988');
+console.log(ani.tellMyAge()); // 27
+
+
+
