@@ -7,6 +7,12 @@
   <title>Lesson 16 - Excercises</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+  <style>
+    #agePlaceholder {
+      color: firebrick;
+    }
+  </style>
+  
 </head>
 
 <body>
@@ -14,15 +20,32 @@
   <div class="container">
     <h1>Let's do some exercises!</h1>
     
-    <div class="row bikes-container">
-      <!-- We'll use this container to generate content via javascript -->
-    </div>
+    <p>I'd like to know your birth date!</p>
     
-    <p>Oh, and by the way, the split demo script can be found here: <a href="split.js">split.js</a></p>
+    <form id="birthdateForm" class="form-inline">
+      <div class="form-group">
+        <input class="form-control" type="number" min="1" max="31" placeholder="dd">-<input class="form-control" type="number" min="1" max="12" placeholder="mm">-<input class="form-control" type="number" min="1900" max="2016" placeholder="yyyy">
+      </div>
+      <button type="submit" class="btn btn-default">Go</button>
+    </form>
+    
+    <h5 id="agePlaceholder"></h5>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="bikes.js"></script>
+  <script src="script.js"></script>
+  
+  <script>
+    $("#birthdateForm").submit(function(e) {
+      e.preventDefault();
+      
+      var day = $("#birthdateForm input:nth-child(1)").val();
+      var month = $("#birthdateForm input:nth-child(2)").val();
+      var year = $("#birthdateForm input:nth-child(3)").val();
+      
+      $("#agePlaceholder").text(calcAge(day, month, year));
+    });
+  </script>
 </body>
 
 </html>
