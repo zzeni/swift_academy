@@ -37,6 +37,11 @@ body {
   list-style-type: decimal;
 }
 
+#accordion ul ul {
+  padding-left: 3em;
+  list-style-type: circle;
+}
+
 #accordion ul li {
   padding: 5px;
 }
