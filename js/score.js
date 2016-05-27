@@ -37,7 +37,7 @@ function processScore(group, format) {
         var style = (format === "homeworks") ? 's2' : 's8';
         if (hw_total <= 100) {
           row.append('<td class="' + style + ' danger">' + hw_total + '</td>');
-        } else if (hw_total < 260) {
+        } else if (hw_total < 160) {
           row.append('<td class="' + style + ' warning">' + hw_total + '</td>');
         } else {
           row.append('<td class="' + style + '">' + hw_total + '</td>');
