@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Bike 1",
+    "url": "img/bikes/1.jpg",
+    "price": 300,
+    "desc": "This awesome bike will take you everywhere!!!",
+    "rating": 4.5,
+    "category": "city"
+  },
+  {
+    "title": "The coolest bike",
+    "url": "img/bikes/2.jpg",
+    "price": 600,
+    "desc": "This awesome bike will take you everywhere!!!",
+    "rating": 3.5,
+    "category": "city"
+  },
+  {
+    "title": "Bike for real men",
+    "url": "img/bikes/3.jpg",
+    "price": 800,
+    "desc": "This awesome bike will take you everywhere!!!",
+    "rating": 4.1,
+    "category": "mtb"
+  },
+  {
+    "title": "Bike 4",
+    "url": "img/bikes/4.jpg",
+    "price": 300,
+    "desc": "This awesome bike will take you everywhere!!!",
+    "rating": 4.5,
+    "category": "city"
+  },
+  {
+    "title": "The coolest bike",
+    "url": "img/bikes/5.jpg",
+    "price": 600,
+    "desc": "This awesome bike will take you everywhere!!!",
+    "rating": 3.5,
+    "category": "city"
+  },
+  {
+    "title": "Bike for real men",
+    "url": "img/bikes/6.jpg",
+    "price": 800,
+    "desc": "This awesome bike will take you everywhere!!!",
+    "rating": 4.1,
+    "category": "country"
+  }
+]
