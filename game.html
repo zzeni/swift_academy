@@ -47,21 +47,21 @@
 
     <form action="http://zenlabs.pro/api/game/start" method="post" target="_blank">
       <p>
-        <label for="name">Твоето име</label>
+        <label for="form1Name">Твоето име</label>
         <br>
-        <input placeholder="Your name" name="name" type="text" required>
+        <input placeholder="Your name" name="name" type="text" id="form1Name" required>
       </p>
 
       <p>
-        <label for="email">Твоят имейл</label>
+        <label for="form1Email">Твоят имейл</label>
         <br>
-        <input type="email" placeholder="Your email" name="email" required>
+        <input type="email" placeholder="Your email" name="email" id="form1Email" required>
       </p>
 
       <p>
-        <label for="message">Изпрати текста 'game', за да започнеш играта</label>
+        <label for="form1Message">Изпрати текста 'game', за да започнеш играта</label>
         <br>
-        <textarea name="message" placeholder="Type 'game' to begin"></textarea>
+        <textarea name="message" placeholder="Type 'game' to begin" id="form1Message"></textarea>
       </p>
 
       <p>
@@ -87,25 +87,25 @@
 
       <h3>Моля, попълвай само на латиница!</h3>
       <p>
-        <label for="answer_1">Коя година е основана българската държава?</label>
+        <label for="form2Answer1">Коя година е приет HTML5 стандарта?</label>
         <br>
-        <input type="number" value="681" name="answer_1" required>
+        <input type="number" value="2014" name="answer_1" id="form2Answer1" required>
       </p>
 
       <p>
-        <label for="answer_2">Кой е най-високият връх в Стара планина?</label>
+        <label for="form2Answer2">Кой е създателят на JSON нотацията?</label>
         <br>
-        <input type="text" value="Botev" name="answer_2" required>
+        <input type="text" value="Douglas Crockford" name="answer_2" id="form2Answer2" required>
       </p>
 
       <p>
-        <label for="answer_3">Кое диво животно е изкуствено "внесено" през 20ти век в България?</label>
+        Кой от изброените HTML атрибути не е глобален?
         <br>
-        <input type="radio" name="answer_3" value="broun"> кяфява мечка
+        <input type="radio" name="answer_3" value="data" id="form2Answer3-1"><label for="form2Answer3-1"> data</label>
         <br>
-        <input type="radio" name="answer_3" value="black" checked> черна мечка
+        <input type="radio" name="answer_3" value="title" id="form2Answer3-2"><label for="form2Answer3-2"> title</label>
         <br>
-        <input type="radio" name="answer_3" value="lynx"> рис
+        <input type="radio" name="answer_3" value="alt" id="form2Answer3-3" checked><label for="form2Answer3-3"> alt</label>
       </p>
 
       <p>
@@ -121,33 +121,33 @@
 
       <h3>What you know about Chuck Noris?</h3>
       <p>
-        <label for="name">Name</label>
+        <label for="form3Name">Name</label>
         <br>
-        <input type="text" value="Chuck Norris" name="name" required>
+        <input type="text" value="Chuck Norris" name="name" id="form3Name" required>
       </p>
 
       <p>
-        <label for="email">Email</label>
+        <label for="form3Email">Email</label>
         <br>
-        <input type="email" value="chuck@kicks.ass" name="email" required>
+        <input type="email" value="chuck@kicks.ass" name="email" id="form3Email" required>
       </p>
 
       <p>
-        <label for="occupation">Occupation</label>
+        <label for="form3Occupation">Occupation</label>
         <br>
-        <input type="text" value="ultimate hero" name="occupation" required>
+        <input type="text" value="ultimate hero" name="occupation" id="form3Occupation" required>
       </p>
 
       <p>
-        <label for="eyes_color ">Eyes Color</label>
+        <label for="form3Eyes">Eyes Color</label>
         <br>
-        <input type="color" name="eyes_color" value="#0000ff" required>
+        <input type="color" name="eyes_color" value="#0000ff" id="form3Eyes" required>
       </p>
 
       <p>
-        <label for="photo">Photo</label>
+        <label for="form3Photo">Photo</label>
         <br>
-        <input type="file" name="photo" required>
+        <input type="file" name="photo" id="form3Photo" required>
       </p>
 
       <p>
@@ -176,7 +176,7 @@
     <script>
       var myVar = "let's keep it simple".length;
       var myOtherVar = 213 % 36 - 5 * 3;
-      if (myVar == myOtherVar) {
+      if (myVar === myOtherVar) {
         myVar += 1;
       } else {
         myVar = myOtherVar;
