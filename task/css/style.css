@@ -1,0 +1,7 @@
+.jumbotron {
+  background-color: lightblue;
+  background-image: url(../img/kids-bg.png);
+  background-size: contain;
+  color: #f1f1f1;
+  text-shadow: 2px 4px 9px #333;
+}

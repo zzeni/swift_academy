@@ -10,7 +10,7 @@
 <body>
    <div class="container" ng-controller="TypeAheadController">
 	<h1>TypeAhead Using AngularJS</h1>
-	<typeahead items="items" prompt="Start typing a US state" title="name" subtitle="abbreviation" model="name" on-select="onItemSelected()" />
+	<typeahead items="items" prompt="country" label="en_name" model="selectedCountry" on-select="onItemSelected()" auto="true" />
    </div>
 </body>
 </html>
