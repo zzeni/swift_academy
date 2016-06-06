@@ -27,7 +27,8 @@ function processScore(group, format) {
           sum += sc;
         }
         hw_total += sum;
-        if (format === "homeworks" || format === "final") {
+//        if (format === "homeworks" || format === "final") {
+        if (format === "homeworks") {
           var style = (format === "homeworks") ? 's8' : 's2';
           row.append('<td class="' + style + '">' + sum + '</td>');
         }
@@ -80,8 +81,8 @@ function processScore(group, format) {
       // Now all the final scores
       if (format === "final") {
         // persistance
-        var persistence = Math.round((Math.max(hw_total - 100, 0)) / 20);
-        var exam = Math.round((exam_total + project_total * 5) / 90);
+        var persistence = Math.round((hw_total + 10) / 20);
+        var exam = Math.round(exam_total / 10);
         var bonus = 0;
 
         if (persistence > 10) {
@@ -104,11 +105,11 @@ function processScore(group, format) {
           row.append('<td class="s8">?/10</td>')
         }
         // binus points
-        if (bonus > 0) {
-          row.append('<td class="s8 bonus">' + bonus + '</td>');
-        } else {
-          row.append('<td class="s8">-</td>');
-        }
+//        if (bonus > 0) {
+//          row.append('<td class="s8 bonus">' + bonus + '</td>');
+//        } else {
+//          row.append('<td class="s8">-</td>');
+//        }
       }
 
       if (format === "test1") {
@@ -132,6 +133,17 @@ function processScore(group, format) {
         }        
         row.append('<td class="s8">' + total + '</td>');
         row.append('<td class="s8">' + Math.round(total * 0.4) + '</td>');
+      }
+      
+      if (format === "test3") {
+        row.append('<td class="s8">' + score["test3"] + '</td>');
+      }
+      
+      if (format === "test4") {
+        row.append('<td class="s2">0</td>');
+        row.append('<td class="s2">0</td>');
+        row.append('<td class="s2">0</td>');
+        row.append('<td class="s8">0</td>');
       }
       
       table.append(row);
