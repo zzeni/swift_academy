@@ -65,7 +65,7 @@ $(document).ready(function () {
     if (error) {      
       error.name = "FieldValidationError";
       error.target = input;
-
+      
       throw error;
     }
   }
