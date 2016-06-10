@@ -1,0 +1,64 @@
+<html>
+  
+  <head>
+    
+  </head>
+  <body>
+    <canvas width="300" height="300"></canvas>
+    <script>
+      var canvas = document.getElementsByTagName('canvas')[0];
+
+var ctx = canvas.getContext("2d");
+
+var w = 300, h = 300;
+
+ctx.strokeRect(0,0,w,h);
+
+ctx.beginPath();
+ctx.moveTo(0,h/2);
+
+var a = [];
+
+for(var x=0;x<w;x+=3) {
+  var y = calcY(x,w,h);
+  ctx.lineTo(x,y);
+  var ry = h/2-random(h/2-y);
+  ctx.strokeRect(x, ry/2, 1, 1);
+  
+  a.push([Math.round(x/3),Math.round(ry/6)]);
+}
+for(;x>0;x-=3) {
+  var y = calcY(x,w,h/4);
+  ctx.lineTo(x,h-y);
+  var ry = random(h/2-y)+h/2;
+  ctx.strokeRect(x, ry/2, 1, 1);
+  
+  a.push([Math.round(x/3),Math.round(ry/6)]);
+}
+
+ctx.stroke();
+
+function calcY(x,w,h) {
+  var c = h/2;
+  var b = -2*h/w;
+  
+  // a*x*x + b*x + c = y
+  // a*w*w + 2*b*w + 2*h = 0
+  // a*w*w + b*w = 0
+  
+  var a = -b/w;
+  
+  return x*x*a + x*b + c;
+}
+
+function random(number) {
+  return Math.round(Math.random() * number);
+}
+
+console.log(JSON.stringify(a));
+
+
+
+    </script>
+  </body>
+</html>
