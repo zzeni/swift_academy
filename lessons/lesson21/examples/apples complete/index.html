@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Happy Apple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main>
+
+      <div class="start-caption caption">
+        <h1>
+          <span class="apples-placeholder"></span> red apples!
+        </h1>
+      </div>
+
+      <div class="start-caption caption">
+        <h1>
+          In <span class="seconds-placeholder"></span> seconds...
+        </h1>
+      </div>
+
+      <div class="start-caption caption">
+        <h1>
+          ready?
+        </h1>
+      </div>
+
+      <div class="start-counter caption">
+        <h1>
+          3
+        </h1>
+      </div>
+
+      <div class="start-counter caption">
+        <h1>
+          2
+        </h1>
+      </div>
+
+      <div class="start-counter caption">
+        <h1>
+          1
+        </h1>
+      </div>
+
+      <div class="start-counter caption">
+        <h1>
+          GO!
+        </h1>
+      </div>
+
+      <div id="hurryUp" class="caption">
+        <h1>
+          Hurry up!
+        </h1>
+      </div>
+
+      <div id="tree"><div id="applesContainer"></div></div>
+
+      <div id="timeCounter">
+        <span class="placeholder"></span> seconds
+      </div>
+
+      <div id="timesUP" class="caption">
+        <div class="flex-center">
+          <h1>
+            Time's up!
+          </h1>
+        </div>
+      </div>
+
+      <div id="wagon">
+        <img src="img/wagon.png">
+      </div>
+
+      <div id="credits" class="caption">
+        <h1>
+          Well done!
+        </h1>
+        <p>
+          you got <span class="placeholder"></span> apples!
+        </p>
+        <button onClick="window.location.assign('index.html');">Play again</button>
+      </div>
+
+      <div id="settings" class="caption">
+        <div class="flex-center">
+          <h1>
+            Choose difficulty
+          </h1>
+          <ul>
+            <li><button data-level="easy">Easy</button></li>
+            <li><button data-level="medium">Challenging</button></li>
+            <li><button data-level="hard">Impossible</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="settingsToggle">
+        <img src="img/cog.png">
+      </div>
+    </main>
+
+<!--     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+    <script src="js/jquery.js"></script>
+    <script src="js/js.cookie.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
