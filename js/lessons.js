@@ -7,12 +7,18 @@ $(document).on("ready", function() {
     var lesson = $(this).attr('data-target');
     var lesson_index =  lesson.split("lesson")[1];
     if (lesson_index.length == 1) lesson_index = '0' + lesson_index;
-    var lesson_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/lesson.pdf';
+    var htmlLessons = ['01', '20', '21', '22'];
+    var lesson_link = 'lessons/' + lesson + '/';
+    if (htmlLessons.indexOf(lesson_index) > -1)
+      lesson_link += lesson + '/index.html';
+    else
+      lesson_link += 'lesson.pdf';
+//    var lesson_page_link = 'lessons/' + lesson + '/index.html';
 //    var github_example_link = 'https://github.com/zzeni/swift_academy/tree/master/lessons/' + lesson + '/examples';
-    var example_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/examples/index.html';
-    var downlod_link = 'http://zenlabs.pro/courses/lessons/' + lesson + '/examples.zip';
+    var example_link = 'lessons/' + lesson + '/examples/index.html';
+    var downlod_link = 'lessons/' + lesson + '/examples.zip';
     var homework_link = 'https://github.com/zzeni/swift-academy-homeworks/tree/master/tasks/L' + lesson_index;
-    var homework_src = 'http://zenlabs.pro/courses/lessons/' + lesson + '/hw-task.html';
+    var homework_src = 'lessons/' + lesson + '/hw-task.html';
     
     lesson_link = lesson_link + "?version=" + version;
     downlod_link = downlod_link + "?version=" + version;
