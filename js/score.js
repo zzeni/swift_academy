@@ -13,6 +13,18 @@ function processScore(group, format) {
       row.append('<td class="s4">' + index + '</td>');
       row.append('<td class="s3">' + score.name + '</td>');
 
+      var projFields = [
+        "proj_layout",
+        "proj_design",
+        "proj_navigation",
+        "proj_responsiveness",
+        "proj_js",
+        "proj_effects",
+        "proj_code",
+        "proj_use",
+        "proj_complete"
+      ];
+      
       score.test1.total = score.test1.raw[0] + score.test1.raw[1];
       score.test1.score = Math.round(score.test1.total / 2.65) + score.test1.raw[2];
 
@@ -43,6 +55,10 @@ function processScore(group, format) {
       score.homeworks.total = score.homeworks.total / 2;
 
       score.projectTotal = 0;
+      
+      projFields.forEach(function(fname) {
+        score.projectTotal += score[fname];
+      });
 
       score.certificate = Math.round((score.examsTotal + score.homeworks.total + score.projectTotal) / 3);
 
@@ -88,32 +104,16 @@ function processScore(group, format) {
         row.append('<td class="s8">' + score.examsTotal + '%</td>');
         row.append('<td class="s8">' + score.projectTotal + '%</td>');
         row.append('<td class="s6">' + score.certificate + '%</td>');
-      }
-
-      $.each([
-        "proj_layout",
-        "proj_design",
-        "proj_navigation",
-        "proj_responsiveness",
-        "proj_js",
-        "proj_effects",
-        "proj_code",
-        "proj_use",
-        "proj_complete"
-      ], function (index, key_name) {
-        if (format === "project") {
-          var comment = score[key_name + '_comment'];
+      } else if (format === "project") {
+        projFields.forEach(function(fname) {
+          var comment = score[fname + '_comment'];
           if (comment === undefined) {
-            row.append('<td class="s2">' + score[key_name] + '</td>');
+            row.append('<td class="s2">' + score[fname] + '</td>');
           } else {
-            row.append('<td class="s2 commented" title="' + comment + '">' + score[key_name] + '</td>');
+            row.append('<td class="s2 commented" title="' + comment + '">' + score[fname] + '</td>');
           }
-        }
-        project_total += score[key_name];
-      });
-
-      if (format === "project" || format === "final") {
-        row.append('<td class="s2">' + project_total + '</td>');
+        });
+        row.append('<td class="s2">' + score.projectTotal + '</td>');
       }
 
       table.append(row);
