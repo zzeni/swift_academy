@@ -90,32 +90,31 @@ function processScore(group, format) {
         row.append('<td class="s6">' + score.certificate + '%</td>');
       }
 
-      //      $.each([
-      //        "proj_layout",
-      //        "proj_design",
-      //        "proj_navigation",
-      //        "proj_responsiveness",
-      //        "proj_js",
-      //        "proj_effects",
-      //        "proj_code",
-      //        "proj_use",
-      //        "proj_complete"
-      //      ], function (index, key_name) {
-      //        if (format === "project") {
-      //          var comment = score[key_name + '_comment'];
-      //          if (comment === undefined) {
-      //            row.append('<td class="s2">' + score[key_name] + '</td>');
-      //          } else {
-      //            row.append('<td class="s2 commented" title="' + comment + '">' + score[key_name] + '</td>');
-      //          }
-      //        }
-      //        project_total += score[key_name];
-      //      });
-      //
-      //      if (format === "project" || format === "final") {
-      //        row.append('<td class="s2">' + project_total + '</td>');
-      //      }
-      //
+      $.each([
+        "proj_layout",
+        "proj_design",
+        "proj_navigation",
+        "proj_responsiveness",
+        "proj_js",
+        "proj_effects",
+        "proj_code",
+        "proj_use",
+        "proj_complete"
+      ], function (index, key_name) {
+        if (format === "project") {
+          var comment = score[key_name + '_comment'];
+          if (comment === undefined) {
+            row.append('<td class="s2">' + score[key_name] + '</td>');
+          } else {
+            row.append('<td class="s2 commented" title="' + comment + '">' + score[key_name] + '</td>');
+          }
+        }
+        project_total += score[key_name];
+      });
+
+      if (format === "project" || format === "final") {
+        row.append('<td class="s2">' + project_total + '</td>');
+      }
 
       table.append(row);
     });
