@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="http://swift.bg/wp-content/uploads/fbrfg/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://swift.bg/wp-content/uploads/fbrfg/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://swift.bg/wp-content/uploads/fbrfg/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://swift.bg/wp-content/uploads/fbrfg/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://swift.bg/wp-content/uploads/fbrfg/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://swift.bg/wp-content/uploads/fbrfg/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://swift.bg/wp-content/uploads/fbrfg/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://swift.bg/wp-content/uploads/fbrfg/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://swift.bg/wp-content/uploads/fbrfg/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="http://swift.bg/wp-content/uploads/fbrfg/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://swift.bg/wp-content/uploads/fbrfg/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="http://swift.bg/wp-content/uploads/fbrfg/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://swift.bg/wp-content/uploads/fbrfg/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="http://swift.bg/wp-content/uploads/fbrfg/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="http://swift.bg/wp-content/uploads/fbrfg/manifest.json">
+  <link rel="shortcut icon" href="http://swift.bg/wp-content/uploads/fbrfg/favicon.ico">
+  <!--[if lt IE 9]>
+      <script src="http://swift.bg/wp-content/themes/generatepress/js/html5shiv.js"></script>
+      <link rel="stylesheet" href="http://swift.bg/wp-content/themes/generatepress/css/ie.css" />
+    <![endif]-->
+
+  <title>Swift Academy | Front-end development course</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://use.fonticons.com/78f6d43b.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+
+  <script type="text/javascript">
+    $(document).on("ready", function () {
+      $('#menu-toggle').click(function (e) {
+        $('#nav-dropdown').slideToggle(600);
+        e.preventDefault();
+      });
+
+      $("#nav-dropdown").mouseleave(function () {
+        $(this).slideToggle(600);
+      });
+
+      $('header #nav-dropdown li').click(function () {
+        window.location = $(this).attr('data-href');
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <script>
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <header>
+    <div class="container">
+      <h1 id="swift-academy">Swift Academy: Front-end Development</h1>
+
+      <nav>
+        <a href="#" id="menu-toggle"><i class="icon icon-bars icon-square-o icon-2x"></i></a>
+
+        <ul id="nav-dropdown">
+          <li data-href="group1/index.html">group 1</li>
+          <li data-href="group2/index.html">group 2</li>
+          <li data-href="program.html">програма</li>
+          <li data-href="projects.html">проекти</li>
+          <li data-href="lessons/index.html">lessons</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <section id="terms-of-the-course">
+
+      <h3>Курс по front-end програмиране</h3>
+
+      <hr>
+
+
+      <ul>
+        <li><a href="#purpose">Цел и продължителност</a></li>
+        <li><a href="#program">Програма</a></li>
+        <li>
+          <a href="#evaluation">Оценяване и текущ контрол</a>
+          <ul>
+            <li><a href="#evaluation-forming">Сформиране на оценката</a> </li>
+            <li><a href="#control">Текущ контрол</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#homeworks">Задачи за домашна работа</a>
+          <ul>
+            <li><a href="#submitting">Предаване</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#common-recommendations">Общи насоки правила и препоръки</a>
+          <ul>
+            <li><a href="#coding-reqirements">Изисквания към оформлението на кода</a></li>
+            <li><a href="#efficiency-requirements">Изисквания към коректността на кода</a></li>
+            <li><a href="#references">Допълнителни източници и референции</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3><em>Добре дошли!</em></h3>
+
+      <p>Добре дошли в курса по Front-end програмиране на SwiftAcademy <sup>&reg;</sup>
+        <br> Моля прочетете този документ до край за да се запознаете с естеството, целите и общите условия на курса.</p>
+
+      <p><em>Благодаря и приятно четене!</em></p>
+
+      <h3 id="purpose">Цел и продължителност</h3>
+
+      <p>Курсът има за цел да ви запознае с езика HTML, който е един от основните средства за създаване на уеб страници и сайтове. Също ще разгледаме и как да стилизираме страниците с CSS и ще научим какви са новостите, които предлага CSS3. След това ще се запознаем с езика за програмиране JavaScript, с който ще може да добавяме функционалност, валидации и да зареждаме данни към нашите HTML страници. Финалната цел на курса е всеки курсист да може да създава сам уеб сайтове и да има знанията, необходими да почне работа като младши Front-end програмист.</p>
+
+      <p>Курсът е с продължителност 3 месеца като занятията са 2 пъти седмично. Материалът е разпределен в рамките на 72 астрономически часа. Всяко занятие включва лекции и практическа част.</p>
+
+      <p><a href="#swift-academy">нагоре</a></p>
+
+      <h3 id="program">Програма</h3>
+
+      <p>Официалната програма на курса можете да видите тук: <a href="http://swift.bg/courses/html_and_css/" target="_blank">http://swift.bg/courses/html_and_css/</a></p>
+      <p>А тази, по която ние ще работим - тук: <a href="program.html" target="_blank">Програма</a></p>
+
+      <p>Преподавателят на курса запазва правото си да прави леки изменения в програмата там, където това се налага или спомага за по-качественото преподаване на материала.</p>
+
+      <p>Материалите за курса ще се предоставят чрез системата GitHub.</p>
+
+      <p>Лекторът има задължението да публикува или изпрати на курсистите всички материали, използвани по време на учебните часове. Желателно е публикуването на материалите да става <em>преди</em> или най-късно до 24 часа <em>след</em> съответната лекция.</p>
+
+      <p><a href="#swift-academy">нагоре</a></p>
+
+      <h3 id="evaluation">Оценяване и текущ контрол</h3>
+
+      <h4 id="evaluation-forming">Сформиране на оценката</h4>
+
+      <p>Крайната оценка от курса ще бъде композитна от следните 3 оценки:</p>
+
+      <ul>
+        <li>оценка на преподавателя</li>
+        <li>оценка от текущ контрол и домашни</li>
+        <li>оценка от финален изпит/проект</li>
+      </ul>
+
+      <p>Оценките ще се изчисляват в проценти или по скалата от 1 до 10.
+        <em>Например: ако оценката от домашни е 64%, в дипломата тя ще бъде 6/10</em></p>
+
+      <p>Оценката, която се поставя от преподавателя, ще се сформира от следните показатели:</p>
+
+      <ul>
+        <li>
+          мотивация
+          <ul>
+            <li><em>колко усилия даден курсист полага за да вникне в материала (например като задава въпроси в час)</em></li>
+            <li><em>желание за самоподготовка</em></li>
+          </ul>
+        </li>
+        <li>
+          самостоятелна подготовка
+          <ul>
+            <li><em>когато се показва дълбоко разбиране по преподадения материал</em></li>
+            <li><em>четене на допълнителни материали и упражняване на преподадения материал вкъщи</em></li>
+          </ul>
+        </li>
+        <li>
+          старание
+          <ul>
+            <li><em>когато предадените задачи за домашна работа имат <em>добър вид</em> (виж <a href="#coding-reqirements">Изисквания към оформлението на кода</a>) и си личи че за тях е отделено време</em>
+            </li>
+          </ul>
+        </li>
+        <li>
+          концентрация
+          <ul>
+            <li><em>показване на разбиране и вникване в материала по време на самата лекция</em></li>
+          </ul>
+        </li>
+        <li>
+          HR качества
+          <ul>
+            <li><em>умения за комуникация и работа в екип</em></li>
+            <li><em>реакция при стрес и кратки срокове</em></li>
+            <li><em>умения да предава поставените задачи в срок</em></li>
+          </ul>
+        </li>
+        <li>обща компютърна и IT грамотност</li>
+      </ul>
+
+      <h4 id="control">Текущ контрол</h4>
+
+      <p>Текущият контрол ще се провежда регулярно - на всеки няколко лекции, като преподавателят не е длъжен да известява курсистите предварително. Текущият контрол ще представлява кратък списък с въпроси върху материала преподаден до момента.</p>
+
+      <p>При сформиране на оценката от текущ контрол и домашни, <em>текущият контрол</em> ще има значително по-малка тежест.</p>
+
+      <p><a href="#swift-academy">нагоре</a></p>
+
+      <h3 id="homeworks">Задачи за домашна работа</h3>
+
+      <p>След всеки урок преподавателя ще предоставя задание за домашна работа, което ще има конкретен срок за предаване.</p>
+
+      <h4 id="submitting">Предаване</h4>
+
+      <p>Предаването ще се осъществява чрез системата GitHub</p>
+
+      <p>Няма да има наказание за непредадена в срок домашна работа, но за предалите в срок ще има поощрение при сформирането на оценката от преподавателя.</p>
+
+      <p><a href="#swift-academy">нагоре</a></p>
+
+      <h3 id="common-recommendations">Общи насоки правила и препоръки</h3>
+
+      <p>За работа по време на занятията ще използваме редактора Brackets (brackets.io).</p>
+
+      <h4 id="code-requirements">Изисквания към оформлението на кода</h4>
+
+      <ol>
+        <li>Форматът на кода, който предавате <em>трябва</em> да е стриктно идентиран: всеки "вложен" елемент/блок да е с 2 или 4 интервала по-навътре от "обграждащия" го елемент/блок (повече може да прочетете <a href="http://www.granneman.com/webdev/coding/formatting-and-indenting-your-html/" target="_blank">тук</a>)</li>
+        <li>Файловете да се именуват само с малки букви, без интервали, скоби или други специални символи.</li>
+        <li>Именуването на файлове и променливи да следва конвенциите на съответния език за програмиране.</li>
+        <li>Да се използва само латиница и само английски език, дори и при писането на коментари.</li>
+      </ol>
+
+      <p>Кода трябва да е четим и разбираем.</p>
+
+      <p><em>Кодът трябва да следва официалната конвенция и style guide за съответния език!</em></p>
+
+      <ul>
+        <li>
+          HTML:
+          <ul>
+            <li><a href="http://www.w3schools.com/html/html5_syntax.asp" target="_blank">http://www.w3schools.com/html/html5_syntax.asp</a></li>
+          </ul>
+        </li>
+        <li>
+          CSS<sup>*</sup>:
+          <br>
+          <ul>
+            <li><a href="https://make.wordpress.org/core/handbook/best-practices/coding-standards/css/" target="_blank">WordPress CSS Coding Standards</a></li>
+            <li><a href="https://google.github.io/styleguide/htmlcssguide.xml" target="_blank">Google HTML/CSS Style Guide</a></li>
+            <li>Още: <a href="https://css-tricks.com/css-style-guides/" target="_blank">https://css-tricks.com/css-style-guides/</a></li>
+          </ul>
+          <em><sup>*</sup>избирате си един style guide и си следвате само него</em>
+        </li>
+        <li>
+          JavaScript:
+          <ul>
+            <li><a href="http://www.w3schools.com/js/js_conventions.asp" target="_blank">http://www.w3schools.com/js/js_conventions.asp</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <p><em>Спазването на тези правила ще даде сериозно отражение при сформирането на оценката от преподавателя!</em></p>
+
+      <h4 id="efficiency-requirements">Изисквания към коректността на кода</h4>
+
+      <p>Кодът и файловете, които предавате трябва да са коректно написани, без грешки (по възможност и без warnings).</p>
+      <p>За да следите коректността на кода си, може да използвате следните системи и инструменти(*):</p>
+
+      <ul>
+        <li>за HTML валидация: валидаторът на W3C (<a href="https://validator.w3.org" target="_blank">https://validator.w3.org</a>)</li>
+        <li>за JavaScript: "use strict", JSLint (<a href="http://www.jslint.com/" target="_blank">http://www.jslint.com/</a>)</li>
+        <li>за CSS: CSS валидаторът на W3C (<a href="https://jigsaw.w3.org/css-validator/" target="_blank">https://jigsaw.w3.org/css-validator/</a>)</li>
+      </ul>
+
+      <p>(*) Изредените приложения са само примени, желателно е курсистите да не се ограничават само с тях.</p>
+
+      <p><em>Писането на валиден код ще даде много сериозно отражение в оценката от текущ контрол и домашни, както и в оценката от преподавателя</em></p>
+
+      <h4 id="references">Допълнителни източници и референции</h4>
+
+      <ul>
+        <li>W3Schools: <a href="http://www.w3schools.com" target="_blank">http://www.w3schools.com</a></li>
+        <li>Bootstrap: <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a></li>
+        <li>StackOverflow: <a href="http://stackoverflow.com/" target="_blank">http://stackoverflow.com/</a></li>
+      </ul>
+
+      <p><a href="#swift-academy">нагоре</a></p>
+
+      <h3 id="location">Къде сме на картата:</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d421.33503727732324!2d23.372719250765748!3d42.654021029470506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbg!4v1449789684198" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    <hr>
+
+      <div class="fb-like" data-href="https://facebook.com/swiftacad" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+      <br />
+    <p>
+      <span class="smaller">This document was created with <a href="http://dillinger.io/" target="_blank">Deligner</a></span>
+    </p>
+  </div>
+
+  <footer>
+    <p>Swift Academy 2015 &copy;</p>
+    <nav id="socilal_nav">
+      <a href="https://www.facebook.com/SwiftAcad" target="_blank"><i class="icon icon-facebook-square"></i></a>
+      <a href="https://www.linkedin.com/company/swift-academy-bg" target="_blank"><i class="icon icon-linkedin-square"></i></a>
+      <a href="http://swift.bg/" target="_blank"><i class="icon icon-external-link"></i></a>
+    </nav>
+    <small>Created by <a href="https://bg.linkedin.com/pub/evgenia-manolova/39/96a/166" target="_blank">Evgenia Manolova</a> &copy; All rights reserved</small>
+  </footer>
+</body>
+
+</html>

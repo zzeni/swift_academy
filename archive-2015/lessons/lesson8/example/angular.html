@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta author="Evgenia Manolova">
+
+    <title>Meet Angular! :)</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">-->
+
+    <style>
+      .row {
+        border: 1px black solid;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 30px auto;
+      }
+    </style>
+
+    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
+<!--    <link rel="stylesheet" href="template.css">-->
+
+    <script>
+      var app = angular.module('tryAngular', []);
+      app.controller('tryAngularController', function($scope) {
+        $scope.names = ['Joe', 'Henry', 'Jim'];
+
+        $scope.countries= [
+          {id:'BG',name:'България', style:'background-color: #f3c'},
+          {id:'DE',name:'Deuchland', style:'background-color: #3fc'},
+          {id:'FR',name:'France', style:'background-color: #3cf'},
+          {id:'IT',name:'Italy', style:'background-color: #cf3'}
+        ];
+
+        $scope.flowers = [
+                           'african corn lily, ixia',
+                           'african lily, agapanthus',
+                           'alpine thistle, eryngium',
+                           'amaryllis, hippeastrum',
+                           'amazon lily, eucharis',
+                           'arum, zantedeschia',
+                           'baby’s breath, gypsophila',
+                           'balloon flower, platycodon',
+                           'barberton daisy, gerbera',
+                           'bee balm, monarda',
+                           'bell flower, campanula',
+                           'bells of Ireland, moluccella',
+                           'bergamot, monarda',
+                           'bird of paradise, strelizia',
+                           'bloom, chrysanthemum',
+                           'blue throatwort, trachelium',
+                           'bottlebrush, banksia',
+                           'brodiaea, triteleia (syn)',
+                           'broom, genista',
+                           'calla lily, zantedeschia',
+                           'canterbury bells, campanula',
+                           'carnation, dianthus',
+                           'china aster, callistephus',
+                           'chincerinchee, ornithogalum',
+                           'chinese bellflower, platycodon',
+                           'christmas rose, hellebore',
+                           'cockscomb, celosia',
+                           'columbine, aquilegia',
+                           'coneflower, rudbeckia/echinacea',
+                           'cornflower, centaurea',
+                           'corsage orchid, cattleya',
+                           'cosmos, cosmea (syn)',
+                           'cuban lily, scilla',
+                           'daffodil, narcissus',
+                           'dill, anethum',
+                           'drumstick, craspedia',
+                           'eustoma, lisianthus (syn)',
+                           'evening primrose, oenothera',
+                           'false goat’s beard, false spirea/astilbe',
+                           'feverfew, tanacetum parthenium',
+                           'flame lily, gloriosa',
+                           'flame tip, leucadendron',
+                           'flamingo flower, anthurium',
+                           'florist’s nighmare, ornithogalum',
+                           'floss flower, ageratum',
+                           'flowering cherry, prunus',
+                           'flowering onion, allium',
+                           'forget-me-not, myosotis',
+                           'foxglove, digitalis',
+                           'foxtail lily, eremurus',
+                           'gay feather, liatris',
+                           'gentian, gentiana',
+                           'gillyflower, matthiola',
+                           'ginger, alpinia',
+                           'globe amarath, gomphrena',
+                           'globe artichoke, cynara',
+                           'globe flower, trollius',
+                           'globe thistle, echinops',
+                           'glory lily, gloriosa',
+                           'golden rod, solidago',
+                           'golden shower orchid, oncidium',
+                           'goosefoot, chenpodium',
+                           'grape hyacinth, muscari',
+                           'guelder rose, viburnum opulus',
+                           'guernsey lily, nerine',
+                           'hyacinth, hyacinthus',
+                           'jersey lily, alstroemeria',
+                           'kangaroo paw, anigozanthos',
+                           'kansas feather, liatris',
+                           'lady’s mantle, alchemilla',
+                           'lady’s slipper orchid, paphiopedilum',
+                           'larkspur, delphinium consolida',
+                           'lavender, lavandula',
+                           'lilac, syringa',
+                           'lily, lilium',
+                           'lily of the valley, convallaria',
+                           'lisianthus, eustoma',
+                           'lobster claw, heliconia',
+                           'loose strife, lysimachia',
+                           'love lies bleeding, amaranthus',
+                           'love-in-a-mist, nigella',
+                           'lupin, lupinus',
+                           'marguerite, chrysanthemum frutescens',
+                           'marigold, calendula',
+                           'masterwort, astrantia',
+                           'michaelmas daisy, aster',
+                           'mimosa, acacia',
+                           'monkshood, aconitum',
+                           'montbretia, crocosmia',
+                           'moth orchid, phalenopsis',
+                           'mum, chrysanthemum',
+                           'obedient plant, physostegia',
+                           'ox-eye daisy, leucanthemum vulgare aka chrysanthemum leucanthemum',
+                           'painter’s palette, anthurium',
+                           'peony, paeonia',
+                           'peruvian lily, alstroemeria',
+                           'pincushion protea, leucospermum',
+                           'plumed thistle, cirsium',
+                           'prairie gentian, lisianthus',
+                           'prince of Wales feather, amaranthus',
+                           'queen Anne’s lace, ammi',
+                           'queen Fabiola lily, triteleia (syn brodiaea)',
+                           'red-hot poker, kniphofia',
+                           'rose, rosa',
+                           'safari sunset, leucadendron',
+                           'safflower, carthamus',
+                           'scabious, scabiosa',
+                           'scarlet plume, euphorbia fulgens',
+                           'scorpion orchid, aranthera',
+                           'sea holly, eryngium',
+                           'sea lavender, limonium',
+                           'september flower, aster',
+                           'singapore orchid, dendrobium',
+                           'slipper orchid, paphiopedilum',
+                           'snake head, chelone',
+                           'snapdragon, antirrhinum',
+                           'sneezeweed, helenium',
+                           'snow berry, symphoricarpos',
+                           'snow on the mountain, eurphorbia marginata',
+                           'speedwell, veronica',
+                           'spider orchid, arachnis',
+                           'spray carnation, dianthus',
+                           'spurge, euphorbia',
+                           'st john’s wort, hypericum',
+                           'star of bethlehem, ornithogalum',
+                           'statice, limonium',
+                           'stock, matthiola',
+                           'stonecrop, sedum',
+                           'sugarbush, protea',
+                           'sunflower, helianthus',
+                           'sweet pea, lathyrus',
+                           'sweet sultan, centaurea',
+                           'sweet William, dianthus barbatus',
+                           'sword lily, gladiolus',
+                           'tansy, tanacetum',
+                           'tazetta, narcissus',
+                           'thistle, eryngium',
+                           'tjenkenrientjee, ornithogalum',
+                           'transvaal daisy, gerbera',
+                           'tuberose, polianthes tuberosa',
+                           'tulip, tulipa',
+                           'turban buttercup/French buttercup/Persian buttercup, ranunculus',
+                           'turtle head, chelone',
+                           'ulster mary, alstroemeria',
+                           'waxflower, chamaelaucium',
+                           'windflower, anemone',
+                           'wormwood, artemesia',
+                           'yarrow, achillea'
+        ];
+
+        $scope.flowerRanges = {
+          a: 'a-d',
+          b: 'a-d',
+          c: 'a-d',
+          d: 'a-d',
+          e: 'e-h',
+          h: 'e-h',
+          i: 'i-l',
+          j: 'i-l',
+          k: 'i-l',
+          l: 'i-l',
+          m: 'm-p',
+          n: 'm-p',
+          o: 'm-p',
+          p: 'm-p',
+          q: 'q-t',
+          r: 'q-t',
+          s: 'q-t',
+          t: 'q-t',
+          u: 'u-x',
+          v: 'u-x',
+          w: 'u-x',
+          x: 'u-x',
+          y: 'y-x',
+          z: 'y-x'
+        };
+
+        var flowersKeys = [];
+
+        $scope.flowers.forEach(function(name) { this.push({name:name, id:name.split(', ')[1]}) }, flowersKeys);
+        $scope.flowersKeys = flowersKeys;
+      });
+
+    </script>
+  </head>
+
+  <body>
+    <main data-ng-app="tryAngular" data-ng-controller="tryAngularController">
+      <div class="container">
+        <h1>
+          Meet Angular! :)
+        </h1>
+
+        <div class="row boardered">
+          Tell me something: <input type="text" data-ng-model="inputtext">
+          <ul>
+            <li data-ng-repeat="name	in names">
+              Hey {{ name }}! Did you know that {{ inputtext || '...' }}
+            </li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <form action="">
+            <label for="country">Select a country</label>
+            <select name="country" data-ng-model="selectedCountry">
+              <option data-ng-repeat="country in countries | orderBy:'id' " value="{{ country.id }}">{{ country.name }}</option>
+            </select>
+          </form>
+
+          <div class="row" data-ng-hide="selectedCountry == null" class="ng-hide">
+            <div data-ng-repeat="selected in countries | filter: {id: selectedCountry} :true">
+              <span style="{{ selected.style }}">
+              So you say you're from {{ selected.name }} ? :)
+              </span>
+            </div>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <p>
+            <input type="text" placeholder="Pick a flower" data-ng-model="flowerFilter">
+          </p>
+          <ul data-ng-hide="flowerFilter == null || flowerFilter == ''" class="ng-hide">
+            <li data-ng-repeat="flower in flowersKeys | filter: flowerFilter">
+              <a href="http://www.flowers.org.uk/flowers-names/{{ flowerRanges[flower.id.charAt(0)] }}/{{ flower.id }}" target="_blank">{{ flower.name }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <style>
+      .about-image img {
+        vertical-align: top;
+        width: 140px;
+        border-radius: 100%;
+      }
+      
+      .about-image {
+        background-color: lightblue;
+        text-align: center;
+      }
+      
+      .about-info {
+        background-color: aliceblue;
+      }
+      
+      .col {
+        display: table-cell;
+      }
+      
+      .col, td {
+        padding: 0 10px;
+        vertical-align: middle;
+      }
+      
+      .box {
+        display: table;
+      }
+      
+      .row {
+        display: table-row;
+      }
+      
+      .about-info .box, .about-info table {
+        font-family: monospace;
+        list-style: none;
+        line-height: 1.5;
+        font-size: 1.5em;
+        padding-left: 10px;
+      }
+      
+      .about-info .col:first-child,
+      .about-info th {
+        text-align: right;
+        font-weight: bold;
+      }
+    </style> 
+  </head> 
+  <body>
+    <h1>Homework 5: solution samples</h1>
+    <!-- Begin: Table solution-->
+    <section id="table_solution">
+      <h2>About me: The table solution</h2>
+      <table>
+        <tr>
+          <td rowspan="4" class="about-image"><img src="http://swift.bg/images/staff/evgenia_manolova.jpg"></td>
+          <td class="about-info">
+            <table>
+              <tr>
+                <th>Name</th>
+                <td>Evgenia Manolova</td>
+              </tr>
+              <tr>
+                <th>email</th>
+                <td><a href="mailto:emanolova@gmail.com">emanolova@gmail.com</a></td>
+              </tr>
+              <tr>
+                <th>github</th>
+                <td><a href="http://github.com/zzeni">link</a></td>
+              </tr>
+              <tr>
+                <th>LinkedIn</th>
+                <td><a href="https://bg.linkedin.com/pub/evgenia-manolova/39/96a/166
+        ">link</a></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <!-- End of Table solution-->
+    <!-- Begin: Css solution-->
+    <section id="css_solution">
+      <h2>About me: The css solution</h2>
+      <div>
+        <div class="box">
+          <div class="row">
+            <div class="col about-image">
+              <img src="http://swift.bg/images/staff/evgenia_manolova.jpg">
+            </div>
+            <div class="col about-info">
+              <div class="box">
+                <div class="row">
+                  <div class="col">Name</div>
+                  <div class="col">Evgenia Manolova</div>
+                </div>
+                <div class="row">
+                  <div class="col">email</div>
+                  <div class="col"><a href="mailto:emanolova@gmail.com">emanolova@gmail.com</a></div>
+                </div>
+                <div class="row">
+                  <div class="col">github</div>
+                  <div class="col"><a href="http://github.com/zzeni">link</a></div>
+                </div>
+                <div class="row">
+                  <div class="col">LinkedIn</div>
+                  <div class="col"><a href="https://bg.linkedin.com/pub/evgenia-manolova/39/96a/166
+        ">link</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Css solution-->
+  </body>
+</html>

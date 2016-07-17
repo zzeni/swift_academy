@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Forms Example</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <form method="get" action="foo">
+
+First Name: <input type="text" name="first_name" /> <br />
+Last Name: <input type="text" name="last_name" /> <br />
+
+<input type="submit" name="action" value="Submit" />
+
+</form>
+
+    <h2>Web forms examples</h2>
+
+    <section id="text-input">
+      <h3>Text inputs</h3>
+      <form action="./" method="get">
+        <p>
+          <label for="sender-name">Your name:</label>
+          <input type="text" name="sender-name" value="Jeni" placeholder="Your Name Here" required disabled>
+        </p>
+        <p>
+          <label for="email">email:</label>
+          <input type="email" name="email" required placeholder="user@example.com" value="email@email.com" readonly>
+        </p>
+        <p>
+          <label for="content">Your message:</label>
+        </p>
+        <p>
+          <textarea name="content" rows="5">enter your message here</textarea>
+        </p>
+        <p>
+          <input type="reset" value="reset">
+          <input type="submit" name="submit" value="submit">
+        </p>
+      </form>
+    </section>
+
+    <hr>
+
+    <section id="select-inputs">
+      <h3>Selects</h3>
+      <form action="./" method="get">
+        <p>
+          <label for="country-select">Select a country:</label>
+          <select name="country-select" required>
+            <option value="">--</option>
+            <option value="BG" selected>Bulgaria</option>
+            <option value="FR">France</option>
+            <option value="ES">Spain</option>
+            <option value="GR">Germany</option>
+            <option value="GB">UK</option>
+          </select>
+        </p>
+        <p>
+          <label for="languages">Spoken languages:</label>
+        </p>
+        <p>
+          <input name="languages" type="checkbox" value="EN" checked> English
+        </p>
+        <p>
+          <input name="languages" type="checkbox" value="BG"> Bulgarian
+        </p>
+        <p>
+          <input name="languages" type="checkbox" value="FR" checked> French
+        </p>
+        <p>
+          <label for="satisfaction">Do you like my page?</label>
+        </p>
+        <p>
+          <input type="radio" name="satisfaction" value="high"> Yes
+          <input type="radio" name="satisfaction" value="low"> No
+          <input type="radio" name="satisfaction" value="moderate" checked> Maybe
+        </p>
+        <p>
+          <input type="submit" name="submit" value="submit">
+        </p>
+      </form>
+    </section>
+
+    <hr>
+
+    <section id="special-inputs">
+      <h3>Special inputs</h3>
+      <form action="./" method="get">
+
+        <!-- You can't see this field on the screen -->
+        <input type="hidden" value="1" name="my-hidden-field">
+
+        <p>
+          <label for="password">Enter a password:</label>
+          <input type="password">
+        </p>
+
+        <input type="file" name="file">
+
+        <p>
+          <input type="submit" name="submit" value="submit">
+        </p>
+      </form>
+    </section>
+
+    <hr>
+
+    <section id="html5-inputs">
+      <h3>HTML5 input types</h3>
+      <form action="./" method="get">
+        <fieldset>
+          <p>
+            <label for="color">Pick a colour:</label>
+            <input type="color" name="color" value="#ffff00">
+          </p>
+          <p>
+            <label for="b-day">When is your birthday?</label>
+            <input name="b-day" type="date">
+          </p>
+          <p>
+            <input type="submit" name="submit" value="submit">
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>

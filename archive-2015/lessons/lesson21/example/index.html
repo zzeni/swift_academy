@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Evgenia Manolova">
+
+  <title>Iframe example</title>
+
+  <style>
+    iframe {
+      display: block;
+      margin: 50px auto;
+    }
+
+    .fb_iframe_widget {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 460px) {
+      #responsiveIframe {
+        height: 200px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      #responsiveIframe {
+        height: 350px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      #responsiveIframe {
+        height: 660px;
+      }
+    }
+
+    .small {
+      font-size: 0.8em;
+    }
+
+    .rem-small {
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+
+<body>
+  <p>
+    Normal text
+  </p>
+  <div class="small">
+    <p>
+      Smaller text
+    </p>
+    <p class="small">
+      2xSmaller text
+    </p>
+    <p class="rem-small">
+      REM 2xSmaller text
+    </p>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11736.72417014225!2d23.371151949999998!3d42.657518749999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbg!4v1452169381252" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+  <div class="fb-post" data-href="https://www.facebook.com/sofiagreentour/posts/935135203238383:0" data-width="500">
+    <div class="fb-xfbml-parse-ignore">
+      <blockquote cite="https://www.facebook.com/sofiagreentour/posts/935135203238383:0">
+        <p>&#x412;&#x435;&#x441;&#x435;&#x43b;&#x430; &#x41a;&#x43e;&#x43b;&#x435;&#x434;&#x430;, &#x441;&#x43a;&#x44a;&#x43f;&#x438; &#x43f;&#x440;&#x438;&#x44f;&#x442;&#x435;&#x43b;&#x438;! &#x414;&#x430; &#x441;&#x442;&#x435; &#x437;&#x434;&#x440;&#x430;&#x432;&#x438;, &#x437;&#x430;&#x441;&#x43c;&#x44f;&#x43d;&#x438; &#x438; &#x441; &#x43f;&#x435;&#x441;&#x435;&#x43d; &#x432; &#x441;&#x44a;&#x440;&#x446;&#x430;&#x442;&#x430;!</p>Публикувахте от <a href="https://www.facebook.com/sofiagreentour/">Sofia Green Tour</a> в&nbsp;<a href="https://www.facebook.com/sofiagreentour/posts/935135203238383:0">25 декември 2015 г.</a></blockquote>
+    </div>
+  </div>
+
+  <iframe id="responsiveIframe" width="100%" height="200px" src="http://greatnomad.com/9-reasons-to-move-to-bulgaria"></iframe>
+
+  <div id="fb-root"></div>
+  <script>
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v2.3";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+</body>
+
+</html>

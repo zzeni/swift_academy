@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Animation example</title>
+  <style>
+    #animated {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 0;
+      -webkit-animation: mymove 10s infinite;
+      /* Chrome, Safari, Opera */
+      animation: mymove 10s infinite;
+    }
+    /* Chrome, Safari, Opera */
+
+    @-webkit-keyframes mymove {
+      0% {
+        transform: translate(160px, 0px) rotate(90deg);
+        background: red;
+      }
+      20% {
+        transform: translate(0, 120px) rotate(-90deg);
+        background: blue;
+      }
+      40% {
+        transform: translate(80px, 240px) rotate(90deg);
+        background: yellow;
+      }
+      60% {
+        transform: translate(240px, 240px) rotate(-90deg);
+        background: green;
+      }
+      80% {
+        transform: translate(320px, 120px) rotate(90deg);
+        background: purple;
+      }
+      100% {
+        transform: translate(160px, 0px) rotate(-90deg);
+        background: red;
+      }
+    }
+
+    @keyframes mymove {
+      0% {
+        transform: translate(160px, 0px) rotate(90deg);
+        background: red;
+      }
+      20% {
+        transform: translate(0, 120px) rotate(-90deg);
+        background: blue;
+      }
+      40% {
+        transform: translate(80px, 240px) rotate(90deg);
+        background: yellow;
+      }
+      60% {
+        transform: translate(240px, 240px) rotate(-90deg);
+        background: green;
+      }
+      80% {
+        transform: translate(320px, 120px) rotate(90deg);
+        background: purple;
+      }
+      100% {
+        transform: translate(160px, 0px) rotate(-90deg);
+        background: red;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background">
+    <canvas id="canvas" width="400px" height="300px"></canvas>
+  </div>
+  <div id="animated"></div>
+
+  <script>
+    var c = document.getElementById("canvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.fillStyle = "black";
+    ctx.moveTo(200, 40);
+    ctx.lineTo(40, 160);
+    ctx.lineTo(120, 280);
+    ctx.lineTo(280, 280);
+    ctx.lineTo(360, 160);
+    ctx.lineTo(200, 40);
+    ctx.stroke();
+  </script>
+</body>
+
+</html>
