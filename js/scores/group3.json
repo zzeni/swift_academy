@@ -46,13 +46,13 @@
       },
       "proj_layout": 10,
       "proj_design": 10,
-      "proj_navigation": 0,
+      "proj_navigation": 10,
       "proj_responsiveness": 5,
-      "proj_js": 5,
-      "proj_effects": 10,
+      "proj_js": 10,
+      "proj_effects": 20,
       "proj_code": 10,
       "proj_use": 10,
-      "proj_complete": 0,
+      "proj_complete": 5,
       "recommendation": 0
     },
     {
@@ -209,15 +209,15 @@
         "css": 0,
         "js": 0
       },
-      "proj_layout": 0,
-      "proj_design": 0,
-      "proj_navigation": 0,
-      "proj_responsiveness": 0,
+      "proj_layout": 10,
+      "proj_design": 5,
+      "proj_navigation": 10,
+      "proj_responsiveness": 10,
       "proj_js": 0,
-      "proj_effects": 0,
+      "proj_effects": 5,
       "proj_code": 0,
-      "proj_use": 0,
-      "proj_complete": 0,
+      "proj_use": 10,
+      "proj_complete": 5,
       "recommendation": 0
     },
     {
@@ -597,13 +597,13 @@
       "proj_layout": 10,
       "proj_design": 10,
       "proj_navigation": 10,
-      "proj_responsiveness": 15,
-      "proj_js": 0,
+      "proj_responsiveness": 20,
+      "proj_js": 10,
       "proj_effects": 10,
       "proj_code": 10,
       "proj_use": 10,
       "proj_complete": 5,
-      "recommendation": "остава още малко да се доизпипа responsiveness-a. Също така, трябва да се направи някаква JS функционалност като например да се зареждат текстовете от json файл или пък да се преведе на друг език или пък да се валидира user input-a. Липсва форма за контакт."
+      "recommendation": ""
       },
     {
       "name": "Валентин Недялков",
