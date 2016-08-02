@@ -1,4 +1,0 @@
-<input type="text" ng-model="model" placeholder="{{prompt}}" ng-keydown="selected=false" ng-click="auto&&(selected=!selected)"/><br/>
-<ul class="dropdown-menu" ng-hide="!items.length || selected">
-	<li class="item" ng-repeat="item in items | filter:model  track by $index" ng-click="handleSelection(item[label])" style="cursor:pointer" ng-class="{active:isCurrent($index)}" ng-mouseenter="setCurrent($index)">{{item[label]}}</li>
-</ul>
