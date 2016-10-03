@@ -1,7 +1,7 @@
 'use_strict';
 
 $(document).on("ready", function() {
-  var version = "0.12"
+  var version = "0.13"
 
   $('.lesson-preview a').click(function(e) {
     var lesson = $(this).attr('data-target');
@@ -12,7 +12,7 @@ $(document).on("ready", function() {
     if (htmlLessons.indexOf(lesson_index) > -1)
       lesson_link += lesson + '/index.html';
     else
-      lesson_link += 'lesson.pdf';
+      lesson_link += lesson + '.pdf';
 //    var lesson_page_link = 'lessons/' + lesson + '/index.html';
 //    var github_example_link = 'https://github.com/zzeni/swift_academy/tree/master/lessons/' + lesson + '/examples';
     var example_link = 'lessons/' + lesson + '/examples/index.html';
