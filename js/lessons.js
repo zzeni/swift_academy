@@ -1,13 +1,13 @@
 'use_strict';
 
 $(document).on("ready", function() {
-  var version = "0.11"
+  var version = "0.12"
 
   $('.lesson-preview a').click(function(e) {
     var lesson = $(this).attr('data-target');
     var lesson_index =  lesson.split("lesson")[1];
     if (lesson_index.length == 1) lesson_index = '0' + lesson_index;
-    var htmlLessons = ['01', '20', '21', '22'];
+    var htmlLessons = []; // ['01', '20', '21', '22'];
     var lesson_link = 'lessons/' + lesson + '/';
     if (htmlLessons.indexOf(lesson_index) > -1)
       lesson_link += lesson + '/index.html';
@@ -19,10 +19,10 @@ $(document).on("ready", function() {
     var downlod_link = 'lessons/' + lesson + '/examples.zip';
     var homework_link = 'https://github.com/zzeni/swift-academy-homeworks/tree/master/tasks/L' + lesson_index;
     var homework_src = 'lessons/' + lesson + '/hw-task.html';
-    
+
     lesson_link = lesson_link + "?version=" + version;
     downlod_link = downlod_link + "?version=" + version;
-    
+
     $('.lesson-preview .selected').removeClass('selected');
     $(this).parent().addClass('selected');
     $('#lesson-name').text('Lesson ' + lesson_index);
