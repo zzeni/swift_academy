@@ -1,0 +1,31 @@
+header {
+  background-color: darkseagreen;
+  padding: 15px;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+}
+
+footer {
+  background-color: darkseagreen;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  line-height: 2em;
+  text-align: center;
+}

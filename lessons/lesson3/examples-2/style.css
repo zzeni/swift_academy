@@ -1,0 +1,50 @@
+header {
+  position: relative;
+  text-align: center;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+main {
+  width: 70%;
+  margin: auto;
+}
+
+nav {
+  padding: 10px;
+  text-align: center;
+  background-color: burlywood;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+}
+
+aside {
+  float: left;
+  background-color: antiquewhite;
+  padding: 30px;
+}
+
+section {
+  float: left;
+  padding-left: 30px;
+}
+
+footer {
+  clear: left;
+  background-color: burlywood;
+  color: white;
+  height: 40px;
+  padding: 10px;
+  line-height: 20px;
+  text-align: center;
+}
