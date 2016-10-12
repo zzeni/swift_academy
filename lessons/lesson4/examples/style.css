@@ -1,94 +1,49 @@
-* {
-/*  box-sizing: border-box;*/
-}
-
-body {
-  font-family: sans-serif;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Shadows Into Light', cursive;
-}
-
-header {
-  position: relative;
-  text-align: center;
-  font-family: cursive;
-  font-size: 20px;
-}
-
-main {
-  display: table;
-}
-
-.side-nav {
-  position: fixed;
-  
-}
-
-.main-nav {
-  padding: 10px;
-  text-align: center;
-  background-color: burlywood;
-  display: block;
-}
-
-.main-nav ul li {
-  list-style-type: none;
-  display: inline-block;
+td,
+th {
   padding: 10px;
 }
 
-.main-nav a {
+th {
+  text-align: right;
+  background-color: #ccc;
+  padding-left: 20px;
+}
+
+td {
+  background-color: #f1f1f1;
+  padding-right: 20px;
+}
+
+nav a {
+  font-family: Helvetica, sans-serif;
+  padding: 10px 20px;
+  color: white;
   text-decoration: none;
-  font-size: 1.2em;
-  color: white;
-}
-
-aside {
-  width: 20%;
-  background-color: antiquewhite;
-  padding: 30px;
-  display: table-cell;
-}
-
-h2 {
-/*  padding-bottom: 5px;*/
-/*  border-bottom: 1px solid black;*/
-}
-
-section {
-  padding-left: 30px;
-  display: table-cell;
-}
-
-footer {
-  background-color: burlywood;
-  color: white;
-  height: 40px;
-  padding: 10px;
-  line-height: 20px;
   text-align: center;
+  width: 100px;
+  display: inline-block;
 }
 
-.images img {
-  width: 200px;
+.green {
+  background-color: #689f5b;
 }
 
-@media screen and (max-width: 600px) {
-  section, aside {
-    display: table-row;
-    width: 100%;
-  }
+.yellow {
+  background-color: #fbc701;
 }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+.red {
+  background-color: #d11f00;
+}
+
+.cyan {
+  background-color: #0292bf;
+}
+
+.top-link {
+  text-decoration: none;
+}
+
+.top-link::before {
+  content: "\2191";
+}
