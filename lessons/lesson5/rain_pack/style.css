@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body, ul, video, audio {
+  padding: 0;
+  margin: 0;
+}
