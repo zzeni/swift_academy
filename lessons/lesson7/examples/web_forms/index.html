@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    form div {
+      margin: 10px;
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <form action="" method="get">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="your username here">
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="your email here">
+    </div>
+
+    <div>
+      <input id="choice1" type="checkbox" name="choice" value="first">
+      <label for="choice1">Избери ме</label>
+    </div>
+    <div>
+      <input id="choice2" type="checkbox" name="choice" value="second" checked>
+      <label for="choice2">Мен също!</label>
+    </div>
+
+    <p>
+      Which radio do you prefer?
+    </p>
+
+    <div>
+      <input type="radio" id="radio1" name="radios" value="r1" checked>
+      <label for="radio1">Radio 1</label>
+    </div>
+
+    <div>
+      <input type="radio" id="radio2" name="radios" value="r2">
+      <label for="radio2">Radio 2</label>
+    </div>
+
+    <div>
+      Your birthdate:
+      <input type="date">
+
+    </div>
+
+    <div>
+      Your age:
+      <input id="range" type="range" min="0" max="100">
+      <span id="range_value"></span>
+    </div>
+
+    <div>
+      <input type="color" value="#ff0000">
+    </div>
+
+    <div>
+      Държава:
+      <select name="country" required>
+        <option readonly>Моля изберете ..</option>
+        <option value="BG">България</option>
+        <option value="UK">UK</option>
+        <option value="FR">France</option>
+        <option value="ES">Spain</option>
+      </select>
+    </div>
+
+    <div>
+      <input type="submit" value="Изпращане">
+    </div>
+</form>
+<input type="text"> - стандартно
+<input type="password"> - не показва изписаният от потребителя текст
+<input type="email"> - същото като text, но се прилага валидация за email
+<textarea col="20" row="5"><textarea> - това е поле за писане на дълъг текст
+  HTML5: url, date, color, number, range
+  <script>
+    $("#range").on("input", function (e) {
+      $("#range_value").text($(this).val());
+    })
+  </script>
+</body>
+</html>
