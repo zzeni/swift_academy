@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The square task</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    
+    body {
+      font-family: sans-serif;
+    }
+    
+    .square {
+      width: 200px;
+      height: 200px;
+      color: white;
+    }
+    
+    .red {
+      background-color: red;
+    }
+    
+    .blue {
+      background-color: blue;
+    }
+    
+    .green {
+      background-color: green;
+    }
+    
+    .black {
+      background-color: black;
+    }
+    
+    /* Bonus points if you can make the text be centered in the square */s
+    .square {
+      display: table;
+    }
+    .square p {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+    
+    /* Smallest first (<399px) */
+    @media screen and (max-width: 399px), (max-height: 399px) {
+      .square {
+        width: 100%;
+      }
+    }
+    
+    /* Medium screens: 400 - 799 */
+    @media screen and (min-width: 400px) and (max-width: 799px) and (min-height: 400px) {
+      .square { 
+        position: absolute;
+      }
+    }
+    /* 400 - 499 */
+    @media screen and (min-width: 400px) and (max-width: 499px) {
+      .blue {
+        right: 0;
+      }
+      
+      .green {
+        bottom: 0;
+      }
+      
+      .black {
+        right: 0;
+        bottom: 0;
+      }
+    }
+    /* 500 - 599 */
+    @media screen and (min-width: 500px) and (max-width: 599px) {
+      .green {
+        right: 0;
+      }
+      
+      .black {
+        bottom: 0;
+      }
+      
+      .red {
+        right: 0;
+        bottom: 0;
+      }
+    }
+    /* 600 - 699 */
+    @media screen and (min-width: 600px) and (max-width: 699px) {
+      .black {
+        right: 0;
+      }
+      
+      .red {
+        bottom: 0;
+      }
+      
+      .blue {
+        right: 0;
+        bottom: 0;
+      }
+    }
+    /* 700 - 799 */
+    @media screen and (min-width: 700px) and (max-width: 799px) {
+      .red {
+        right: 0;
+      }
+      
+      .blue {
+        bottom: 0;
+      }
+      
+      .green {
+        right: 0;
+        bottom: 0;
+      }
+    }
+    
+    /* > 800 */
+    @media screen and (min-width: 800px) {
+      .square {
+        float: left;
+      }
+    }
+    
+    
+  </style>
+</head>
+
+<body>
+  <div class="square red">
+    <p>
+      RED
+    </p>
+  </div>
+  <div class="square blue">
+    <p>
+      BLUE
+    </p>
+  </div>
+  <div class="square green">
+    <p>
+      GREEN
+    </p>
+  </div>
+  <div class="square black">
+    <p>
+      BLACK
+    </p>
+  </div>
+</body>
+
+</html>

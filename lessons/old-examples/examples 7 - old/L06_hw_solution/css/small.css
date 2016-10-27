@@ -1,0 +1,20 @@
+main {
+  background-color: linen;
+}
+
+#responsiveCircle {
+  background-color: olive;
+}
+
+#responsiveText:before {
+  content: "small";
+  display: block;
+  line-height: 1em;
+}
+
+#responsiveText:after {
+  clear: left;
+  font-size: .5em;
+  content: "< 460px";
+  text-transform: lowercase;
+}

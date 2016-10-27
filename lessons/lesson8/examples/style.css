@@ -1,0 +1,57 @@
+body {
+  display: flex;
+}
+
+main {
+  margin: 0 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.nav-btn {
+  display: block;
+  width: 120px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align:center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-btn:hover {
+  background-color: #e1e1e1;
+}
+
+a:visited {
+  color: red;
+}
+
+a:focus, input:focus {
+  color: orange;
+}
+
+button {
+  background-color: lightblue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightblue cadetblue cadetblue lightblue;
+}
+
+button:active {
+  border-color: cadetblue lightblue lightblue cadetblue;
+}
+
+button:active, button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+div {
+  margin: 10px;
+}
+
