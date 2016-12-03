@@ -20,7 +20,7 @@ $(document).ready(function () {
       event.preventDefault();
     }
   });
-  
+
   $('#username').keyup(function (event) {
     try {
       fieldValidate(event.target, /^[\w\d]+$/);
@@ -34,12 +34,12 @@ $(document).ready(function () {
       }
     }
   });
-  
+
   $('input').blur(function (event) {
     if ($(event.target).parent().hasClass('has-error'))
       clearFeedback($(event.target));
   });
-  
+
   function formValidate(form) {
     fieldValidate(form.username, /^[\w\d]+$/);
     fieldValidate(form.email, /^[^@]+@[^\.@]+(?:\.[^\.@]+)+$/);
@@ -52,7 +52,7 @@ $(document).ready(function () {
     var fieldName = input.attr('name').replace("_", " ");
     var value = input.val();
     var error = "";
-    
+
     clearFeedback(input);
 
     if (!value) {
@@ -61,15 +61,15 @@ $(document).ready(function () {
       var msg = regExMsg || "is invalid";
       error = new Error(fieldName + " " + msg);
     }
-    
-    if (error) {      
+
+    if (error) {
       error.name = "FieldValidationError";
       error.target = input;
-      
+
       throw error;
     }
   }
-  
+
   function setError(input, errMsg) {
     var parent = input.parent();
     clearFeedback(input);
@@ -77,14 +77,14 @@ $(document).ready(function () {
     parent.find('.failure').show();
     parent.find('.help-block').text(errMsg).show();
   }
-  
+
   function setSuccess(input, errMsg) {
     var parent = input.parent();
     clearFeedback(input);
     parent.find('.success').show();
     parent.addClass('has-success has-feedback');
   }
-  
+
   function clearFeedback(input) {
     var parent = input.parent();
     parent.find('.success').hide();

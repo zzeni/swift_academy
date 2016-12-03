@@ -68,14 +68,15 @@
               <li>навигация</li>
               <li>responsiveness</li>
               <li>смисъл (реално приложение)</li>
-              <li>функционалност</li>
+              <li>JavaScript функционалност</li>
+              <li>четене от база данни (json)</li>
+              <li>ООП</li>
             </ul>
           </li>
           <li>
             <h3>Допълнителни</h3>
             <p>(следните компоненти са специфични и са необходими само за някои проекти)</p>
             <ul>
-              <li>свързване с бекенд</li>
               <li>анимации</li>
               <li>бисквитки</li>
               <li>векторни графики</li>
@@ -84,7 +85,7 @@
             </ul>
           </li>
           <li>
-            <h3>Срок за предаване: 15ти юли!</h3>
+            <h3>Срок за предаване: <strong>11ти януари</strong>!</h3>
           </li>
         </ul>
       </section>
@@ -92,98 +93,59 @@
       <section id="projects">
         <h2>Проекти</h2>
         <ul id="accordion">
-          <li id="#project0">
-            <h3>Portfolio</h3>
-            <div class="project-description">
-              <ul>
-                <li>Multipage страница
-                  <ul>
-                    <li>wlcome page</li>
-                    <li>about me</li>
-                    <li>my projects</li>
-                    <li>hire me</li>
-                  </ul>
-                </li>
-                <li>Проектите да се зареждат от JSON файл</li>
-                <li>Да поддържа 2 езика - български и английски</li>
-                <li>Да съдържа CSS анимация или js ефекти</li>
-                <li>всеки проект да може да се отваря и разглежда самостоятелно</li>
-                <li>hire me страницата трябва да има форма за наемане, която да съдържа:
-                  <ul>
-                    <li>избор на услуга, технология и срок за изпълнение</li>
-                    <li>данни на възложителя (име, телефон, имейл)</li>
-                    <li>изчисление на ориентировъчна цена спрямо избраните параметри</li>
-                  </ul>
-                </li>
-                <li>Интеграция с google+, facebook, или linkedin</li>
-              </ul>
-              <!--
-                  <h4>Примери:</h4>
-                  <ul>
-                    <li><a href="http://www.bulmobile.com/">bulmobile.com</a></li>
-                    <li><a href="https://www.teahousesofia.com/magazin/page/2/">teahousesofia.com</a></li>
-                    <li><a href="http://www.franklywines.com/wines.aspx">franklywines.com</a></li>
-                    <li><a href="https://canopy.co/">canopy.co</a></li>
-                  </ul>
-  -->
-            </div>
-          </li>
           <li id="#project1">
             <h3>Уеб магазин</h3>
             <div class="project-description">
               <ul>
-                <li>логин на потребители - опционално</li>
-                <li>разпределение на продуктите по категории</li>
-                <li>търсене по текст</li>
-                <li>търсене по филтри</li>
+                <li>логин на потребители - опционално (данните се зареждат от JSON база с данни)</li>
+                <li>разпределение на продуктите по категории (продуктите и категориите се зареждат от JSON база с данни)</li>
+                <li>търсене по филтри (цена, категория, текст) и сортиране</li>
                 <li>показване на продуктите като списък</li>
                 <li>показване на отделен продукт</li>
                 <li>сравняване на 2 продукта - опционално</li>
                 <li>кошница</li>
                 <li>страница за контакти</li>
               </ul>
-              <!--
-                  <h4>Примери:</h4>
-                  <ul>
-                    <li><a href="http://www.bulmobile.com/">bulmobile.com</a></li>
-                    <li><a href="https://www.teahousesofia.com/magazin/page/2/">teahousesofia.com</a></li>
-                    <li><a href="http://www.franklywines.com/wines.aspx">franklywines.com</a></li>
-                    <li><a href="https://canopy.co/">canopy.co</a></li>
-                  </ul>
-  -->
+              <h4>Примери:</h4>
+              <ul>
+                <li><a href="http://www.bulmobile.com/">bulmobile.com</a></li>
+                <li><a href="https://www.teahousesofia.com/magazin/page/2/">teahousesofia.com</a></li>
+                <li><a href="http://www.franklywines.com">franklywines.com</a></li>
+                <li><a href="https://canopy.co/">canopy.co</a></li>
+              </ul>
             </div>
           </li>
           <li id="#project2">
             <h3>Блог</h3>
             <div class="project-description">
               <ul>
-                <li>логин на потребители (не е задължително свързване с бекенд, може да се симулира чрез javascript)</li>
+                <li>логин на потребители - опционално (данните се зареждат от JSON база с данни)</li>
+                <li>10-12 статии (зареждат се от JSON база с данни), които имат: заглавие, автор, форматиран текст (html или markdown), дата на публикуване, оценка</li>
                 <li>заглавна страница</li>
-                <li>търсене по автор</li>
-                <li>търсене по текст в постовете</li>
-                <li>преглед на авторите</li>
-                <li>преглед на постовете</li>
+                <li>търсене по филтри (автор, текст) и сортиране на статиите по дата или рейтинг</li>
+                <li>преглед на авторите като списък</li>
+                <li>преглед на статиите като списък</li>
+                <li>преглед на отделна статия</li>
                 <li>писане и публикуване на постове през редактор</li>
-                <li>валидация на публикациите</li>
-                <li>публикуване на коментари - опционално</li>
+                <li>публикуване на оценка - опционално</li>
                 <li>бутони за споделяне в социалните мрежи</li>
               </ul>
-              <!--
-                  <h4>Примери:</h4>
-                  <ul>
-                    <li><a href="https://blog.pinterest.com/en">blog.pinterest.com</a></li>
-                    <li><a href="https://googleblog.blogspot.bg/">blogspot.bg</a></li>
-                    <li><a href="http://www.thebigroundtable.com/">thebigroundtable.com</a></li>
-                    <li><a href="http://callmenick.com/post/simple-responsive-tabs-javascript-css">callmenick.com</a></li>
-                  </ul>
-  -->
+              <h4>Примери:</h4>
+              <ul>
+                <li><a href="https://css-tricks.com/">css-tricks.com</a></li>
+                <li><a href="https://blog.codepen.io/">blog.codepen.io</a></li>
+                <li><a href="https://googleblog.blogspot.bg/">blogspot.bg</a></li>
+                <li><a href="http://www.thebigroundtable.com/">thebigroundtable.com</a></li>
+                <li><a href="http://callmenick.com/post/simple-responsive-tabs-javascript-css">callmenick.com</a></li>
+              </ul>
             </div>
           </li>
           <li id="#project3">
             <h3>Сайт за новини</h3>
             <div class="project-description">
               <ul>
-                <li>админ достъп (може да се симулира)</li>
+                <li>админ достъп (логин данните се зареждат от JSON база с данни или конфиг файл)</li>
+                <li>10-12 новини (данните се зареждат от JSON база с данни), които имат: заглавие, снимка, дата, текст</li>
                 <li>публикуване на новина</li>
                 <li>търсене в новините</li>
                 <li>начална страница - с полседната новина най-отпред (и акордеон от по-стари новини или нещо такова)</li>
@@ -193,22 +155,19 @@
                 <li>about страница/секция</li>
                 <li>contact страница/секция</li>
               </ul>
-              <!--
-                  <h4>Примери:</h4>
-                  <ul>
-                    <li><a href="http://www.dnevnik.bg/">dnevnik.bg</a></li>
-                    <li><a href="http://www.nenovinite.com/">nenovinite.com</a></li>
-                    <li><a href="http://www.dnes.bg/">dnes.bg</a></li>
-                    <li></li>
-                  </ul>
-  -->
+              <h4>Примери:</h4>
+              <ul>
+                <li><a href="http://www.dnevnik.bg/">dnevnik.bg</a></li>
+                <li><a href="http://www.nenovinite.com/">nenovinite.com</a></li>
+                <li><a href="http://www.dnes.bg/">dnes.bg</a></li>
+              </ul>
             </div>
           </li>
           <li id="#project4">
             <h3>Online журнал</h3>
             <div class="project-description">
               <ul>
-                <li>админ достъп (може да се симулира)</li>
+                <li>админ достъп (логин данните се зареждат от JSON база с данни или конфиг файл)</li>
                 <li>публикуване на статия</li>
                 <li>търсене в статиите</li>
                 <li>водещи статии (трябва да изпъкват)</li>
@@ -218,21 +177,19 @@
                 <li>about страница/секция</li>
                 <li>contact страница/секция</li>
               </ul>
-              <!--
-                  <h4>Примери:</h4>
-                  <ul>
-                    <li><a href="http://www.cosmopolitan.bg/">cosmopolitan.bg</a></li>
-                    <li><a href="http://www.primermagazine.com/">primermagazine.com</a></li>
-                    <li><a href="http://spisanie.manager.bg/">manager.bg</a></li>
-                  </ul>
-  -->
+              <h4>Примери:</h4>
+              <ul>
+                <li><a href="http://www.cosmopolitan.bg/">cosmopolitan.bg</a></li>
+                <li><a href="http://www.primermagazine.com/">primermagazine.com</a></li>
+                <li><a href="http://spisanie.manager.bg/">manager.bg</a></li>
+              </ul>
             </div>
           </li>
           <li id="#project5">
             <h3>Сайт за фото/аудио/видео албуми</h3>
             <div class="project-description">
               <ul>
-                <li>юзер логин (може да се симулира)</li>
+                <li>юзер логин (данните се зареждат от JSON база с данни)</li>
                 <li>създаване на албум</li>
                 <li>добавяне на аудио/видео/картинка</li>
                 <li>подреждане на албумите</li>
@@ -241,54 +198,49 @@
                 <li>бутон за лайк/споделяне</li>
                 <li>рейтинг система</li>
               </ul>
-              <!--
-                  <h4>Примери:</h4>
-                  <ul>
-                    <li><a href="https://vimeo.com">vimeo.com</a></li>
-                    <li><a href="https://www.flickr.com/">flickr.com</a></li>
-                    <li><a href="https://soundcloud.com/">soundcloud.com</a></li>
-                  </ul>
-  -->
+              <h4>Примери:</h4>
+              <ul>
+                <li><a href="https://vimeo.com">vimeo.com</a></li>
+                <li><a href="https://www.flickr.com/">flickr.com</a></li>
+                <li><a href="https://soundcloud.com/">soundcloud.com</a></li>
+              </ul>
             </div>
           </li>
           <li id="#project6">
-            <h3>Сайт за преглед на мобилни телефони (или нещо друго по ваше желание)</h3>
+            <h3>Сайт за сравняване на мобилни телефони</h3>
             <div class="project-description">
               <ul>
-                <li>админ достъп (може да се симулира)</li>
+                <li>админ достъп (логин данните се зареждат от JSON база с данни или конфиг файл)</li>
+                <li>10-12 различни телефона (данните се зареждат от JSON база с данни)</li>
+                <li>Всеки телефон има: име, марка, снимка, цена и около 10тина технически параметри: дисплей, размер, батерия, година на произвеждане, тегло и т.н.</li>
                 <li>добавяне на телефон</li>
-                <li>търсене по марка производител</li>
-                <li>разширено търсене - опционално</li>
-                <li>за всеки телефон да има: снимка, производител, всякаквите основни показатели</li>
-                <li>възможност за сравняване</li>
+                <li>търсене по име и марка, сортиране по цена, година</li>
+                <li>избор на до 3 телефона за сравняване (отваря прозорец или модал с таблица, където разликите са подчертани)</li>
                 <li>рейтинг</li>
               </ul>
-              <!--
-                  <h4>Примери:</h4>
-                  <ul>
-                    <li><a href="http://www.bulmobile.com/">bulmobile.com</a></li>
-                  </ul>
-  -->
+              <h4>Примери:</h4>
+              <ul>
+                <li><a href="http://www.bulmobile.com/">bulmobile.com</a></li>
+              </ul>
             </div>
           </li>
           <li id="#project7">
-            <h3>Сайт за споделени пътувания</h3>
+            <h3>Сайт за споделени пътувания (труден!)</h3>
             <div class="project-description">
               <ul>
-                <li>user login (може да се симулира)</li>
+                <li>user login (данните се зареждат от JSON база с данни)</li>
                 <li>публикуване на пътуване (начална точка, крайна точка, междинни точки, дата и час, цена)</li>
                 <li>търсене по начална и крайна точка</li>
-                <li>писане на коментар или съобщение (опционално)</li>
-                <li>интеграция с google places api за търсенето</li>
+                <li>писане на коментар или съобщение между потребителите</li>
+                <li>интеграция с google places api за отбелязването на маршрута</li>
               </ul>
-              <!--
-                  <h4>Примери:</h4>
-                  <ul>
-                    <li><a href="https://www.blablacar.co.uk">blablacar.co.uk</a></li>
-                  </ul>
-  -->
+              <h4>Примери:</h4>
+              <ul>
+                <li><a href="https://www.blablacar.co.uk">blablacar.co.uk</a></li>
+              </ul>
             </div>
           </li>
+<!--
           <li class="divider"></li>
           <li id="#project8">
             <h3>Online messenger - изисква връзка с бекенд</h3>
@@ -301,47 +253,95 @@
                 <li>интерфейс сходен на скайп, icq, etc..</li>
                 <li>опционално - известие (нотификация) при нови съобщения чрез звук/иконка</li>
               </ul>
-              <!--
+
                   <h4>Примери:</h4>
                   <ul>
                     <li><a href="http://www.iwantim.com/">iwantim.com</a></li>
                   </ul>
-  -->
+
             </div>
           </li>
-          <li id="#project9">
+-->
+          <li id="#project8">
             <h3>Игра с управление от мишката (тъчскрийн)</h3>
             <div class="project-description">
               <ul>
-                <li>чрез анимация и javascript да се направи интерактивна игра, която да регистрира кликове, drag & drop</li>
+                <li>чрез анимация и javascript да се направи интерактивна игра, която да регистрира кликове, drag &amp; drop</li>
+                <li>да е съвместима с ътчскрийн устройства (може да ползвате библиотеката jQyery mobile)</li>
                 <li>да показва резултат</li>
+                <li>статистика с резултати (може да се симулира или да се използва бекенд API)</li>
               </ul>
-              <!--
-                  <h4>Примери:</h4>
-                  <ul>
-                    <li></li>
-                  </ul>
-  -->
+              <h4>Примери:</h4>
+              <ul class="list-group">
+                <li></li>
+              </ul>
             </div>
           </li>
-          <li id="#project10">
+          <li id="#project9">
             <h3>Игра с управление от клавиатурата</h3>
             <div class="project-description">
               <ul>
                 <li>чрез анимация и javascript да се направи интерактивна игра, която да се управлява от клавиатурата (движение напред, назад, нагоре, надолу, специални действия..)</li>
                 <li>да показва резултат</li>
+                <li>статистика с резултати (може да се симулира или да се използва бекенд API)</li>
               </ul>
-              <!--
-                  <h4>Примери:</h4>
+              <h4>Примери:</h4>
+              <ul>
+                <li><a href="https://www.sokobanonline.com/play/web-archive/jordi-domenech/miniatures/9934_miniatures-38">Sokoban</a></li>
+                <li><a href="http://www.play-pacman-online.com/">Packman</a></li>
+                <li><a href="http://www.ponger.org/galaxians/">Galaxan</a></li>
+                <li><a href="http://old.slax.org/modules/screenshots/4/413_big.png">Frog</a></li>
+                <li><a href="http://static.toomkygames.com/download-free-games/images/screens/Double-Snake-a-600x400.jpg">Snake</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="#project10">
+            <h3>Портфолио (половин проект)</h3>
+            <div class="project-description">
+              <ul>
+                <li>Multipage страница
                   <ul>
-                    <li></li>
+                    <li>Начална страница</li>
+                    <li>За мен</li>
+                    <li>Моите проекти</li>
+                    <li>Контакти</li>
                   </ul>
-  -->
+                </li>
+                <li>Проектите да се зареждат от JSON файл</li>
+                <li>Да поддържа 2 езика - български и английски</li>
+                <li>всеки проект да може да се отваря и разглежда самостоятелно</li>
+                <li>Като отделна задача: да се импелемтира проста игра чрез HTML, CSS и Javascript</li>
+              </ul>
+              <h4>Примери:</h4>
+              <ul>
+                <li><a href="http://www.bulmobile.com/">bulmobile.com</a></li>
+                <li><a href="https://www.teahousesofia.com/magazin/page/2/">teahousesofia.com</a></li>
+                <li><a href="http://www.franklywines.com/wines.aspx">franklywines.com</a></li>
+                <li><a href="https://canopy.co/">canopy.co</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="#project10">
+            <h3>Проста JS игра (половин проект)</h3>
+            <div class="project-description">
+              <ul>
+                <li>Трябва да се имплементира някоя от следните игри
+                  <ol>
+                    <li>Бесеница (примерна имплементация: https://www.ego4u.com/en/chill-out/games/hangman)</li>
+                    <li>Познай за кого си мисля? (примерна имплементация: https://www.ego4u.com/en/chill-out/games/valentine)</li>
+                    <li>Игра на думи (примерна имплементация: https://www.ego4u.com/en/chill-out/games/doublets)</li>
+                    <li>Въпросник за научаване на език (примерна имплементация: https://www.ego4u.com/en/chill-out/games/food-quiz)</li>
+                    <li>Играта за роботчето (примерна имплементация: http://zenlabs.pro/robot/)</li>
+                  </ol>
+                </li>
+                <li>Данните за играта се зареждат от JSON файл</li>
+                <li>Отчита и показва резултат</li>
+              </ul>
             </div>
           </li>
         </ul>
       </section>
-      
+
       <section id="scoring">
         <h2>Оценяване на проектите</h2>
 
@@ -363,7 +363,7 @@
             <p>Това е много важна част от пеокта, затова е с по-голяма тежест. Не забравяйте - страницата трябва да изглежда добре както на различни видове десктоп, така и на мобилни устройства. Използвайте viewport задължително! Може да ползвате bootstrap или друг фреймуърк по ваш избор. Може и сами да си напишете media queries</p>
           </li>
           <li>
-            <h4>10% функционалност (js)</h4>
+            <h4>20% функционалност (js)</h4>
             <p>Тук оценката ще е 0 ако няма функционалност или ако има и не работи. Искам да използвате бисквитка или да зареждате данни от json файл.</p>
           </li>
           <li>
@@ -372,12 +372,14 @@
           </li>
           <li>
             <h4>10% оформление на кода</h4>
-            <p>Ако кода ви не е подравнен и се чете трудно - губите 10% от оценката</p>
+            <p>Губите 10% от оценката ако кода ви не е подравнен и се чете трудно или файловете от проекта не са правилно организирани, или пък са лошо именувани (специални символи, интервали, кирилица)</p>
           </li>
+<!--
           <li>
             <h4>10% полезност или смисъл</h4>
             <p>Тази оценка ще се отнася за това дали този уебсайт реално може да се използва и да свърши работа на някой</p>
           </li>
+-->
           <li>
             <h4>10% пълнота</h4>
             <p>Губите тези 10% ако на сайта ви му липсват компоненти (след като ми кажете какво сте избрали за проект, ще обсъдим компонентите, които задължително ще трябва да се включват)</p>
@@ -386,7 +388,7 @@
 
         <p>Когато някой от критериите визия, функционалност и ефекти е изпълнен много добре, може да получите бонус точки.</p>
       </section>
-      
+
       <section id="assign" class="hidden">
         <h2>Избор на проект </h2>
         <div class="row">
@@ -420,7 +422,6 @@
                 </div>
                 <div class="col-xs-7">
                   <select name="chosen_project">
-                    <option value="0">Portfolio</option>
                     <option value="1">Уеб магазин</option>
                     <option value="2">Блог</option>
                     <option value="3">Сайт за новини</option>
@@ -428,9 +429,10 @@
                     <option value="5">Сайт за фото/аудио/видео албуми</option>
                     <option value="6">Сайт за преглед на мобилни телефони</option>
                     <option value="7">Сайт за споделени пътувания</option>
-                    <option value="8">Online messenger - изисква връзка с бекенд</option>
+<!--                    <option value="8">Online messenger - изисква връзка с бекенд</option>-->
                     <option value="9">Игра с управление от мишката (тъчскрийн)</option>
                     <option value="10">Игра с управление от клавиатурата</option>
+                    <option value="0">Portfolio + проста игра</option>
                   </select>
                 </div>
               </div>
@@ -462,7 +464,7 @@
   </main>
 
   <footer>
-    <p>Swift Academy 2015 &copy;</p>
+    <p>Swift Academy 2016 &copy;</p>
     <nav id="socilal_nav">
       <a href="https://www.facebook.com/SwiftAcad" target="_blank"><i class="icon icon-facebook-square"></i></a>
       <a href="https://www.linkedin.com/company/swift-academy-bg" target="_blank"><i class="icon icon-linkedin-square"></i></a>

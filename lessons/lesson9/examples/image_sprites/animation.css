@@ -119,3 +119,14 @@
   -webkit-animation: full-sprint 1s step-end infinite;
 }
 
+h1 {
+  transition: font-size 1s ease-in-out;
+  font-size: 2em;
+  color: blue;
+}
+
+h1:hover {
+  color: pink;
+  font-size: 2.2em;
+}
+
